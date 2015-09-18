@@ -5363,9 +5363,9 @@ body:not(.tc-sticky-header) #tc-reset-margin-top {
 }
 /* Downsize the brand/project name a bit */
 .navbar-wrapper .navbar .site-description {
-  float: right;
-  padding-right: 5px;
-  text-align: right;
+  float: left;
+  padding-left: 5px;
+  text-align: left;
 }
 .navbar-wrapper .navbar h2.site-description {
   line-height: 19px;
@@ -5544,21 +5544,22 @@ li.dropdown.active > .dropdown-toggle,
 }
 /* ADJUST LEFT AND RIGHT MENU POSITIONS => align with socials (left) and tagline (right) */
 .logo-left .navbar div > ul.nav > .menu-item:last-child > a {
-  padding-right: 0px;
+  padding-left: 0px;
 }
 .navbar .nav {
   margin-left: 0px;
+  margin-right: 0px;
 }
 .tc-header .btn-toggle-nav.pull-left {
   clear: both;
 }
 .tc-header .btn-toggle-nav.pull-left,
 .pull-menu-left .navbar div > ul.nav > .menu-item:first-child > a {
-  padding-left: 5px;
+  padding-right: 5px;
 }
 .tc-header .btn-toggle-nav.pull-right,
 .pull-menu-right .navbar div > ul.nav > .menu-item:last-child > a {
-  padding-right: 0px;
+  padding-left: 0px;
 }
 .pull-menu-left .nav-collapse {
   float: left;
@@ -5574,7 +5575,6 @@ li.dropdown.active > .dropdown-toggle,
   clear: both;
   margin: 10px 0px;
   position: relative;
-  float: right;
   padding-bottom: 12px;
   font-size: 17px;
 }
@@ -5718,7 +5718,6 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
 }
 .sn-nav-wrapper {
   clear: both;
-  float: right;
   min-width: 100%;
 }
 #tc-sn .tc-sn-inner .nav li {
@@ -6025,7 +6024,7 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
 /* SOCIAL
     -------------------------------------------------- */
 .navbar-inner .social-block {
-  padding: 0px 20px 0px 10px;
+  padding: 0px 10px 0px 20px;
   *max-width: 270px;
   /* IE 7 and below */
   margin: 10px 0;
@@ -6050,7 +6049,7 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
   line-height: inherit;
   margin: 0px;
   text-decoration: none;
-  padding-right: 13px;
+  padding-left: 13px;
   position: relative;
   top: 2px;
 }
