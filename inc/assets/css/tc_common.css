@@ -519,6 +519,10 @@ body {
 .row-fluid [class*="span"].pull-right {
   float: right;
 }
+[class*="span"].pull-left,
+.row-fluid [class*="span"].pull-left {
+  float: left;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -5357,9 +5361,9 @@ body:not(.tc-sticky-header) #tc-reset-margin-top {
 }
 /* Downsize the brand/project name a bit */
 .navbar-wrapper .navbar .site-description {
-  float: right;
+  float: left;
   padding-right: 5px;
-  text-align: right;
+  text-align: left;
 }
 .navbar-wrapper .navbar h2.site-description {
   line-height: 19px;
@@ -5428,10 +5432,21 @@ h2.site-description {
   float: right;
   width: 0;
   height: 0;
-  border-color: transparent;
   border-style: solid;
-  border-width: 4px 0 4px 4px;
+  /* the following will allow us to make no reference to the direction in the skin 
+  * so we can keep it text direction independent
+  */
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-width: 4px;
+  border-right-width: 0px;
   border-left-color: #cccccc;
+}
+.navbar .btn-navbar {
+  float: left;
+  padding: 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 /* Hide responsive button by default when menu is regulat type*/
 .tc-regular-menu .navbar .btn-toggle-nav,
@@ -5747,7 +5762,7 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
   padding-left: 25px;
 }
 #tc-sn.navbar .nav-collapse ul.nav > li li li a {
-  padding-left: 50px;
+  padding-left: 25px;
 }
 .animating .tc-sn-inner .nav [class*=dropdown],
 .tc-sn-visible .tc-sn-inner .nav [class*=dropdown] {
@@ -5814,9 +5829,9 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
   text-align: center;
   margin: auto;
   display: block;
-  float: right;
+  float: left;
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 5px;
   cursor: pointer;
 }
 .navbar .btn-toggle-nav .icon-bar {
@@ -5983,7 +5998,7 @@ style when side nav visible is actually rendered inline TC_menu.tc_set_sidenav_s
   border-bottom: 1px solid #FFF;
   position: absolute;
   width: 100%;
-  right: 0px;
+  left: 0px;
   bottom: -2px;
 }
 #main-wrapper .widget li:hover,
@@ -6139,8 +6154,8 @@ footer#footer .colophon .social-block a {
 }
 .carousel-image img {
   width: 100%;
-  -webkit-transition-property: width,height,top,left;
-  transition-property: width,height,top,left;
+  -webkit-transition-property: width, height, top, left;
+  transition-property: width, height, top, left;
   -webkit-transition-duration: .25s;
   transition-duration: .25s;
   -webkit-transition-timing-function: ease-in-out;
@@ -6181,6 +6196,14 @@ footer#footer .colophon .social-block a {
   position: absolute;
   bottom: 40px;
   right: 11%;
+}
+.tc_posts_slider .carousel-inner .edit-link {
+  right: auto;
+  left: 11%;
+}
+.tc_posts_slider .customizer-link.edit-kink {
+  bottom: 5px;
+  right: 5px;
 }
 /* If automatic centering is enabled */
 .carousel > .center-slides-enabled > .item > .carousel-image img {
@@ -6423,7 +6446,7 @@ article.format-chat .entry-content {
 }
 article.format-quote .entry-content,
 article.error404 .entry-content {
-  padding: 24px 24px 0;
+  padding: 24px 0 24px;
   border-left: 18px solid #afafaf;
   padding: 1.714285714rem;
   background: #c9c9c9;
@@ -6438,10 +6461,12 @@ cite {
   font-size: 14px;
 }
 blockquote {
-  padding: 5px 0 5px 15px;
+  padding: 5px 0;
+  padding-left: 15px;
   margin: 0 0 20px;
   font-style: italic;
   background: #FFF;
+  border-left: 5px solid;
 }
 article.format-link .entry-content {
   padding: 24px 24px 0;
@@ -7349,8 +7374,8 @@ tr:nth-child(even) th {
 }
 /*tr th:first-child,
 tr td:first-child {
-  border-left-style: solid;
-  border-left-width: 1px;
+  border-@{floatDirection}-style: solid;
+  border-@{floatDirection}-width: 1px;
 }*/
 #wp-calendar tfoot td {
   text-align: left;
@@ -9129,7 +9154,14 @@ li#wp-admin-bar-tc-customizr a {
   .navbar .btn-navbar {
     display: block;
     margin: 10px 0;
-    /*float: right;*/
+    float: right;
+  }
+  .tc-header .navbar .btn-toggle-nav {
+    clear: none;
+  }
+  .logo-right.tc-header .navbar .btn-toggle-nav,
+  .logo-right .navbar .btn-navbar {
+    float: left;
   }
   /* GIVE NAVBAR A SMALLER Z-index than logo / title SINCE V3.2.0*/
   .sticky-enabled .navbar-wrapper {
@@ -9279,7 +9311,7 @@ li#wp-admin-bar-tc-customizr a {
   }
   /*hide the border and before effect for right sidebar*/
   #right.widget-area {
-    border-left: 0px;
+    border-right: 0px;
   }
   #right.widget-area:before {
     border-left: 0px;
@@ -9319,7 +9351,7 @@ li#wp-admin-bar-tc-customizr a {
   .row-fluid .comment-avatar.span2 {
     width: 14.893617021%;
     float: left;
-    margin-right: 2.762430939%;
+    margin-left: 2.762430939%;
   }
   footer#footer {
     text-align: center;
