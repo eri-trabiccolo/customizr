@@ -429,6 +429,7 @@ li[id*="customize-control-"] {
 	-o-transition: left .3s ease-in-out, opacity .3s ease-in-out;
 	transition: left .3s ease-in-out, opacity .3s ease-in-out;
 	left: 10px;
+	right: initial;
 	opacity:0.7;
 
 }
