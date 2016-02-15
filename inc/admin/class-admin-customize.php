@@ -521,6 +521,13 @@ if ( ! class_exists( 'TC_customize' ) ) :
     */
     function tc_print_js_templates() {
       ?>
+      <script type="text/template" id="customizr-doc-link">
+        <br><p class="customizr-doc-link"><?php printf('%1$s <a href="%2$s" target="_blank"> %3$s</a>',
+            __( 'Read the theme', 'customizr'),
+            esc_url('http://docs.presscustomizr.com'),
+            __( 'documentation', 'customizr')
+        )?></p>
+      </script>
       <script type="text/template" id="donate_template">
         <div id="tc-donate-customizer">
           <a href="#" class="tc-close-request button" title="<?php _e('dismiss' , 'customizr'); ?>">X</a>
