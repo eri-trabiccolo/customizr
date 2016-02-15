@@ -192,14 +192,16 @@ if ( ! class_exists( 'TC_customize' ) ) :
 								'description',
 								'priority' ,
 								'theme_supports',
-								'capability'
+                                'capability',
+                                'doc_link'
 					),
 					'sections' => array(
 								'title' ,
 								'priority' ,
 								'description',
 								'panel',
-								'theme_supports'
+                                'theme_supports',
+                                'doc_link'
 					),
 					'settings' => array(
 								'default'			=>	null,
@@ -254,7 +256,9 @@ if ( ! class_exists( 'TC_customize' ) ) :
 					//checks authorized panel args
 					foreach( $args['panels'] as $p_set) {
 						$panel_options[$p_set] = isset( $p_options[$p_set]) ?  $p_options[$p_set] : null;
-					}
+                    }
+                    if ( isset( $panel_options['doc_link'] ) && ( isset( $panel_options['description'] ) ) )
+                      $panel_options['description'] .= '<br><p class="tc-doc-link-container">Check the theme\'s <a target="_blank" class="tc-doc-link" href="'. $panel_options['doc_link'] .'">documentation</a></p>';
 					$wp_customize -> add_panel( $p_key, $panel_options );
 				}
 			}
