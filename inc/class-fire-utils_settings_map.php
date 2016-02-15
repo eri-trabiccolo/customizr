@@ -2145,7 +2145,7 @@ if ( ! class_exists( 'TC_utils_settings_map' ) ) :
                   'capability'     => 'edit_theme_options',
                   'title'          => __( 'Global settings' , 'customizr' ),
                   'description'    => __( 'Global settings for the Customizr theme :skin, socials, links...' , 'customizr' ),
-                  'doc_link'       => 'http:://docs.presscustomizr.com'
+                  'doc_link'       => 'http://docs.presscustomizr.com/article/100-customizr-theme-options-global-settings'
         ),
         'tc-header-panel' => array(
                   'priority'       => 20,

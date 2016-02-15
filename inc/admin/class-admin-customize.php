@@ -247,7 +247,13 @@ if ( ! class_exists( 'TC_customize' ) ) :
 		 * @since Customizr 3.0
 		 */
 		function tc_customize_factory ( $wp_customize , $args, $setup ) {
-			global $wp_version;
+            global $wp_version;
+            $doc_link_message = __( "Check the theme's %sdocumentation%s", 'customizr');
+            $doc_link_message = sprintf( '<br><p class="tc-doc-link-container">%1$s</p>',
+                sprintf( $doc_link_message,
+                    '<a class="tc-doc-link" target="_blank" href="%1$s">',
+                    '</a>'
+                ));
 			//add panels if current WP version >= 4.0
 			if ( isset( $setup['add_panel']) && version_compare( $wp_version, '4.0', '>=' ) ) {
 				foreach ( $setup['add_panel'] as $p_key => $p_options ) {
@@ -258,7 +264,7 @@ if ( ! class_exists( 'TC_customize' ) ) :
 						$panel_options[$p_set] = isset( $p_options[$p_set]) ?  $p_options[$p_set] : null;
                     }
                     if ( isset( $panel_options['doc_link'] ) && ( isset( $panel_options['description'] ) ) )
-                      $panel_options['description'] .= '<br><p class="tc-doc-link-container">Check the theme\'s <a target="_blank" class="tc-doc-link" href="'. $panel_options['doc_link'] .'">documentation</a></p>';
+                      $panel_options['description'] .= sprintf( $doc_link_message, esc_url( $panel_options['doc_link']) );
 					$wp_customize -> add_panel( $p_key, $panel_options );
 				}
 			}
@@ -279,7 +285,8 @@ if ( ! class_exists( 'TC_customize' ) ) :
 					foreach( $args['sections'] as $sec) {
 						$option_section[$sec] = isset( $options[$sec]) ?  $options[$sec] : null;
 					}
-
+                    if ( isset( $option_section['doc_link'] ) && ( isset( $option_section['description'] ) ) )
+                      $option_section['description'] .= sprintf( $doc_link_message, esc_url( $option_section['doc_link']) );
 					//add section
 					$wp_customize	-> add_section( $key,$option_section);
 				}//end foreach
@@ -524,13 +531,15 @@ if ( ! class_exists( 'TC_customize' ) ) :
     *@since v3.2.9
     */
     function tc_print_js_templates() {
+      $doc_link_message = __( "Check the theme's %sdocumentation%s", 'customizr');
+      $doc_link_message = sprintf( '<br><p class="tc-doc-link-container">%1$s</p>',
+      sprintf( $doc_link_message,
+          '<a class="tc-doc-link" target="_blank" href="%1$s">',
+          '</a>'
+      ));   
       ?>
       <script type="text/template" id="customizr-doc-link">
-        <br><p class="customizr-doc-link"><?php printf('%1$s <a href="%2$s" target="_blank"> %3$s</a>',
-            __( 'Read the theme', 'customizr'),
-            esc_url('http://docs.presscustomizr.com'),
-            __( 'documentation', 'customizr')
-        )?></p>
+        <?php printf($doc_link_message, esc_url('http://docs.presscustomizr.com') ) ?>
       </script>
       <script type="text/template" id="donate_template">
         <div id="tc-donate-customizer">
