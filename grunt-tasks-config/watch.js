@@ -16,6 +16,11 @@ module.exports = {
 		files : ['<%= paths.less %>**/*.less'],
 		tasks : ['gitinfo' , 'replace:readme', 'less:dev_common', 'less:dev_skin' , 'cssmin:dev_common', 'cssmin:dev_skin' ],
 	},
+  front_jquery_js : {
+    files : ['<%= paths.front_js %>jquery-plugins/*.js', '!*.min.js'],
+    tasks : ['jshint:those', 'jshint:part_front_js', 'concat:front_main_parts_js', 'concat:front_js', 'jshint:front', 'uglify:part_front_js' , 'uglify:main_front_js'],
+    //tasks: ['concat:front_js', 'jshint:front', 'ftp_push:those'],
+  },
 	front_js : {
 		files : ['<%= paths.front_js %>parts/*.js', '!*.min.js'],
 		tasks : ['gitinfo' , 'replace:readme', 'jshint:part_front_js', 'concat:front_main_parts_js', 'concat:front_js', 'jshint:front', 'uglify:part_front_js' , 'uglify:main_front_js'],
@@ -28,7 +33,7 @@ module.exports = {
 	},
 	//Other admin js assets are jshinted on change
 	admin_js : {
-		files : ['<%= paths.admin_js %>theme-customizer-preview.js', '<%= paths.admin_js %>theme-customizer-control.js', '<%= paths.admin_js %>tc_ajax_slider.js'],
+		files : ['<%= paths.admin_js %>theme-customizer-preview.js','<%= paths.admin_js %>tc_ajax_slider.js'],
 		tasks : ['gitinfo' , 'replace:readme', 'jshint:those', 'uglify:prod_admin_js'],
 	},
 	admin_css : {
@@ -36,7 +41,7 @@ module.exports = {
 		tasks : ['gitinfo' , 'replace:readme', 'wait:pause'],
 	},
 	push_php : {
-		files: ['**/*.php' , '!build/**.*.php'],
-		tasks: ['gitinfo' , 'replace:readme', 'wait:pause']
+		files: ['**/*.php' , '!build/**.*.php', '! <%= paths.inc_php %>czr-admin.php', '! <%= paths.inc_php %>czr-front.php', '! <%= paths.inc_php %>czr-init.php'],
+		tasks: ['gitinfo' , 'replace:readme', 'wait:pause', 'concat:init_php', 'concat:front_php', 'concat:admin_php']
 	}
 };

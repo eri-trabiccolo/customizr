@@ -30,6 +30,7 @@
     line-height: 385px;
     overflow: hidden;
     min-height: 385px;
+    max-height: 385px;
   }
   #left .round-div {
     left: -77px;
@@ -64,6 +65,7 @@
 
 @media (min-width: 980px) {
   /* ROUND DIV FOR 3 columns Top or bottom thumb position SINCE V3.2.0*/
+  .span6 .thumb-position-bottom .round-div,
   .span6 .thumb-position-top .round-div {
     width: 125px;
     height: 125px;
@@ -186,8 +188,13 @@
   .nav-collapse, .nav-collapse.collapse.in .nav{
     display: block;
   }
-  .navbar div > ul.nav > .menu-item:first-child > a {
-    padding-left: 15px
+  .tc-header:not(.tc-second-menu-on) .navbar div > ul.nav > .menu-item:first-child > a {
+    & when (@is_rtl = false){
+      padding-left: 15px;
+    }
+    & when (@is_rtl = true){
+      padding-right: 15px;
+    }
   }
   .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
     font-weight:normal;
@@ -223,7 +230,7 @@
     text-align: @textAlign;
     position: relative;
   }
-  .tc-hover-menu.nav a:after {
+  .tc-header:not(.tc-second-menu-on) .tc-hover-menu.nav a:after {
     border-top: none;
     border-right: none;
     border-left: none;
@@ -252,6 +259,7 @@
     line-height: 309px;
     overflow: hidden;
     min-height: 309px;
+    max-height: 309px;
   }
 
   .featurette {
@@ -553,6 +561,7 @@
     line-height: 308px;
     overflow: hidden;
     min-height: 308px;
+    max-height: 308px;
   }
 
   .item .carousel-caption h1 {
@@ -584,12 +593,14 @@
     text-align: center;
   }
   /* SINCE V3.2.0 */
+  .span6 .thumb-position-bottom .round-div,
   .span6 .thumb-position-top .round-div {
     width: 125px;
     height: 125px;
     top: -59px;
     left: -63px;
   }
+  .span6 .thumb-position-bottom .thumb-wrapper,
   .span6 .thumb-position-top .thumb-wrapper {
     max-width: none;
   }
@@ -657,6 +668,7 @@
     line-height: 190px;
     overflow: hidden;
     min-height: 190px;
+    max-height: 190px;
   }
 
   .carousel-caption {
@@ -733,6 +745,7 @@
     line-height: 140px;
     overflow: hidden;
     min-height: 140px;
+    max-height: 140px;
   }
   .carousel-caption {
     padding: 2%;

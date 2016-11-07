@@ -50,6 +50,12 @@ var czrapp = czrapp || {};
       }
     },//eventHandler
 
+    //outline firefox fix, see https://github.com/presscustomizr/customizr/issues/538
+    outline: function() {
+      if ( czrapp.$_body.hasClass( 'mozilla' ) && 'function' == typeof( tcOutline ) )
+          tcOutline();
+    },
+
     //SMOOTH SCROLL
     smoothScroll: function() {
       if ( TCParams.SmoothScroll && TCParams.SmoothScroll.Enabled )
@@ -71,10 +77,10 @@ var czrapp = czrapp || {};
       _deep_excl = _.isObject( TCParams.anchorSmoothScrollExclude.deep ) ? TCParams.anchorSmoothScrollExclude.deep : null ;
       if ( _deep_excl )
         _links = _.toArray($_links).filter( function ( _el ) {
-          return ( 2 == ( ['ids', 'classes'].filter( 
-                        function( sel_type) { 
-                            return self.isSelectorAllowed( $(_el), _deep_excl, sel_type); 
-                        } ) ).length 
+          return ( 2 == ( ['ids', 'classes'].filter(
+                        function( sel_type) {
+                            return self.isSelectorAllowed( $(_el), _deep_excl, sel_type);
+                        } ) ).length
                 );
         });
       $(_links).click( function () {
@@ -107,11 +113,13 @@ var czrapp = czrapp || {};
     //BACK TO TOP
     backToTop : function() {
       var $_html = $("html, body"),
-          _backToTop = function($) {
-            return ($.which > 0 || "mousedown" === $.type || "mousewheel" === $.type) && $_html.stop().off( "scroll mousedown DOMMouseScroll mousewheel keyup", _backToTop );
+          _backToTop = function( evt ) {
+            return ( evt.which > 0 || "mousedown" === evt.type || "mousewheel" === evt.type) && $_html.stop().off( "scroll mousedown DOMMouseScroll mousewheel keyup", _backToTop );
           };
 
-      $(".back-to-top, .tc-btt-wrapper, .btt-arrow").on("click touchstart touchend", function ($) {
+      $(".back-to-top, .tc-btt-wrapper, .btt-arrow").on("click touchstart touchend", function ( evt ) {
+        evt.preventDefault();
+        evt.stopPropagation();
         $_html.on( "scroll mousedown DOMMouseScroll mousewheel keyup", _backToTop );
         $_html.animate({
             scrollTop: 0
@@ -119,7 +127,6 @@ var czrapp = czrapp || {};
             $_html.stop().off( "scroll mousedown DOMMouseScroll mousewheel keyup", _backToTop );
             //czrapp.$_window.trigger('resize');
         });
-        $.preventDefault();
       });
     },
 
@@ -218,14 +225,14 @@ var czrapp = czrapp || {};
 
       //both conain iframes => do nothing
       if ( leftIframe && contentIframe )
-        return;    
+        return;
 
       if ( that.$_left.length ) {
         if ( leftIframe )
           that.$_content[ _sidebarLayout === 'normal' ?  'insertAfter' : 'insertBefore']( that.$_left );
         else
           that.$_left[ _sidebarLayout === 'normal' ?  'insertBefore' : 'insertAfter']( that.$_content );
-      } 
+      }
     },
 
     //Handle dropdown on click for multi-tier menus
@@ -358,7 +365,7 @@ var czrapp = czrapp || {};
     },
 
     //Helpers
-    
+
     //Check if the passed element(s) contains an iframe
     //@return list of containers
     //@param $_elements = mixed

@@ -8,6 +8,12 @@
 ehthumbs.db
 Thumbs.db
 
+# DEV PHP FILES
+# _dev/
+
+# dev img
+inc/assets/img/demo/ALL/
+
 # CUSTOM SKINS
 custom-skins/
 
@@ -19,6 +25,7 @@ node_modules/
 .ftpauth
 #grunt-tasks-config/
 # gruntfile.js
+npm-debug.log
 
 # PHP_CodeSniffer
 PHP_CodeSniffer/

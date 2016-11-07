@@ -24,7 +24,7 @@ jQuery(function ($) {
     _render_gc_cta();
     _render_mc_cta();
   }
-  _render_rate_czr();
+  //_render_rate_czr();
 
   function _render_rate_czr() {
     var _cta = _.template(
@@ -109,7 +109,7 @@ jQuery(function ($) {
     var _cta = _.template(
         $( "script#footer_cta" ).html()
     );
-    $('li[id*="tc_show_back_to_top"]').append( _cta() );
+    $('li[id*="tc_show_back_to_top"]').closest('ul').append( _cta() );
   }
 
   function _ajax_save() {

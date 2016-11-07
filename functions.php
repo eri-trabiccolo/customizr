@@ -15,7 +15,7 @@
 * @subpackage 	functions
 * @since     	1.0
 * @author    	Nicolas GUILLAUME <nicolas@presscustomizr.com>
-* @copyright 	Copyright (c) 2013-2015, Nicolas GUILLAUME
+* @copyright 	Copyright (c) 2013-2016, Nicolas GUILLAUME
 * @link      	http://presscustomizr.com/customizr
 * @license   	http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
@@ -23,7 +23,7 @@
 
 /**
 * This is where Customizr starts. This file defines and loads the theme's components :
-* => Constants : CUSTOMIZR_VER, TC_BASE, TC_BASE_CHILD, TC_BASE_URL, TC_BASE_URL_CHILD, THEMENAME, TC_WEBSITE
+* => Constants : CUSTOMIZR_VER, TC_BASE, TC_BASE_CHILD, TC_BASE_URL, TC_BASE_URL_CHILD, THEMENAME, CZR_WEBSITE
 * => Default filtered values : images sizes, skins, featured pages, social networks, widgets, post list layout
 * => Text Domain
 * => Theme supports : editor style, automatic-feed-links, post formats, navigation menu, post-thumbnails, retina support
@@ -31,7 +31,7 @@
 * => Default filtered options for the customizer
 * => Customizr theme's hooks API : front end components are rendered with action and filter hooks
 *
-* The method TC__::tc__() loads the php files and instanciates all theme's classes.
+* The method CZR__::czr_fn__() loads the php files and instantiates all theme's classes.
 * All classes files (except the class__.php file which loads the other) are named with the following convention : class-[group]-[class_name].php
 *
 * The theme is entirely built on an extensible filter and action hooks API, which makes customizations easy and safe, without ever needing to modify the core structure.
@@ -42,9 +42,8 @@
 * https://codex.wordpress.org/Plugin_API
 */
 
-
 //Fire Customizr
-require_once( get_template_directory() . '/inc/init.php' );
+require_once( get_template_directory() . '/inc/czr-init.php' );
 
 /**
 * THE BEST AND SAFEST WAY TO EXTEND THE CUSTOMIZR THEME WITH YOUR OWN CUSTOM CODE IS TO CREATE A CHILD THEME.
@@ -56,195 +55,3 @@ require_once( get_template_directory() . '/inc/init.php' );
 * More informations about how to create a child theme with Customizr : http://docs.presscustomizr.com/article/24-creating-a-child-theme-for-customizr/
 * A good starting point to customize the Customizr theme : http://docs.presscustomizr.com/article/35-how-to-customize-the-customizr-wordpress-theme/
 */
-
-
-// Fire Customizr
-CZR();
-
-
-/*******************************************************
-* SOME TEST VIEW CLASSES AND CALLBACKS
-*******************************************************/
-function callback_fn( $text1 = "default1", $text2 = "default2"  ) {
-  ?>
-    <h1>THIS IS RENDERED BY A CALLBACK FUNCTION WITH 2 OPTIONAL PARAMS : <?php echo $text1; ?> and <?php echo $text2; ?></h1>
-  <?php
-}
-
-
-class TC_test_view_class extends TC_View {
-  public $test_class_property = 'YOUPI';
-  static $instance;
-
-  function __construct( $model = array() ) {
-    self::$instance =& $this;
-    //Fires the parent constructor
-    if ( ! isset(parent::$instance) )
-      parent::__construct( $model );
-  }
-
-  /*public function tc_render() {
-    ?>
-      <h1>MY ID IS <span style="color:blue"><?php echo $this -> id ?></span>, AND I AM RENDERED BY THE VIEW CLASS</h1>
-    <?php
-  }*/
-}
-
-
-class TC_rendering {
-  function callback_met( $text1 = "default1", $text2 = "default2"  ) {
-    ?>
-      <h1>THIS IS RENDERED BY A CALLBACK METHOD IN A CLASS, WITH 2 OPTIONAL PARAMS : <?php echo $text1; ?> and <?php echo $text2; ?></h1>
-    <?php
-  }
-}
-
-/*******************************************************
-* / SOME TEST VIEW CLASSES AND CALLBACKS
-*******************************************************/
-//CZR() -> collection -> tc_delete( 'joie');
-
-
-//CZR() -> collection -> tc_delete( 'joie');
-add_action('wp' , 'register_test_views');
-
-function register_test_views() {
-
-  CZR() -> collection -> tc_register(
-    array(
-      'hook'        => '__after_header',
-      'id'          => 'joie',
-      'template'    => 'custom',
-      'view_class'  => 'TC_test_view_class',
-      'early_setup' => 'TC_test_early_setup',
-      'children' => array(
-        'child1' => array(
-            'hook'        => 'in_custom_template',
-            'html'        => '<h2 style="color:green">I AM A CHID VIEW</h2>'
-        ),
-        'child2' => array(
-            'hook'        => 'in_custom_template',
-            'html'        => '<h2 style="color:purple">I AM ANOTHER CHID VIEW</h2>'
-        )
-      )
-    )
-  );
-
-  // CZR() -> collection -> tc_register(
-  //   array( 'hook' => '__after_header', 'html' => '<h1>Yo Man this is some html to render</h1>' )
-  // );
-  // CZR() -> collection -> tc_register(
-  //   array( 'hook' => '__after_header', 'callback' => array( 'TC_rendering', 'callback_met'), 'html' => '<h1>YOOOOOO</h1>' )
-  // );
-  // CZR() -> collection -> tc_register(
-  //   array( 'hook' => '__after_header', 'callback' => 'callback_fn', 'cb_params' => array('custom1', 'custom2'), 'html' => '<h1>YAAAA</h1>' )
-  // );
-
-  CZR() -> collection -> tc_change( 'joie', array('template' => '', 'html' => '<h1>Yo Man this is a changed view</h1>', 'view_class' => '') );
-}
-
-//register_test_views();
-
-
-
-//Create a new test view
-// CZR() -> collection -> tc_register(
-//   array( 'hook' => '__after_header', 'template' => 'custom',  'html' => '<h1>Yo Man this some html to render 1</h1>' )
-// );
-
-
-
-
-
-
-
-add_action('__after_header' , function() {
-  ?>
-    <pre>
-      <?php print_r( CZR() -> collection -> tc_get() ); ?>
-    </pre>
-  <?php
-}, 100);
-
-
-
-
-
-//@todo : tc_change does not work when the model is already instanciated
-//=> shall remove the actions on "view_instanciated_{$this -> id}"
-
-//@todo : children it would be good to add actions on pre_render_view, where we are in the parent's hook action.
-//=> late check if new children have been registered
-//=> if so, instanciate their views there
-//
-//@todo : the id could be based on the id, then template name, then hook_priority
-//
-//@todo : for logged in admin users, add a line of html comment before and after the view giving id, hook, priority
-//
-//@todo : move tc_apply_registered_changes_to_instance into the model ?
-//
-//@todo : pre_render_view stuffs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*add_action('__after_footer' , function() {
-  $args = array(
-    'post_type' => array('post'),
-    'post_status' => array('publish'),
-    'posts_per_page'         => 10
-  );
-
-  tc_new(
-    array('content' => array( array('inc/parts', 'loop_base') ) ),
-    array(
-      'name' => '',
-      'query' => new WP_Query( $args )
-    )
-  );
-});*/
-
-/*add_action( 'parse_query' , function($query) {
-  $test = array(
-    'is_single' => $query -> is_single(),
-    'is_home' => $query -> is_home()
-  );
-
-   if ( is_array() )
-    array_walk_recursive(, function(&$v) { $v = htmlspecialchars($v); });
-  ?>
-    <pre>
-      <br/><br/><br/><br/><br/><br/>
-      <?php print_r($test); ?>
-    </pre>
-  <?php
-  //wp_die();
-});*/
-
-// add_action('init' , function() {
-//   $args = array(
-//     'post_type' => array('post'),
-//     'post_status' => array('publish'),
-//     'posts_per_page'         => 3
-//   );
-
-//   tc_new(
-//     array('content' => array( array('inc/parts', 'post_list') ) ),
-//     array(
-//       '_singleton' => false,
-//       'loop_name' => 'custom-grid',
-//       'query' => new WP_Query( $args ),
-//       'render_on_hook' => '__after_header'
-//     )
-//   );
-// });

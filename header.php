@@ -19,7 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 	<?php
-		//the '__before_body' hook is used by TC_header_main::$instance->tc_head_display()
+		//the '__before_body' hook is used by CZR_header_main::$instance->czr_fn_head_display()
 		do_action( '__before_body' );
 	?>
 
@@ -28,8 +28,17 @@
     <?php do_action( '__before_page_wrapper' ); ?>
 
     <div id="tc-page-wrap" class="<?php echo implode( " ", apply_filters('tc_page_wrap_class', array() ) ) ?>">
-      <?php
-      do_action( '__before_header' );
-  		  do_action( '__header_main');
-      do_action ( '__after_header' ); //This hook is used for the slider
-      ?>
+
+  		<?php do_action( '__before_header' ); ?>
+
+  	   	<header class="<?php echo implode( " ", apply_filters('tc_header_classes', array('tc-header' ,'clearfix', 'row-fluid') ) ) ?>" role="banner">
+  			<?php
+  				// The '__header' hook is used with the following callback functions (ordered by priorities) :
+  				//CZR_header_main::$instance->tc_logo_title_display(), CZR_header_main::$instance->czr_fn_tagline_display(), CZR_header_main::$instance->czr_fn_navbar_display()
+  				do_action( '__header' );
+  			?>
+  		</header>
+  		<?php
+  		 	//This hook is used for the slider : CZR_slider::$instance->czr_fn_slider_display()
+  			do_action ( '__after_header' )
+  		?>

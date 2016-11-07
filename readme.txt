@@ -34,12 +34,186 @@ The exceptions to this license are as follows:
 * stepper v3.0.5 - 2014-02-06, Copyright 2014 Ben Plum, MIT Licensed
 * Hammer.JS - v2.0.4 - Copyright (c) 2014 Jorik Tangelder, MIT license
 * SmoothScroll - v1.3.8 (Balazs Galambosi), MIT license
-* Icon Set:	Entypo is licensed under SIL Open-Font License
+* Icon Set: Font Awesome is licensed under SIL OFL 1.1 and MIT License
 * The images screenshot.png, inc/assets/img/customizr-theme-customizer.png, inc/assets/img/customizr-theme-responsive.png, inc/admin/img/ are creations of Nicolas Guillaume and licensed under GPL v2+
+* All images in inc/assets/img/demo are licensed under CC0 in pixabay.com
 * The image slider-loader.gif is released under the WTFPL license (http://www.wtfpl.net/, GPL compatible), generated on http://ajaxload.info/
 
 
 #######################  Changelog ######################
+= 3.4.34 October 28th 2016 =
+* fixed : compatibility issue with php7
+* fixed : better check for is customize preview()
+* fixed : correctly instantiate front classes in admin building slider of posts fixes #662
+* improved : add requestAnimationFrame polyfill required by several jquery-plugins fixes #665
+* improved : get rid of the outdated menu item first letter styling
+* improved : Imp: add back langpacks completed on translate.wordpress.org. Needed for Customizr-Pro. note: german GTE considered our german translation as formal german. The current de_DE.po(mo) is just a copy of the de_DE_formal.po(mo) pack.
+
+= 3.4.33 October 17th 2016 =
+* fixed : compatibility problems with plugins using the WP tinyMCE editor. Example : Black studio tinyMCE
+
+= 3.4.32 October 17th 2016 =
+* fixed : added back function tc__f() for retro-compatibility
+* updated : grey.css is now the default skin, color #5A5A5A. No impact for previous version users using the old default skin (blue3.css)
+
+= 3.4.31 October 16th 2016 =
+* fixed : wrong class name in czr-init.php
+* fixed : footer widgets not displayed
+
+= 3.4.30 October 15th 2016 =
+* added : in single post, new wp filter : apply_filters( 'tc_single_post_section_class', array( 'entry-content' )
+* added : in single post, new wp action : do_action( '__after_single_entry_inner' )
+* added : demo singleton class CZR_prevdem
+* added : demo images in inc/assets/img/demo
+* Imp: group files in 4 main files to load in inc/
+* Imp: add fp and round-div comp code with plugins running bootsrap3+ fixes #640
+* Fix: fix js issue for pages with no header (dropdown placement)fixes #643
+* Imp: replace class prefixes from TC to CZR
+* Imp: change function names prefix from tc to czr
+* Imp: add parallax classes and js only when slider exists
+* Removed : language packs translated on wp.org
+
+= 3.4.23 September 14th 2016 =
+* added : a parallax scrolling option for sliders. Enabled by default.
+* added : the waypoint js library (v4.0.0)
+* changed : slide loader icon is enabled by default
+* fixed : center the rectangular thumbs with golden ration only in post lists, not in single posts
+
+= 3.4.22 August 23rd 2016 =
+* Fix: tinymce custom style conflicts (detected with the ACF WP plugin ) with tinymce 4.x api. Fixes #626
+* Fix : customizer terms array (categories/tags pickers options) not being updated on term delettion. fixes #620
+* Improved : use WooCommerce breadcrumb code in wc contexts
+* Improved : remove it lang files - will use the ones available on wp.org
+* Added : new option - customize back to top - arrow position left or right
+
+= 3.4.21 May 6th 2016 =
+* Fix: remove grunt live reload script fixes #611
+* Fix: border-collapse specify 'separate' instead of 'initial': Opera fix should work with IE too, needs further tests
+* Fix: fix wp media insert in front fixes #605
+* Fix: fix woocommerce variation not visible on a product page fixes #601
+* Fix : rename Finnish translations to match Wordpress core
+* Fix: fix potential issue with the dropdown limit to viewport and some plugins (maybe) fixes #593
+* Imp: be sure drodpown are displayed when overflowing the header/navbar fixes #608
+* Imp: allow wc-cart in the header ajax update
+
+= 3.4.20 March 14th 2016 =
+* Update: translations ru_RU and id_ID
+* Fix: calendar widget style in footer with multiple widget instances
+* Fix: disable smoothscroll touchpad support by default
+* Imp: move the woocommerce header options, option do display the shopping cart on scroll
+* Imp: wp 4.5 compatibility better rendering of the rating block in the customizer
+* Fix: do not display menu-button when mobile+scrolling+sticky+not_allowed fixes #571
+
+= 3.4.19 February 16th 2016 =
+* Add : 3 new social icons: VKontakte, Yelp, Xing
+* Imp: woocommerce icon cart now rendered with font-awesome
+* Imp: remove outdated old ie fixes in the head
+* Imp: move front and back icons to Font Awesome set
+* Add: add customizer setting to optionally load font-awesome resources
+* Imp: logo - replace previous upload control in the customizer with cropped images control
+* Updated: translation fr_CA
+* Fix: slider - avoid caption increasing slides height
+* Fix: amend missing comma in the previous commit
+* Fix: better rendering of the social-block in sidebar and colophon when they take up more than one line
+* Fix: amend typo in the new control css
+* Fix: refine compatibility with old customizr versions
+* Fix: make icons in singular post / page contexts skin based
+* Fix: never display edit links in the customizer fixes #361
+* Fix: avoid outline showing up on links click in ff (v44) fixes #538
+* Fix: fix potential warning when using custom skins fixes #540
+
+= 3.4.18 January 30th 2016 =
+* Updated Italian translation plus a typo
+* Add: new option - display woocommerce cart in the header when sticky fixes #499
+* Fix: fix grid not considering custom max height in left sidebar layout
+* Fix: fix smartloaded img not correctly displayed in some browsers fixes #534
+* Fix: fix slider link with QTranslate X in pre-path mode thanks to @justinbb fixes #531
+* Fix: fix broken link to the header's navigation doc
+* Fix: fix broken links to theme's faq
+* Fix: fix broken links to the slider docs
+* Fix: fix broken links to the docs in class-fire-utils
+* Fix: fix grid expanded post edit link not reachable fixes #286
+* Fix: refine alignment when tagline not shown
+
+= 3.4.17 January 23rd 2016 =
+* Add: a few translation tr_TR thanks to @ghost
+* Add : Indonesian translation. Thanks to Rio Bermano
+* Fix : some Swedish translation strings. Thanks to Mia Oberg.
+* Fix: fix post-metas hierarchical tax check when building button class
+* Fix: prefer mysqli api to the mysql ones (deprecated) in sys-info fixes #508
+* Fix: amend wrong documentation link in sidebar widget placeholder fixes #502
+* Fix: fix jetpack's photon - theme smartload compatibility issue
+* Fix: fix btt-arrow and scroll-down issue Also use more descriptive variable names. fixes #477
+* Fix: fix disabling wc-header-cart to reset tc_user_options_style
+* Fix: avoid smartload conflict with buddypress setting avatar img fixes #467 a)
+* Fix: better html comments fix rare cases when some html comments were considered as server's directives. fixes #470
+* Fix: skip URIS images among imgs to smartload fixes #463
+* Fix: smarload preg callback - reverse strpos param order
+* Fix: apply border bottom only to theme sidebars widget list item
+
+= 3.4.16 December 10th 2015 =
+* Added: WooCommerce cart in the header
+* Added: Turkish (tr_TR) translation files
+* Added: Front js - new js class to better place dropdowns submenus avoiding overflowing the window
+* Added: Images compatibility with wp 4.4+. Added customizer options to disable the default responsive images behaviour for slider and thumbnails.
+* Fix: allow smartload in wp 4.4 (responsive images)
+* Fix: alternate layout is available only if thumb position is right/left. Also fixes the alternate layout thumbnail's height control visibility
+* Fix: do not display colophon's back to top text when back to top arrow button is enabled
+* Fix: rtl colophon's layout fixes
+* Fix: remove unneeded css code for the secondary menu dropdown top arrow
+* Fix: allow smartload when jetpack's sharing enabled
+* Fix: fix some issues regarding to smartload and centering imgs
+* Fix: show second-menu dropdown-submenu arrow anyways
+* Fix: WPML customizr option name
+* Fix: allow logo transition only when both w,h are available.
+* Fix: fix padding for the first menu-item in responsive menu
+* Fix: remove unsupported turkish translation files
+* Fix: Front-js - new js event triggered for sticky header and sidenav
+* Fix: limit dropdown top arrow adjustment to the tc-wc-menu
+* Fix: some CSS fixes for parent dropdown submenus in secondary menu
+* Fix: allow slides translations in post/pages
+* Updated : Dutch translation. Thanks to Helena Handa
+* Updated: Brazilian Portuguese translation
+* Updated: japanese translation
+* Updated Farsi translation
+* Improved : disable all front end notices when customizing
+
+= 3.4.15 November 14th 2015 =
+* Fix: wrong variable declaration in the main front js file
+* Updated: Norwegian translation. Thanks to Marvin Wiik.
+* Fix: better way to check if the search query has results
+* Fix: the-events-calendar: fix showing the content twice in single event pages fixes #396
+* Fix: display header in multisite signup/activate pages
+* updated Brazilan Portuguese. Thanks to Helena Handa.
+* Fix: fix column layouts in Help and About admin pages
+* Add: WPML compatibility
+* Improved: disable the front end notices when customizing
+
+= 3.4.14 November 4th 2015 =
+* Add: Added a dismissable help notice on front-end in post lists about using img smart-load
+* Add : add Powered by Wordpress in footer credits
+* updated : German translation, thanks to Martin Bangermann
+* Fix: menu display element, cast element classes to array fixes #372
+* Fix: Deep link to customizer menu panel in a control description fixes #244
+* Fix: Deep link to the featured page control in the removable front end block fixes #246
+* Fix: better handling of the simple-load event triggered on holders fixes #377
+
+= 3.4.13 October 16th 2015 =
+* fix : better support for php versions < 5.4.0
+
+= 3.4.12 October 16th 2015 =
+* added : performance help notice on front-end for posts/pages showing more than 2 images
+* updated : Italian Translation thanks to Giorgio Riccardi http://www.giorgioriccardi.com/
+* fix: better support for Visual Composer, prevent conflicts with anchor links in visual composer elements
+* fix: better support for The Events Calendar, events list view fixes #353
+* fix: better support for JetPack's photon, load imgs from cdn
+updated Polish translation. Thanks to Krzysztof Busłowicz
+* fix : better retro compatibility for the customizer preview for WP version under 4.1
+* fix: Select a submenu expansion option disappears #340
+* fix: allow control deeplink in the customizer
+* fix: limit previous fix to ie9 and below
+* fix: slider-controls always visible in ie9- In such browsers the opacity+transition doesn't really work fine, let's make them always visible
+
 = 3.4.11 September 30th 2015 =
 * added: new social link - email
 
@@ -59,8 +233,8 @@ The exceptions to this license are as follows:
 * fix: broken update notice in edit attachment page fixes issue #248
 * fix: display slider notice only on the demo slider fixes issue #251
 * fix: Add back the Google Font img in the Customizer fixes issue #285
-* fix: Woocommerce's product tabs not showing if Smooth scroll on click enabled Fixes issue #258 
-* fix: Allow the expanded grid title to be translated with qtranslate 
+* fix: Woocommerce's product tabs not showing if Smooth scroll on click enabled Fixes issue #258
+* fix: Allow the expanded grid title to be translated with qtranslate
 * fix: include pages in search results when including cpt in post lists Fixes issue #280
 * fix: expand last published sticky post in the grid
 * fix: disable link smoothscroll in woocommerce contexts See issue #258
@@ -248,7 +422,7 @@ The exceptions to this license are as follows:
 * fixed : use '===' to compare with '0'.
 * fixed : fix logo ratio, apply only when no sticky-logo set
 * fixed : avoid plugin's conflicts with the centering slides feature: replace the #customizr-slider's 'slide' class with 'customizr-slide'
-* fixed : user defined comments setting for a single page in quick edit mode 
+* fixed : user defined comments setting for a single page in quick edit mode
 * fixed : pre_get_posts as action instead of filter
 * fixed : hook post-metas and headings early actions to wp_head instead of wp
 * fixed : minor css issues due to the larger width for the customizer controls
@@ -791,7 +965,7 @@ added grid design option as a specific set to be revealed on click
 = 3.2.0 October 20th 2014 =
 * added (php, class-content-slider.php) New action hooked : __after_carousel_inner. Used to render the slider controls.
 * added (js) slider swipe support with hammer.js. Controls not renderd for mobile devices.
-* fixed (php, class-content-comments.php, comments.php) Comment title was not included in the translation strings (out of the poedit source paths). New filter on comment_form_defaults filter 
+* fixed (php, class-content-comments.php, comments.php) Comment title was not included in the translation strings (out of the poedit source paths). New filter on comment_form_defaults filter
 * added (css, php : class-fire-init.php) css : class 'is-customizing' is added to the body tag in a customization context
 * changed (css) transition: width 0.2s ease-in-out, left 0.25s ease-in-out, right 0.25s ease-in-out; is only applied in a customization context.
 * changed : (php, class-header-header_main.php) tc_logo_class filter is now handled as an array of css classes instead of a string : implode( " ", apply_filters( 'tc_logo_class', array( 'brand', 'span3') ) )
@@ -870,7 +1044,7 @@ added grid design option as a specific set to be revealed on click
 * improved : (php , class-fire-utils.php#207)tc_get_the_ID() : now check the wp_version global to avoid the get_post() whitout parameter issue. ( $post parameter became optional after v3.4.1 )
 * added : (php, class-controls.php) 2 new action hooks : __before_setting_control, __after_setting_control, using the setting id as additional parameter.
 * fixed : (css) .navbar-inner .nav li : 1px hack for chrome to not loose the focus on menu item hovering
- 
+
 = 3.1.22 August 16th 2014 =
 * added : (css, class-fire-init.php#75) 9 new minified css skins
 * fixed : (php, class-content-breadcrumb.php#443) added a check is_array(get_query_var( 'post_type' ) in archive context
@@ -1216,10 +1390,10 @@ added grid design option as a specific set to be revealed on click
 * fixed : reordering slides was deleting the slides
 
 = 3.0.2 July 20th, 2013 =
-* fixed : problem fixed on theme zipping and upload in repository 
+* fixed : problem fixed on theme zipping and upload in repository
 
 = 3.0.1 July 4th, 2013 =
-* fixed : 'header already sent' error fixed (space before php opening markup in an admin class) was generating an error on log out  
+* fixed : 'header already sent' error fixed (space before php opening markup in an admin class) was generating an error on log out
 
 = 3.0 June 28th, 2013 =
 * changed : global code structure has changed. Classes are instanciated by a singleton factory, html is rendered with actions, values are called through filters
@@ -1334,7 +1508,7 @@ added grid design option as a specific set to be revealed on click
 
 = 1.1.7 April 17th, 2013 =
 * file structure simplification : one core loop in index.php
-* 
+*
 
 = 1.1.6 April 17th, 2013 =
 * Removal of add_editor_style()

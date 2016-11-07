@@ -1,3483 +1,3153 @@
+# Translation of Themes - Customizr in Norwegian (Bokmål)
+# This file is distributed under the same license as the Themes - Customizr package.
 msgid ""
 msgstr ""
-"Project-Id-Version: * Customizr v3.5.0\n"
-"POT-Creation-Date: 2015-08-22 17:04+0200\n"
-"PO-Revision-Date: 2015-08-22 17:04+0200\n"
-"Last-Translator: Nicolas <contact@presscustomizr.com>\n"
-"Language-Team: Nicolas <contact@presscustomizr.com>\n"
-"Language: nb_NO\n"
+"PO-Revision-Date: 2016-10-06 09:21:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
-"X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: assets\n"
-
-#: admin/class-admin-customize.php:89
-msgid "&mdash; Select &mdash;"
-msgstr ""
-
-#: admin/class-admin-customize.php:125
-msgid "Assign menus to locations"
-msgstr ""
-
-#: admin/class-admin-customize.php:133
-#, php-format
-msgid ""
-"You haven't created any menu yet. %s or check the %s to learn more about "
-"menus."
-msgstr ""
-
-#: admin/class-admin-customize.php:134
-msgid "Create a new menu now"
-msgstr ""
-
-#: admin/class-admin-customize.php:135 class-fire-utils_settings_map.php:1330
-#: parts/class-content-post.php:206
-msgid "WordPress documentation"
-msgstr ""
-
-#: admin/class-admin-customize.php:152
-msgid "SITE ICON"
-msgstr ""
-
-#: admin/class-admin-customize.php:348
-#, fuzzy
-msgid "More grid design options"
-msgstr "Fremhevet innhold"
-
-#: admin/class-admin-customize.php:358
-msgid "Jump to the blog design options"
-msgstr ""
-
-#: admin/class-admin-customize.php:463
-msgid ""
-"Your favicon is currently handled with an old method and will not be "
-"properly displayed on all devices. You might consider to re-upload your "
-"favicon with the new control below."
-msgstr ""
-
-#: admin/class-admin-customize.php:534
-msgid "dismiss"
-msgstr ""
-
-#: admin/class-admin-customize.php:537
-msgid "Hi! This is"
-msgstr ""
-
-#: admin/class-admin-customize.php:539
-msgid ", developer of the Customizr theme"
-msgstr ""
-
-#: admin/class-admin-customize.php:542
-msgid ""
-"I'm doing my best to make Customizr the perfect free theme for you. If you "
-"think it helped you in any way to build a better web presence, please "
-"support it's continued development with a donation of $20, $50, ..."
-msgstr ""
-
-#: admin/class-admin-customize.php:547
-msgid "Make a donation for Customizr"
-msgstr ""
-
-#: admin/class-admin-customize.php:550
-msgid ""
-"Once clicked the 'Hide forever' button, this donation block will not be "
-"displayed anymore.<br/>Either you are using Customizr for personal or "
-"business purposes, any kind of sponsorship will be appreciated to support "
-"this free theme.<br/><strong>Already donator? Thanks, you rock!<br/><br/> "
-"Live long and prosper with Customizr!</strong>"
-msgstr ""
-
-#: admin/class-admin-customize.php:551
-msgid "Hide forever"
-msgstr ""
-
-#: admin/class-admin-customize.php:552
-msgid "Let me think twice"
-msgstr ""
-
-#: admin/class-admin-customize.php:561
-msgid "Need more customizations options and premium support ?"
-msgstr ""
-
-#: admin/class-admin-customize.php:563 admin/class-admin-customize.php:574
-#: admin/class-admin-customize.php:585 admin/class-admin-customize.php:599
-#: admin/class-admin-customize.php:613 admin/class-admin-customize.php:625
-msgid "Get Customizr Pro"
-msgstr ""
-
-#: admin/class-admin-customize.php:572
-msgid ""
-"Need more control on your fonts ? Style any text in live preview ( size, "
-"color, font family, effect, ...) with Customizr Pro."
-msgstr ""
-
-#: admin/class-admin-customize.php:583
-msgid "Add unlimited featured pages with Customizr Pro."
-msgstr ""
-
-#: admin/class-admin-customize.php:595
-msgid ""
-"Rediscover the beauty of your blog posts and increase your visitors "
-"engagement with the Grid Customizer."
-msgstr ""
-
-#: admin/class-admin-customize.php:596
-msgid "Try it in the demo"
-msgstr ""
-
-#: admin/class-admin-customize.php:609
-msgid "Add creative and engaging reveal animations to your side menu."
-msgstr ""
-
-#: admin/class-admin-customize.php:610
-msgid "Side menu animation demo"
-msgstr ""
-
-#: admin/class-admin-customize.php:623
-msgid "Customize your footer credits with Customizr Pro."
-msgstr ""
-
-#: admin/class-admin-customize.php:634
-msgid "If you like"
-msgstr ""
-
-#: admin/class-admin-customize.php:635
-msgid "the Customizr theme"
-msgstr ""
-
-#: admin/class-admin-customize.php:635
-msgid "the Customizr pro theme"
-msgstr ""
-
-#: admin/class-admin-customize.php:636
-msgid "we would love to receive a"
-msgstr ""
-
-#: admin/class-admin-customize.php:638
-msgid "Review the Customizr theme"
-msgstr ""
-
-#: admin/class-admin-customize.php:640
-msgid "rating. Thanks :) !"
-msgstr ""
-
-#: admin/class-admin-customize.php:656 admin/class-admin-customize.php:657
-msgid "Upgrade WP"
-msgstr ""
-
-#: admin/class-admin-customize.php:676
-msgid "This theme requires WordPress 3.4+"
-msgstr ""
-
-#: admin/class-admin-customize.php:679 admin/class-admin-customize.php:680
-msgid "Upgrade Wordpress Now"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:87
-#, fuzzy
-msgid "Layout Options"
-msgstr "Utseende"
-
-#: admin/class-admin-meta_boxes.php:95 admin/class-admin-meta_boxes.php:466
-#, fuzzy
-msgid "Slider Options"
-msgstr "Slider"
-
-#: admin/class-admin-meta_boxes.php:164
-#, php-format
-msgid "Default %1$s layout is set to : %2$s"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:164
-#, fuzzy
-msgid "pages"
-msgstr "Sider:"
-
-#: admin/class-admin-meta_boxes.php:164
-msgid "posts"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:169
-msgid ""
-"You have checked the <i>\"Force global default layout for all posts and pages"
-"\"</i>, you must unchecked this option to enable a specific layout for this "
-"post."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:170
-msgid "Change layout options"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:174
-#, php-format
-msgid ""
-"You can define a specific layout for %1$s by using the pre-defined left and "
-"right sidebars. The default layouts can be defined in the WordPress "
-"customizer screen %2$s.<br />"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:175 admin/class-admin-meta_boxes.php:180
-msgid "this page"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:175 admin/class-admin-meta_boxes.php:180
-msgid "this post"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:176
-msgid "here"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:179
-#, php-format
-msgid "Select a specific layout for %1$s"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:183
-#, php-format
-msgid "Default layout %1s"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:225
-msgid "Add a slider to this post/page"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:289 admin/class-admin-meta_boxes.php:706
-msgid "Choose a slider"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:296 admin/class-admin-meta_boxes.php:721
-msgid "&mdash; Select a slider &mdash; "
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:301
-msgid ""
-"To create a new slider : open the media library, edit your images and add "
-"them to your new slider."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:305
-msgid "Delay between each slides in milliseconds (default : 5000 ms)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:312
-msgid "Slider Layout : set the slider in full width"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:329 admin/class-admin-meta_boxes.php:730
-msgid "Delete this slider"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:334 admin/class-admin-meta_boxes.php:734
-msgid ""
-"The slider will be deleted permanently (images, call to actions and link "
-"will be kept)."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:337 admin/class-admin-meta_boxes.php:737
-msgid "Delete slider"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:345
-#: admin/class-tc-controls-settings.php:141
-msgid ""
-"You haven't create any slider yet. Go to the media library, edit your images "
-"and add them to your sliders."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:495
-msgid "Add to a slider"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:497
-msgid "Add to a slider (create one if needed)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:643
-msgid "Title text (80 car. max length)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:650
-msgid "Description text (below the title, 250 car. max length)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:657
-#, fuzzy
-msgid "Title and text color"
-msgstr "Nettstedets farge"
-
-#: admin/class-admin-meta_boxes.php:665
-msgid "Button text (80 car. max length)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:672
-msgid "Choose a linked page or post (among the last 100)."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:677
-#, fuzzy
-msgid "No link"
-msgstr "Flere lenker"
-
-#: admin/class-admin-meta_boxes.php:686
-msgid ""
-"or a custom link (leave this empty if you already selected a page or post "
-"above)"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:692
-msgid "Open link in a new page/tab"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:699
-msgid "Link the whole slide"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:727 admin/class-admin-meta_boxes.php:756
-msgid "Add a slider"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:754
-msgid ""
-"You haven't create any slider yet. Write a slider name and click on the "
-"button to add you first slider."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:882
-msgid ""
-"This slider has not slides to show. Go to the media library and start adding "
-"images to it."
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:892
-#, fuzzy
-msgid "Slide Image"
-msgstr "Neste bilde"
-
-#: admin/class-admin-meta_boxes.php:893
-#, fuzzy
-msgid "Title"
-msgstr "Tittel:"
-
-#: admin/class-admin-meta_boxes.php:894
-#, fuzzy
-msgid "Slide Text"
-msgstr "Slider"
-
-#: admin/class-admin-meta_boxes.php:895
-msgid "Button Text"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:896
-msgid "Link"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:897 parts/class-content-breadcrumb.php:645
-#: parts/class-content-breadcrumb.php:678
-#: parts/class-content-breadcrumb.php:693
-#: parts/class-content-breadcrumb.php:721 parts/class-content-comments.php:195
-#: parts/class-content-featured_pages.php:250
-#: parts/class-content-headings.php:238 parts/class-content-slider.php:470
-msgid "Edit"
-msgstr "Rediger"
-
-#: admin/class-admin-meta_boxes.php:939
-msgid "No Image Selected"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:965
-msgid "Edit this slide"
-msgstr ""
-
-#: admin/class-admin-meta_boxes.php:967
-msgid "Current slide"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:263
-msgid "Good, you've just upgraded to"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:265
-msgid "version"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:274
-msgid "We'd like to introduce the new features we've been working on."
-msgstr ""
-
-#: admin/class-fire-admin_init.php:276
-msgid "Read the latest release notes"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:278
-msgid "Visit the demo"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:284
-msgid "I already know what's new thanks !"
-msgstr ""
-
-#: admin/class-fire-admin_init.php:285
-msgid "close"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:41
-msgid "About Customizr"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:74
-msgid "Need help with"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:79
-msgid "Welcome to"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:92
-#, php-format
-msgid "The best way to start is to read the %s."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:93 admin/class-fire-admin_page.php:137
-#: parts/class-header-menu.php:393
-msgid "documentation"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:97
-msgid ""
-"If you don't find an answer to your issue in the documentation, don't panic! "
-"The Customizr theme is used by a growing community of webmasters reporting "
-"bugs and making continuous improvements. If you have a problem with the "
-"theme, chances are that it's already been reported and fixed in the support "
-"forums."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:98
-#, php-format
-msgid ""
-"The easiest way to search in the support forums is to use our Google powered "
-"search engine on our %s."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:99
-msgid "home page"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:107
-msgid "Read the documentation"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:111
-msgid "Check the FAQ"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:116
-msgid "Code snippets"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:119
-msgid "Get support in the forum"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:129
-#, php-format
-msgid "Thank you for using %s!"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:130
-#, php-format
-msgid ""
-"%s %s has more features, is safer and more stable than ever to help you "
-"designing an awesome website."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:131
-msgid "check the changelog"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:135
-#, php-format
-msgid "The best way to start with %s is to read the %s and visit the %s."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:138
-msgid "demo website"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:152
-#, php-format
-msgid ""
-"You are using a child theme of Customizr %1$s : always check the %2$s after "
-"upgrading to see if a function or a template has been deprecated."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:169
-msgid "We need sponsors!"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:170
-msgid ""
-"<strong>We do our best do make Customizr the perfect free theme for you!</"
-"strong><br/> Please help support it's continued development with a donation "
-"of $20, $50, or even $100."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:177
-msgid "Happy user of Customizr?"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:178
-msgid ""
-"If you are happy with the theme, say it on wordpress.org and give Customizr "
-"a nice review! <br />(We are addicted to your feedbacks...)"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:183
-msgid "Follow us"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:193
-msgid "Go Customizr Pro"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:196
-msgid "Visit the extension's page"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:197
-msgid "Easily take your web design one step further"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:199
-msgid ""
-"The Customizr Pro WordPress theme allows anyone to create a beautiful, "
-"professional and fully responsive website in a few seconds. In the Pro "
-"version, you'll get all the features of the free version plus some really "
-"cool and even revolutionary ones."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:202
-msgid "Discover Customizr Pro"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:209
-msgid "Customizr Showcase"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:212 admin/class-fire-admin_page.php:219
-msgid "Visit the showcase"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:213
-msgid "Find inspiration for your next Customizr based website!"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:214
-msgid ""
-"This showcase aims to show what can be done with Customizr and helping other "
-"users to find inspiration for their web design."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:216
-msgid ""
-"Do you think you made an awesome website that can inspire people? Submitting "
-"a site for review is quick and easy to do."
-msgstr ""
-
-#: admin/class-fire-admin_page.php:228
-msgid "Go to Dashboard &rarr; Home"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:228
-msgid "Go to Dashboard"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:286
-#, php-format
-msgid "Changelog in version %1$s"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:303
-msgid "System Informations"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:304
-msgid "Please include the following informations when posting support requests"
-msgstr ""
-
-#: admin/class-fire-admin_page.php:305
-msgid ""
-"To copy the system infos, click below then press Ctrl + C (PC) or Cmd + C "
-"(Mac)."
-msgstr ""
-
-#: admin/class-tc-controls-settings.php:143
-msgid "Create a slider"
-msgstr ""
-
-#: admin/class-tc-controls-settings.php:144
-msgid "Need help to create a slider ?"
-msgstr ""
-
-#: admin/class-tc-controls-settings.php:146
-msgid "Check the documentation"
-msgstr ""
-
-#: admin/class-tc-controls-settings.php:376
-msgid "Upload"
-msgstr ""
-
-#: admin/class-tc-controls-settings.php:377
-msgid "Remove"
-msgstr ""
-
-#: class-fire-init.php:51 class-fire-init.php:52
-msgid "Right sidebar"
-msgstr ""
-
-#: class-fire-init.php:57 class-fire-init.php:58
-#, fuzzy
-msgid "Left sidebar"
-msgstr "Innhold sidekolonne"
-
-#: class-fire-init.php:63 class-fire-init.php:64
-msgid "2 sidebars : Right and Left"
-msgstr ""
-
-#: class-fire-init.php:69 class-fire-init.php:70
-msgid "No sidebars : full width layout"
-msgstr ""
-
-#: class-fire-init.php:84
-msgid "Blue"
-msgstr ""
-
-#: class-fire-init.php:85
-msgid "Black"
-msgstr ""
-
-#: class-fire-init.php:86
-msgid "Flat black"
-msgstr ""
-
-#: class-fire-init.php:87
-msgid "Grey"
-msgstr ""
-
-#: class-fire-init.php:88
-msgid "Ligth grey"
-msgstr ""
-
-#: class-fire-init.php:89
-msgid "Flat purple"
-msgstr ""
-
-#: class-fire-init.php:90
-msgid "Purple"
-msgstr ""
-
-#: class-fire-init.php:91
-msgid "Flat red"
-msgstr ""
-
-#: class-fire-init.php:92
-msgid "Red"
-msgstr ""
-
-#: class-fire-init.php:93
-msgid "Orange"
-msgstr ""
-
-#: class-fire-init.php:94
-msgid "Flat orange"
-msgstr ""
-
-#: class-fire-init.php:95
-msgid "Yellow"
-msgstr ""
-
-#: class-fire-init.php:96
-msgid "Flat yellow"
-msgstr ""
-
-#: class-fire-init.php:97
-msgid "Green"
-msgstr ""
-
-#: class-fire-init.php:98
-msgid "Light green"
-msgstr ""
-
-#: class-fire-init.php:99
-msgid "Green blue"
-msgstr ""
-
-#: class-fire-init.php:100
-msgid "Light blue "
-msgstr ""
-
-#: class-fire-init.php:127
-msgid "Google fonts pairs"
-msgstr ""
-
-#: class-fire-init.php:147
-msgid "Web safe fonts pairs"
-msgstr ""
-
-#: class-fire-init.php:156
-msgid "Single fonts"
-msgstr ""
-
-#: class-fire-init.php:194
-msgid "Subscribe to my rss feed"
-msgstr ""
-
-#: class-fire-init.php:195
-msgid "RSS feed (default is the wordpress feed)"
-msgstr ""
-
-#: class-fire-init.php:199
-msgid "Follow me on Twitter"
-msgstr ""
-
-#: class-fire-init.php:200
-msgid "Twitter profile url"
-msgstr ""
-
-#: class-fire-init.php:204
-msgid "Follow me on Facebook"
-msgstr ""
-
-#: class-fire-init.php:205
-msgid "Facebook profile url"
-msgstr ""
-
-#: class-fire-init.php:209
-msgid "Follow me on Google+"
-msgstr ""
-
-#: class-fire-init.php:210
-msgid "Google+ profile url"
-msgstr ""
-
-#: class-fire-init.php:214
-msgid "Follow me on Instagram"
-msgstr ""
-
-#: class-fire-init.php:215
-msgid "Instagram profile url"
-msgstr ""
-
-#: class-fire-init.php:219
-msgid "Follow me on Tumblr"
-msgstr ""
-
-#: class-fire-init.php:220
-msgid "Tumblr url"
-msgstr ""
-
-#: class-fire-init.php:224
-msgid "Follow me on Flickr"
-msgstr ""
-
-#: class-fire-init.php:225
-msgid "Flickr url"
-msgstr ""
-
-#: class-fire-init.php:229
-msgid "Follow me on WordPress"
-msgstr ""
-
-#: class-fire-init.php:230
-msgid "WordPress profile url"
-msgstr ""
-
-#: class-fire-init.php:234
-msgid "Follow me on Youtube"
-msgstr ""
-
-#: class-fire-init.php:235
-msgid "Youtube profile url"
-msgstr ""
-
-#: class-fire-init.php:239
-msgid "Pin me on Pinterest"
-msgstr ""
-
-#: class-fire-init.php:240
-msgid "Pinterest profile url"
-msgstr ""
-
-#: class-fire-init.php:244
-msgid "Follow me on Github"
-msgstr ""
-
-#: class-fire-init.php:245
-msgid "Github profile url"
-msgstr ""
-
-#: class-fire-init.php:249
-msgid "Follow me on Dribbble"
-msgstr ""
-
-#: class-fire-init.php:250
-msgid "Dribbble profile url"
-msgstr ""
-
-#: class-fire-init.php:254
-msgid "Follow me on LinkedIn"
-msgstr ""
-
-#: class-fire-init.php:255
-msgid "LinkedIn profile url"
-msgstr ""
-
-#: class-fire-init.php:264
-#, fuzzy
-msgid "Left Sidebar"
-msgstr "Innhold sidekolonne"
-
-#: class-fire-init.php:265 class-fire-init.php:269
-msgid "Appears on posts, static pages, archives and search pages"
-msgstr ""
-
-#: class-fire-init.php:268
-#, fuzzy
-msgid "Right Sidebar"
-msgstr "Innhold sidekolonne"
-
-#: class-fire-init.php:276
-#, fuzzy
-msgid "Footer Widget Area One"
-msgstr "Widget-område i sidebunnen"
-
-#: class-fire-init.php:277 class-fire-init.php:281 class-fire-init.php:285
-msgid "Just use it as you want !"
-msgstr ""
-
-#: class-fire-init.php:280
-#, fuzzy
-msgid "Footer Widget Area Two"
-msgstr "Widget-område i sidebunnen"
-
-#: class-fire-init.php:284
-#, fuzzy
-msgid "Footer Widget Area Three"
-msgstr "Widget-område i sidebunnen"
-
-#: class-fire-init.php:302
-msgid "Speaking the Truth in times of universal deceit is a revolutionary act."
-msgstr ""
-
-#: class-fire-init.php:303
-msgid "George Orwell"
-msgstr ""
-
-#: class-fire-init.php:304
-msgid ""
-"Sorry, but the requested page is not found. You might try a search below."
-msgstr ""
-
-#: class-fire-init.php:309
-msgid ""
-"Success is the ability to go from one failure to another with no loss of "
-"enthusiasm..."
-msgstr ""
-
-#: class-fire-init.php:310
-msgid "Sir Winston Churchill"
-msgstr ""
-
-#: class-fire-init.php:311
-#, fuzzy
-msgid ""
-"Sorry, but nothing matched your search criteria. Please try again with some "
-"different keywords."
-msgstr ""
-"Beklager, men det ble ikke funnet noe som passet det du søkte etter. "
-"Vennligst prøv med noen andre søkeord."
-
-#: class-fire-init.php:326
-msgid "Customizr is a clean responsive theme"
-msgstr ""
-
-#: class-fire-init.php:340
-msgid ""
-"Many layout and design options are available from the WordPress customizer "
-"screen : see your changes live !"
-msgstr ""
-
-#: class-fire-init.php:515
-msgid "Main Menu"
-msgstr ""
-
-#: class-fire-init.php:516
-msgid "Secondary (horizontal) Menu"
-msgstr ""
-
-#: class-fire-init.php:680
-msgid "Help"
-msgstr ""
-
-#: class-fire-init.php:683
-msgid "Need help with Customizr? Click here!"
-msgstr ""
-
-#: class-fire-utils.php:511
-#, php-format
-msgid "Page %s"
-msgstr "Side %s"
-
-#: class-fire-utils_settings_map.php:147
-msgid "Logo Upload (supported formats : .jpg, .png, .gif, svg, svgz)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:148
-msgid "LOGO"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:157
-msgid "Force logo dimensions to max-width:250px and max-height:100px"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:161
-msgid "Uncheck this option to keep your original logo dimensions."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:165
-msgid "Sticky Logo Upload (supported formats : .jpg, .png, .gif, svg, svgz)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:169
-msgid ""
-"Use this upload control to specify a different logo on sticky header mode."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:175
-msgid "Favicon Upload (supported formats : .ico, .png, .gif)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:176
-msgid "FAVICON"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:193
-msgid "Choose a predefined skin"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:198
-msgid "Disabled if the random option is on."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:203
-msgid "Randomize the skin"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:206
-msgid "Apply a random color skin on each page load."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:220
-msgid ""
-"Select a beautiful font pair (headings &amp; default fonts) or single font "
-"for your website."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:227
-msgid ""
-"This font picker allows you to preview and select among a handy selection of "
-"font pairs and single fonts. If you choose a pair, the first font will be "
-"applied to the site main headings : site name, site description, titles h1, "
-"h2, h3., while the second will be the default font of your website for any "
-"texts or paragraphs."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:232
-msgid "Set your website default font size in pixels."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:240
-msgid ""
-"This option sets the default font size applied to any text element of your "
-"website, when no font size is already applied."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:262
-msgid "Smooth scroll on click"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:265
-msgid ""
-"If enabled, this option activates a smooth page scroll when clicking on a "
-"link to an anchor of the same page."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:265
-msgid "Important note"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:265
-msgid ""
-"this option can create conflicts with some plugins, make sure that your "
-"plugins features (if any) are working fine after enabling this option."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:270
-msgid "Fade effect on link hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:280
-msgid "Display an icon next to external links"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:284 class-fire-utils_settings_map.php:295
-msgid ""
-"This will be applied to the links included in post or page content only."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:291
-msgid "Open external links in a new tab"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:311
-msgid "Display icons next to titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:315
-msgid ""
-"When this option is checked, a contextual icon is displayed next to the "
-"titles of pages, posts, archives, and WP built-in widgets."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:321
-msgid "Display a page icon next to the page title"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:330
-msgid "Display a post icon next to the single post title"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:339
-msgid "Display an icon next to the archive title"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:342
-msgid ""
-"When this option is checked, an archive type icon is displayed in the "
-"heading of every types of archives, on the left of the title. An archive "
-"page can be : category, tag, author, date archive, custom taxonomies, search "
-"results."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:349
-msgid "Display an icon next to each post title in an archive page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:352
-msgid ""
-"When this option is checked, a post type icon is displayed on the left of "
-"each post titles in an archive page. An archive page can be : category, tag, "
-"author, date archive, custom taxonomies, search results."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:359
-msgid "WP sidebar widgets : display icons next to titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:368
-msgid "WP footer widgets : display icons next to titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:386
-msgid "Lightbox effect on images"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:389
-msgid ""
-"If enabled, this option activates a popin window whith a zoom effect when an "
-"image is clicked. Note : to enable this effect on the images of your pages "
-"and posts, images have to be linked to the Media File."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:395
-msgid "Autoscale images on zoom"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:398
-msgid ""
-"If enabled, this option will force images to fit the screen on lightbox zoom."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:404
-msgid "High resolution (Retina) support"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:408
-msgid ""
-"If enabled, your website will include support for high resolution devices."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:409
-msgid ""
-"It is strongly recommended to regenerate your media library images in high "
-"definition with this free plugin"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:410
-msgid "regenerate thumbnails"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:412
-msgid "Open the description page of the Regenerate thumbnails plugin"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:418
-msgid "Sliders : display on loading icon before rendering the slides"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:421
-msgid ""
-"When checked, this option displays a loading icon when the slides are being "
-"setup."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:426
-msgid "Dynamic slider images centering on any devices"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:434
-msgid "Dynamic thumbnails centering on any devices"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:437
-msgid ""
-"This option dynamically centers your images on any devices, vertically or "
-"horizontally according to their initial aspect ratio."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:455
-msgid "Dynamic sidebar reordering on small devices"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:458
-msgid ""
-"Activate this option to move the sidebars (if any) after the main content "
-"block, for smartphones or tablets viewport."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:473
-msgid "Display an author box after each single post content"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:477
-msgid ""
-"Check this option to display an author info block after each single post "
-"content. Note : the Biographical info field must be filled out in the user "
-"profile."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:492
-msgid "Enable Smooth Scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:496
-msgid "This option enables a smoother page scroll."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:516 class-fire-utils_settings_map.php:2184
-msgid "Header design and layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:518
-msgid "Choose a layout for the header"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:522
-msgid "Logo / title on the left"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:523
-msgid "Logo / title centered"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:524
-msgid "Logo / title on the right"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:527
-msgid "This setting might impact the side on which the menu is revealed."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:532
-msgid "Display top border"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:536
-msgid "Uncheck this option to remove the colored top border."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:542
-#, fuzzy
-msgid "Display the tagline"
-msgstr "Vis nettstedets tittel og slagord"
-
-#: class-fire-utils_settings_map.php:550
-msgid "Social links in header"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:560
-msgid "Display menu in a box"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:565
-msgid ""
-"If checked, this option wraps the header menu/tagline/social in a light grey "
-"box."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:570
-#, fuzzy
-msgid "Sticky header settings"
-msgstr "Bilder"
-
-#: class-fire-utils_settings_map.php:571
-msgid "Sticky on scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:576
-msgid ""
-"If checked, this option makes the header stick to the top of the page on "
-"scroll down."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:581
-msgid "Sticky header : display the tagline"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:590
-msgid "Sticky header : display the title / logo"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:599
-msgid "Sticky header : shrink title / logo"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:608
-msgid "Sticky header : display the menu"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:613
-msgid "Also applied to the secondary menu if any."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:618
-msgid "Sticky header : semi-transparent on scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:628
-msgid "Set the header z-index"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:636
-msgid "What is"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:637
-msgid "the z-index"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:656
-msgid "Display a secondary (horizontal) menu in the header."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:660
-msgid ""
-"When you've set your main menu as a vertical side navigation, you can check "
-"this option to display a complementary horizontal menu in the header."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:665
-msgid "Main menu design"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:666
-msgid "Select a design : side menu (vertical) or regular (horizontal)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:670
-msgid "Regular (horizontal)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:671
-msgid "Side Menu (vertical)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:678
-msgid ""
-"For mobile devices (responsive), limit the height of the dropdown menu block "
-"to the visible viewport."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:687
-msgid "Display a label next to the menu button."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:691
-msgid "Note : the label is hidden on mobile devices."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:696
-msgid "Menu position (for \"main\" menu)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:700 class-fire-utils_settings_map.php:725
-msgid "Menu on the left"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:701 class-fire-utils_settings_map.php:726
-msgid "Menu on the right"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:706
-msgid ""
-"When the menu style is set to \"Side Menu\", the menu position is the side "
-"on which the menu will be revealed."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:707
-#, php-format
-msgid "To change the global header layout, %s"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:710
-msgid "jump to the Design and Layout section"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:711
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: nb_NO\n"
+"Project-Id-Version: Themes - Customizr\n"
+
+#. Description of the plugin/theme
+msgid "Customizr is a versatile and easy to customize WordPress theme, instantly giving a professional look to your online presence. Designed with visitor engagement in mind, it allows anyone to create a beautiful, fast and mobile friendly website compatible with all browsers and devices. Customizr works fine with major WordPress plugins like WooCommerce, bbPress, JetPack and many others. Top rated by hundreds and with a very active community of users and developers, the Customizr theme is a safe and reliable design option to publish your WordPress content."
+"Project-Id-Version: * Customizr v3.4.34\n"
+
+#. Theme Name of the plugin/theme
+msgid "Customizr"
+msgstr "Customizr"
+
+#: inc/czr-init.php:3083
+msgid "If enabled, your slides scroll slower than the page (parallax effect)."
+msgstr "Hvis aktivert vil karuseller gli saktere en selve siden (parallakse-effekt)"
+
+#: inc/czr-init.php:3080
+msgid "Sliders : use parallax scrolling"
+msgstr "Karusell: Bruk parallakse-siderulling"
+
+#: inc/czr-init.php:3300
+msgid "WooCommerce: if checked, your WooCommerce cart icon will remain visible when scrolling."
+msgstr "WooCommerce: Hvis valgt, handlevogn-ikonet for WooCommerce vil forbli synlig ved scrolling."
+
+#: inc/czr-admin.php:545
+msgid "Get help in the free support forum"
+msgstr "Få gratis hjelp i støtteforumet"
+
+#: inc/czr-admin.php:545
+msgid "Get support"
+msgstr "Få støtte"
+
+#: inc/czr-admin.php:541
+msgid "Code snippets for developers"
+msgstr "Kodesnutter for utviklere"
+
+#: inc/czr-init.php:5199
+msgid "Front-end Icons (Font Awesome)"
+msgstr "Frontend ikoner (Font Awesome)"
+
+#: inc/czr-init.php:4847
+msgid "Check out some example of uses"
+msgstr "Sjekk ut noen eksempler på bruksområder"
+
+#: inc/czr-init.php:4846
+msgid "When checked, the additional Font Awesome CSS stylesheet will be loaded. This stylesheet is not loaded by default to save bandwidth but you might need it if you want to use the whole Font Awesome CSS."
+msgstr "Når valgt, vil et ekstra stilark for Font Awesome CSS bli lastet inn. Dette stilarket er ikke lastet inn som standard for å spare båndbredde, men det kan være nødvendig for deg hvis du vil utnytte hele Font Awesome CSS."
+
+#: inc/czr-init.php:4842
+msgid "Load Font Awesome CSS"
+msgstr "Last inn Font Awesome CSS"
+
+#: inc/czr-init.php:4836
+msgid "When checked, the Font Awesome icons will be loaded on front end. You might want to load the Font Awesome icons with a custom code, or let a plugin do it for you."
+msgstr "Når valgt, vil Font Awesome ikoner bli lastet inn i front end. Du burde vurdere å laste inn Font Awesome-ikoner med egenkomponert kode, eller la en utvidelse gjøre det for deg. "
+
+#: inc/czr-init.php:4835
+msgid "Use with caution"
+msgstr "Bruk med omhu"
+
+#: inc/czr-init.php:3588
+msgid "Display navigation in your home blog"
+msgstr "Vis navigasjon på din hjemmeblogg"
+
+#: inc/czr-init.php:773
+msgid "Xing profile url"
+msgstr "Xing profiladresse"
+
+#: inc/czr-init.php:772
+msgid "Follow me on Xing"
+msgstr "Følg meg på Xing"
+
+#: inc/czr-init.php:768
+msgid "Yelp profile url"
+msgstr "Yelp profiladresse"
+
+#: inc/czr-init.php:767
+msgid "Follow me on Yelp"
+msgstr "Følg meg på Yelp"
+
+#: inc/czr-init.php:763
+msgid "VKontakte profile url"
+msgstr "VKontakte profiladresse"
+
+#: inc/czr-init.php:762
+msgid "Follow me on VKontakte"
+msgstr "Følg meg på VKontakte"
+
+#: inc/czr-init.php:4831
+msgid "Load Font Awesome set of icons"
+msgstr "Last Font Awesome ikonsettet"
+
+#: inc/czr-init.php:3293
+msgid "Sticky header: display the shopping cart"
+msgstr "Klistret sidehode: Vis handlekurv"
+
+#: inc/czr-init.php:3247
+msgid "WooCommerce: check to display a cart icon showing the number of items in your cart next to your header's tagline."
+msgstr "WooCommerce: Velg for å vise et handlekurv-ikon som viser antall varer i handlekurven ved siden av slagordet i sidehodet."
+
+#: inc/czr-init.php:3244
+msgid "Display the shopping cart in the header"
+msgstr "Vis handlekurven i sidehodet"
+
+#: inc/czr-init.php:3127
+msgid "This feature has been introduced in WordPress v4.4+ (dec-2015), and might have minor side effects on some of your existing images. Check / uncheck this option to safely verify that your images are displayed nicely."
+msgstr "Denne funksjonen ble introdusert i WordPress v4.4+ (Des. 2015), og kan ha små bivirkninger på noen av eksisterende bilder. Velg / fjern dette valget for og få bekreftet at bildene dine vises pent."
+
+#: inc/czr-init.php:3125
+msgid "Enable the WordPress responsive image feature for the theme's thumbnails"
+msgstr "Aktiver WordPress-funksjonen for responsive bilder i temaets miniatyrbilder"
+
+#: inc/czr-init.php:3118
+msgid "Enable the WordPress responsive image feature for the slider"
+msgstr "Aktiver WordPress-funksjonen for responsive bilder i bildekarusell"
+
+#: inc/czr-init.php:2280
+msgid "View your shopping cart"
+msgstr "Se handlevogn"
+
+#: inc/czr-init.php:3645
+msgid "You can choose to display only the sticky posts. If you're not sure how to set a sticky post, check"
+msgstr "Du kan velge å kun vise klistrede innlegg. Hvis du ikke er sikker på hvordan du klistrer et innlekk, sjekk "
+
+#: inc/czr-init.php:3640
+msgid "Include only sticky posts"
+msgstr "Inkluder kun klistrede innlegg"
+
+#: inc/czr-init.php:1609
+msgid "Posts slider button text"
+msgstr "Tekst på bildekarusell-knapp for innlegg"
+
+#: inc/czr-init.php:1607
+msgid "Front page slider name"
+msgstr "Navn på bildekarusellen til forsiden"
+
+#: inc/czr-front.php:9726
+msgid "Powered by"
+msgstr "Powered by"
+
+#: inc/czr-front.php:8915
+msgid "this slider"
+msgstr "denne innleggskarusellen"
+
+#: inc/czr-front.php:8915
+msgid "the posts slider"
+msgstr "innleggskarusellen"
+
+#: inc/czr-front.php:8914
+msgid "Customize or remove %s"
+msgstr "Tilpass eller fjern %s"
+
+#: inc/czr-init.php:7592
+msgid "%s and check the option 'Load images on scroll' under 'Website Performances' section."
+msgstr "%s og huk av for valget 'Last bilder ved siderulling' under 'Websideytelse'-delen"
+
+#: inc/czr-init.php:7591
+msgid "Did you know you can easily speed up your page load by deferring the loading of the non visible images?"
+msgstr "Visste du at du enkelt kan øke innlastingshastigheten på siden ved å velge bort innlasting av ikke synlige bilder?"
+
+#: inc/czr-init.php:697
+msgid "Contact E-mail address"
+msgstr "E-post kontaktadresse"
+
+#: inc/czr-init.php:696
+msgid "E-mail"
+msgstr "E-mail"
+
+#: inc/czr-init.php:3597
+msgid "Apply a category filter to your home / blog posts"
+msgstr "Aktiver et kategorifilter til hjemmeområdet / blogginnlegg"
+
+#: inc/czr-init.php:3533
+msgid "Set the number of posts to display"
+msgstr "Sett antall innlegg som skal vises"
+
+#: inc/czr-init.php:3526
+msgid "Learn more about post categories in WordPress"
+msgstr "Lær mer om innleggskategorier i WordPress"
+
+#: inc/czr-init.php:3524
+msgid "Click inside the above field and pick post categories you want to display. No filter will be applied if empty."
+msgstr "Klikk inne i feltet ovenfor og velg innleggskategoriene du ønsker å vise. Ingen filter vil bli påført hvis tomt."
+
+#: inc/czr-front.php:9427
+msgid "There is no excerpt because this is a protected post."
+msgstr "Det finnes ikke utdrag siden innlegget er beskyttet."
+
+#: inc/czr-front.php:9402
+msgid "Protected: %s"
+msgstr "Beskyttet: %s"
+
+#: inc/czr-init.php:5397
+msgid "&mdash; Auto-generated slider from your blog posts &mdash;"
+msgstr "&mdash; Autogenerert karusell fra dine blogginnlegg &mdash;"
+
+#: inc/czr-init.php:3698
+msgid "When checked, the front page slider occupies the full viewport's width"
+msgstr "Når valgt, forsidekarusellen dekker hele synsområdets bredde"
+
+#: inc/czr-init.php:3688
+msgid "The button text will be limited to 80 chars max. Leave this field empty to hide the button"
+msgstr "Knappeteksten vil være begrenset til maksimalt 80 tegn. La dette feltet være tomt for å skjule knappen"
+
+#: inc/czr-init.php:3677
+msgid "Entire slide and call to action button"
+msgstr "Hele karusellen og utropsknappen"
+
+#: inc/czr-init.php:3676
+msgid "Entire slide"
+msgstr "Hele karusellen"
+
+#: inc/czr-init.php:3675
+msgid "Call to action button"
+msgstr "Utropsknapp"
+
+#: inc/czr-init.php:3671
+msgid "Link post with"
+msgstr "Lenk innlegg med"
+
+#: inc/czr-init.php:3666
+msgid "The excerpt will be limited to 80 chars max"
+msgstr "Utdraget vil være begrenset til maksimalt 80 tegn"
+
+#: inc/czr-init.php:3657
+msgid "The title will be limited to 80 chars max"
+msgstr "Tittelen vil være begrenset til maksimalt 80 karakterer"
+
+#: inc/czr-init.php:3653
+msgid "Display the title"
+msgstr "Vis tittelen"
+
+#: inc/czr-init.php:3646
+msgid "the WordPress documentation."
+msgstr "WordPress dokumentasjonen."
+
+#: inc/czr-init.php:3635
+msgid "Only the posts with a featured image or at least an image inside their content will qualify for the slider. The number of post slides displayed won't exceed the number of available posts in your website."
+msgstr "Kunn innlegg med et fremhevet bilde eller minst et bilde i innholdet vil kvalifisere for karusellen. Antallet innlegg vist i karusellen vil ikke overskride antallet tilgjengelige innlegg for din webside."
+
+#: inc/czr-init.php:3631
+msgid "Number of posts to display"
+msgstr "Antall innlegg som skal vises"
+
+#: inc/czr-admin.php:1861
+msgid "Slider documentation"
+msgstr "Karuselldokumentasjon"
+
+#: inc/czr-admin.php:1859
+msgid "For more informations about sliders, check the documentation page :"
+msgstr "For mer informasjon om karuseller, sjekk dokumentasjonssiden : "
+
+#: inc/czr-admin.php:1858
+msgid "To add another slide : navigate to your media library (click on Media), open the edit screen of an image ( or add a new image ), and add it to your desired slider by using the dedicated option block at the bottom of the page."
+msgstr "For å legge til en ny karusell : Naviger til mediebiblioteket (Klikk på Media), åpne redigeringsskjermen for et bilde (eller legg til et nytt), og legg det til ønsket karusell ved å bruke den dedikerte valgblokken på bunnen av siden."
+
+#: inc/czr-customize.php:556 inc/czr-customize.php:567
+#: inc/czr-customize.php:578 inc/czr-customize.php:592
+#: inc/czr-customize.php:606 inc/czr-customize.php:618
+msgid "Upgrade to Customizr Pro"
+msgstr "Oppgrader til Customizr Pro"
+
+#: inc/czr-customize.php:471
+msgid "This option generates a home page slider based on your last posts, starting from the most recent or the featured (sticky) post(s) if any."
+msgstr "Dette valget gererer en forsidekarusell basert på dine siste innlegg, som starter med de nyligste eller fremhevede (klistrede) innlegg(ene) hvis de eksisterer."
+
+#: inc/czr-init.php:3427
 msgid "Change the header layout"
-msgstr ""
+msgstr "Endre utformingnen på sidehodet"
 
-#: class-fire-utils_settings_map.php:720
-msgid "Secondary (horizontal) menu design"
-msgstr ""
+#: inc/czr-init.php:3426
+msgid "jump to the Design and Layout section"
+msgstr "gå til Utseende og Utformings-seksjonen"
 
-#: class-fire-utils_settings_map.php:721
-msgid "Menu position (for the horizontal menu)"
-msgstr ""
+#: inc/czr-init.php:3423
+msgid "To change the global header layout, %s"
+msgstr "For å endre den globale sidehode-utseende, %s"
 
-#: class-fire-utils_settings_map.php:736
-msgid "Select a submenu expansion option"
-msgstr ""
+#: inc/czr-customize.php:472
+msgid "Your favicon is currently handled with an old method and will not be properly displayed on all devices. You might consider to re-upload your favicon with the new control below."
+msgstr "Favorittikonet ditt er I øyeblikket  behandlet med en gammel metode , og vil ikke vises korrekt på alle enheter. Du burde vurdere å laste opp favorittikonet ditt på nytt med kontrollene under"
 
-#: class-fire-utils_settings_map.php:740
-msgid "Expand submenus on click"
-msgstr ""
+#: inc/czr-customize.php:150
+msgid "SITE ICON"
+msgstr "SIDEIKON"
 
-#: class-fire-utils_settings_map.php:741
-msgid "Expand submenus on hover"
-msgstr ""
+#: inc/czr-front.php:884
+msgid "Open the menu"
+msgstr "Åpne menyen"
 
-#: class-fire-utils_settings_map.php:748
-msgid "Reveal the sub-menus blocks with a fade effect"
-msgstr ""
+#: inc/czr-front.php:1073
+msgid "You can now display your menu as a vertical and mobile friendly side menu, animated when revealed."
+msgstr "Du kan nå vise menyene som en vertikal og mobilvennlig sidemeny, animert når vist"
 
-#: class-fire-utils_settings_map.php:757
-msgid "Hover move effect for the sub menu items"
-msgstr ""
+#: inc/czr-front.php:1074
+msgid "%s or %s."
+msgstr "%s eller %s."
 
-#: class-fire-utils_settings_map.php:766
-msgid "Choose a mobile devices (responsive) behaviour for the secondary menu."
-msgstr ""
+#: inc/czr-front.php:1075
+msgid "Try it with the demo"
+msgstr "Prøv det i demoen"
 
-#: class-fire-utils_settings_map.php:770
-msgid "Move before inside the side menu "
-msgstr ""
+#: inc/czr-front.php:1076
+msgid "open the customizer menu section"
+msgstr "åpne seksjonen for menytilpasninger"
 
-#: class-fire-utils_settings_map.php:771
-msgid "Move after inside the side menu "
-msgstr ""
+#: inc/czr-front.php:1076
+msgid "change your menu design now"
+msgstr "Endre menyutseende ditt nå"
 
-#: class-fire-utils_settings_map.php:772
-msgid "Display in the header"
-msgstr ""
+#: inc/czr-front.php:1100
+msgid "You can display your main menu or a second menu here horizontally."
+msgstr "Du kan vise hoved- eller sekundærmenyen horisontalt her."
 
-#: class-fire-utils_settings_map.php:773
-msgid "Hide"
-msgstr ""
+#: inc/czr-front.php:1101
+msgid "%s or read the %s."
+msgstr "%s eller les %s."
 
-#: class-fire-utils_settings_map.php:781
-msgid "Remove all the menus."
-msgstr ""
+#: inc/czr-front.php:1102
+msgid "Manage menus in the header"
+msgstr "Administrer menyer i sidehodet"
 
-#: class-fire-utils_settings_map.php:782
-msgid "Don't display any menus in the header of your website"
-msgstr ""
+#: inc/czr-front.php:1102
+msgid "Manage your menus in the header now"
+msgstr "Administrer dine menyer i sidehodet nå"
 
-#: class-fire-utils_settings_map.php:786
-msgid ""
-"Use with caution : provide an alternative way to navigate in your website "
-"for your users."
-msgstr ""
+#: inc/czr-front.php:1522
+msgid "Pages"
+msgstr "Sider"
 
-#: class-fire-utils_settings_map.php:810
-msgid "Choose content and layout"
-msgstr ""
+#: inc/czr-front.php:877
+msgid "Menu"
+msgstr "Meny"
 
-#: class-fire-utils_settings_map.php:818
-msgid "Front page displays"
-msgstr ""
+#: inc/czr-front.php:877 inc/czr-front.php:884
+msgid "Close"
+msgstr "Lukk"
 
-#: class-fire-utils_settings_map.php:823
-msgid "Don't show any posts or page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:824
-msgid "Your latest posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:825
-msgid "A static page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:831
-msgid "Front page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:839
-#, fuzzy
-msgid "Posts page"
-msgstr "Innleggsnavigasjon"
-
-#: class-fire-utils_settings_map.php:848
-msgid "Set up the front page layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:860
-#, fuzzy
-msgid "Slider options"
-msgstr "Slider"
-
-#: class-fire-utils_settings_map.php:861
-msgid "Select front page slider"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:873
-#, fuzzy
-msgid "Full width slider"
-msgstr "Side i full bredde"
-
-#: class-fire-utils_settings_map.php:884
-msgid "Delay between each slides"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:889
-msgid "in ms : 1000ms = 1s"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:896
-msgid "Set slider's height in pixels"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:906
-msgid "Apply this height to all sliders"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:914
-msgid "Replace the default image slider's height"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:920
-msgid ""
-"If this option is checked, your images will be resized with your custom "
-"height on upload. This is better for your overall loading performance."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:921
-msgid "You might want to regenerate your thumbnails."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:929
-#, fuzzy
-msgid "Featured pages options"
-msgstr "Fremhevet innhold"
-
-#: class-fire-utils_settings_map.php:930
-msgid "Display home featured pages area"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:934
-msgid "Enable"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:935
-msgid "Disable"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:944
-#, fuzzy
-msgid "Show images"
-msgstr "Flere bilder"
-
-#: class-fire-utils_settings_map.php:947
-msgid ""
-"The images are set with the \"featured image\" of each pages (in the page "
-"edit screen). Uncheck the option above to disable the featured page images."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:953
-msgid "Read more &raquo;"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:955
-msgid "Button text"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:977
-msgid "Choose the global default layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:981
-msgid "Note : the home page layout has to be set in the home page section"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:989
-msgid "Force default layout everywhere"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:992
-msgid ""
-"This option will override the specific layouts on all posts/pages, including "
-"the front page."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:999
-msgid "Choose the posts default layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1011
-msgid "Global Post Lists Settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1012
-msgid "Maximum number of posts per page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1023
-msgid "Select the length of posts in lists (home, search, archives, ...)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1027
-msgid "Display the excerpt"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1028
-#, fuzzy
-msgid "Display the full content"
-msgstr "Gå til innhold"
-
-#: class-fire-utils_settings_map.php:1036
-msgid "Choose the pages default layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1042
-#, php-format
-msgid ""
-"The above layout options will set your layout globally for your post and "
-"pages. But you can also define the layout for each post and page "
-"individually. Learn how in the %s."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1043
-msgid "Customizr theme documentation"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1046
-msgid ""
-"If you need to change the layout design of the front page, then open the "
-"'Front Page' section above this one."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1064
-msgid "Set the excerpt length (in number of words) "
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1074
-msgid "Thumbnails options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1075
-msgid "Display the post thumbnails"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1079
-msgid ""
-"When this option is checked, the post thumbnails are displayed in all post "
-"lists : blog, archives, author page, search pages, ..."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1079
-msgid "Note : thumbnails are always displayed when the grid layout is choosen."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1084
-msgid "If no featured image is set, use the last image attached to this post."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1091
-msgid "Upload a default thumbnail"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1101
-msgid "Thumbnails options for the alternate thumbnails layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1102
-msgid "Thumbnails shape"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1106
-msgid "Rounded, expand on hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1107
-msgid "Rounded, no expansion"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1108
-msgid "Squared, expand on hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1109
-msgid "Squared, no expansion"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1110
-msgid "Rectangular with no effect"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1111
-msgid "Rectangular with blur effect on hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1112
-msgid "Rectangular with unblur effect on hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1120
-#: class-fire-utils_settings_map.php:1338
-msgid "Set the thumbnail's max height in pixels"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1132
-msgid "Thumbnails position"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1136
-msgid "Top"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1137
-msgid "Right"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1138
-msgid "Bottom"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1139
-msgid "Left"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1146
-msgid "Alternate thumbnail/content"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1155
-#, fuzzy
-msgid "Archive titles"
-msgstr "Arkiv"
-
-#: class-fire-utils_settings_map.php:1156
-#, fuzzy
-msgid "Category pages titles"
-msgstr "Fremhevet innhold"
-
-#: class-fire-utils_settings_map.php:1165
-msgid "Tag pages titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1174
-msgid "Author pages titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1182 parts/class-content-headings.php:336
-#, fuzzy
-msgid "Search Results for :"
-msgstr "Søkeresultater for: %s"
-
-#: class-fire-utils_settings_map.php:1183
-#, fuzzy
-msgid "Search results page titles"
-msgstr "Søkeresultater for: %s"
-
-#: class-fire-utils_settings_map.php:1194
-msgid "Post List Design"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1195
-msgid "Select a Layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1199
-msgid "Alternate thumbnails layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1200
-msgid "Grid layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1203
-msgid ""
-"When you select the grid Layout, the post content is limited to the excerpt."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1208
-#, fuzzy
-msgid "Number of columns per row"
-msgstr "Antall innlegg som skal vises:"
-
-#: class-fire-utils_settings_map.php:1212
-msgid "1"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1213
-msgid "2"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1214
-msgid "3"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1215
-msgid "4"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1218
-msgid ""
-"Note : columns are limited to 3 for single sidebar layouts and to 2 for "
-"double sidebar layouts."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1223
-msgid "Expand the last sticky post (for home and blog page only)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1231
-msgid "Apply the grid layout to Home/Blog"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1239
-msgid "Apply the grid layout to Archives (archives, categories, author posts)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1247
-msgid "Apply the grid layout to Search results"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1251
-msgid "Unchecked contexts are displayed with the alternate thumbnails layout."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1256
-msgid "Apply a shadow to each grid items"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1265
-msgid "Apply a colored bottom border to each grid items"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1274
-msgid "Display post format icons in the background"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1284
-msgid "Max. length for post titles (in words)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1295
-msgid "Thumbnails max height for the grid layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1296
-msgid "Set the post grid thumbnail's max height in pixels"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1317
-#, fuzzy
-msgid "Post thumbnail position"
-msgstr "Innleggsnavigasjon"
-
-#: class-fire-utils_settings_map.php:1321
-msgid "Don't display"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1322
-msgid "Before the title in full width"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1323
-msgid "Before the title boxed"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1324
-msgid "After the title"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1328
-msgid ""
-"You can display the featured image (also called the post thumbnail) of your "
-"posts before their content, when they are displayed individually."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1329 parts/class-content-post.php:205
-#, php-format
-msgid "Don't know how to set a featured image to a post? Learn how in the %s."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1363
-msgid "Display Breadcrumb"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1372
-msgid "Display the breadcrumb on home page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1380
-msgid "Display the breadcrumb in pages"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1389
-msgid "Display the breadcrumb in single posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1398
-msgid ""
-"Display the breadcrumb in posts lists : blog page, archives, search "
-"results..."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1417
-msgid "Display posts metas"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1420
-msgid ""
-"When this option is checked, the post metas (like taxonomies, date and "
-"author) are displayed below the post titles."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1427
-msgid "Metas Design"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1428
-msgid "Select a design for the post metas"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1432
-msgid "Buttons and text"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1433
-msgid "Text only"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1440
-#: class-fire-utils_settings_map.php:1790
-msgid "Select the contexts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1441
-msgid "Display posts metas on home"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1450
-msgid "Display posts metas for single posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1459
-msgid "Display posts metas in post lists (archives, blog page)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1469
-msgid "Select the metas to display"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1470
-msgid "Display hierarchical taxonomies (like categories)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1479
-msgid "Display non-hierarchical taxonomies (like tags)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1488
-#, fuzzy
-msgid "Display the publication date"
-msgstr "Gå til innhold"
-
-#: class-fire-utils_settings_map.php:1496
-#, fuzzy
-msgid "Display the author"
-msgstr "Vis nettstedets tittel og slagord"
-
-#: class-fire-utils_settings_map.php:1504
-#, fuzzy
-msgid "Display the update date"
-msgstr "Vis nettstedets tittel og slagord"
-
-#: class-fire-utils_settings_map.php:1508
-msgid ""
-"If this option is checked, additional date informations about the the last "
-"post update can be displayed (nothing will show up if the post has never "
-"been updated)."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1514
-msgid "Select the last update format"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1518
-msgid "Nb of days since last update"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1519
-msgid "Date of the last update"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1527
-msgid "Recent update notice after post titles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1528
-msgid "Display a recent update notice"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1532
-msgid ""
-"If this option is checked, a customizable recent update notice is displayed "
-"next to the post title."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1538
-msgid ""
-"Display the notice if the last update is less (strictly) than n days old"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1544
-msgid ""
-"Set a maximum interval (in days) during which the last update notice will be "
-"displayed."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1547
-msgid "Recently updated !"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1549
-msgid "Update notice text"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1558
-msgid "Update notice style"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1562
-msgid "Default (grey)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1563
-msgid "Success (green)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1564
-msgid "Alert (orange)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1565
-msgid "Important (red)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1566
-msgid "Info (blue)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1583
-msgid "Enable Customizr galleries"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1585
-msgid "Apply Customizr effects to galleries images"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1592
-msgid "Enable Lightbox effect in galleries"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1594
-msgid "Apply lightbox effects to galleries images"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1601
-msgid "Enable Customizr effects on hover"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1603
-msgid "Apply nice on hover expansion effect to the galleries images"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1621
-msgid "Drop caps"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1622
-msgid "Enable drop caps"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1624
-msgid "Apply a drop cap to the first paragraph of your post / page content"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1633
-msgid ""
-"Apply a drop cap when the paragraph includes at least the following number "
-"of words :"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1634
-msgid "(number of words)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1644
-msgid "Drop cap style"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1648
-msgid "Skin color with shadow"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1649
-msgid "Simple black"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1655
-msgid "Enable drop caps in posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1657
-msgid "Apply a drop cap to the first paragraph of your single posts content"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1664
-msgid "Enable drop caps in pages"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1666
-msgid "Apply a drop cap to the first paragraph of your pages"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1683
-#, fuzzy
-msgid "Comments bubbles"
-msgstr "% kommentarer"
-
-#: class-fire-utils_settings_map.php:1685
-msgid "Display the number of comments in a bubble next to the post title"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1694
-#, fuzzy
-msgid "Comments bubble shape"
-msgstr "Det er stengt for kommentarer."
-
-#: class-fire-utils_settings_map.php:1698
-msgid "Small bubbles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1699
-msgid "Large bubbles"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1707
-#: class-fire-utils_settings_map.php:1719
-#, fuzzy
-msgid "Comments bubble color"
-msgstr "Det er stengt for kommentarer."
-
-#: class-fire-utils_settings_map.php:1711
-msgid "Skin color"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1712
-msgid "Custom"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1730
-msgid "Other comments settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1731
-msgid "Enable comments on pages"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1736
-msgid ""
-"If checked, this option will enable comments on pages. You can disable "
-"comments for a single page in the quick edit mode of the page list screen."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1737
-msgid "You can also change other comments settings in :"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1739
-msgid "the discussion settings page."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1745
-msgid "Enable comments on posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1750
-msgid ""
-"If checked, this option enables comments on all types of single posts. You "
-"can disable comments for a single post in quick edit mode from the"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1752
-msgid "post screen"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1753
-msgid "You can also change other comments settings in the"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1755
-msgid "discussion settings page."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1761
-#, fuzzy
-msgid "Display the comment list"
-msgstr "Gå til innhold"
-
-#: class-fire-utils_settings_map.php:1765
-msgid ""
-"By default, WordPress displays the past comments, even if comments are "
-"disabled in posts or pages. Unchecking this option allows you to not display "
-"this comment history."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1780
-msgid "Display posts navigation"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1783
-msgid ""
-"When this option is checked, the posts navigation is displayed below the "
-"posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1791
-msgid "Display navigation in pages"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1800
-msgid "Display posts navigation in single posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1809
-msgid ""
-"Display posts navigation in post lists (archives, blog page, categories, "
-"search results ..)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1831
-#, fuzzy
-msgid "Social links in left sidebar"
-msgstr "Sekundærmeny i venstre sidekolonne"
-
-#: class-fire-utils_settings_map.php:1841
-#, fuzzy
-msgid "Social links in right sidebar"
-msgstr "Sekundærmeny i venstre sidekolonne"
-
-#: class-fire-utils_settings_map.php:1849
-#: class-fire-utils_settings_map.php:2144
-#, fuzzy
-msgid "Social links"
-msgstr "Flere lenker"
-
-#: class-fire-utils_settings_map.php:1850
-#, fuzzy
-msgid "Social link title in sidebars"
-msgstr "Sekundærmeny i venstre sidekolonne"
-
-#: class-fire-utils_settings_map.php:1856
-msgid "Will be hidden if empty"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1875
-msgid "Social links in footer"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1885
-msgid "Stick the footer to the bottom of the page"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1894
-msgid "Display a back to top arrow on scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1917
-msgid "Add your custom css here and design live! (for advanced users)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1921
-msgid ""
-"Use this field to test small chunks of CSS code. For important CSS "
-"customizations, you'll want to modify the style.css file of a"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1922
-msgid "child theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1923
-msgid "How to create and use a child theme ?"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1940
-msgid "Performance : use the minified CSS stylesheet"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1943
-msgid ""
-"Using the minified version of the skin stylesheet will speed up your webpage "
-"load time."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1947
-msgid "Load images on scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1952
-msgid ""
-"Check this option to delay the loading of non visible images. Images below "
-"the viewport will be loaded dynamically on scroll. This can boost "
-"performances by reducing the weight of long web pages with images."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1965
-msgid "Display help notices on front-end for logged in users."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1968
-msgid ""
-"When this options is enabled, various help notices and some placeholder "
-"blocks are displayed on the front-end of your website. They are only visible "
-"by logged in users with administration capabilities."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1987
-msgid "Global settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1988
-msgid "Global settings for the Customizr theme :skin, socials, links..."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1993
-msgid "Header"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1994
-msgid "Header settings for the Customizr theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:1999
-msgid "Content : home, posts, ..."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2000
-msgid "Content settings for the Customizr theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2005
-msgid "Sidebars"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2006
-msgid "Sidebars settings for the Customizr theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2011
-msgid "Footer"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2012
-msgid "Footer settings for the Customizr theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2017
-#, fuzzy
-msgid "Advanced options"
-msgstr "Slider"
-
-#: class-fire-utils_settings_map.php:2018
-msgid "Advanced settings for the Customizr theme."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2094
-#, php-format
-msgid "Your theme supports %s menu. Select which menu you would like to use."
-msgid_plural ""
-"Your theme supports %s menus. Select which menu appears in each location."
-msgstr[0] ""
-msgstr[1] ""
-
-#: class-fire-utils_settings_map.php:2097
-#: class-fire-utils_settings_map.php:2105
-#, php-format
-msgid "You can create new menu and edit your menu's content %s."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2100
-msgid "on the Menus screen in the Appearance section"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2101
-#: class-fire-utils_settings_map.php:2109
-msgid "create/edit menus"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2108
-msgid "in the menu panel"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2114
-msgid ""
-"If a menu location has no menu assigned to it, a default page menu will be "
-"used."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2121
-#, fuzzy
-msgid "Site Title & Tagline"
-msgstr "Vis nettstedets tittel og slagord"
-
-#: class-fire-utils_settings_map.php:2126
-msgid "Logo &amp; Favicon"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2128
-msgid "Set up logo and favicon options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2132
-msgid "Skin"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2134
-msgid "Select a skin for Customizr"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2138
-msgid "Fonts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2140
-msgid "Set up the font global settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2146
-msgid "Set up your social links"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2150
-msgid "Links style and effects"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2152
-msgid "Various links settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2156
-msgid "Titles icons settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2158
-msgid "Set up the titles icons options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2162
-#, fuzzy
-msgid "Image settings"
-msgstr "Bilder"
-
-#: class-fire-utils_settings_map.php:2164
-msgid "Various images settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2168
-msgid "Authors"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2170
-#, fuzzy
-msgid "Post authors settings"
-msgstr "Innleggsnavigasjon"
-
-#: class-fire-utils_settings_map.php:2174
-msgid "Smooth Scroll"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2176
-msgid "Smooth Scroll settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2184
-msgid "Design and layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2189
-msgid "Navigation Menus"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2201
-#, fuzzy
-msgid "Front Page"
-msgstr "Bidragsyters side"
-
-#: class-fire-utils_settings_map.php:2203
-msgid "Set up front page options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2208
-msgid "Pages &amp; Posts Layout"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2210
-msgid "Set up layout options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2215
-msgid "Post lists : blog, archives, ..."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2217
-msgid "Set up post lists options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2221
-msgid "Single posts"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2223
-#, fuzzy
-msgid "Set up single posts options"
-msgstr "Fremhevet innhold"
-
-#: class-fire-utils_settings_map.php:2227
-msgid "Breadcrumb"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2229
-msgid "Set up breadcrumb options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2241
-msgid "Post metas (category, tags, custom taxonomies)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2243
-#, fuzzy
-msgid "Set up post metas options"
-msgstr "Fremhevet innhold"
-
-#: class-fire-utils_settings_map.php:2247
-msgid "Galleries"
-msgstr "Gallerier"
-
-#: class-fire-utils_settings_map.php:2249
-msgid "Set up gallery options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2253
-msgid "Paragraphs"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2255
-#, fuzzy
-msgid "Set up paragraphs options"
-msgstr "Fremhevet innhold"
-
-#: class-fire-utils_settings_map.php:2259
-#, fuzzy
-msgid "Comments"
-msgstr "% kommentarer"
-
-#: class-fire-utils_settings_map.php:2261
-msgid "Set up comments options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2265
-msgid "Post/Page Navigation"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2267
-msgid "Set up post/page navigation options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2276
+#: inc/czr-init.php:5155
 msgid "Socials in Sidebars"
-msgstr ""
+msgstr "Sosiale lenker i sideområdene"
 
-#: class-fire-utils_settings_map.php:2278
+#: inc/czr-init.php:5157
 msgid "Set up your social profiles links in the sidebar(s)."
-msgstr ""
+msgstr "Sett opp lenkene til dine sosiale profiler i sideområdet"
 
-#: class-fire-utils_settings_map.php:2282
-msgid "Responsive settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2284
-msgid "Various settings for responsive display"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2293
-msgid "Footer global settings"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2295
-msgid "Set up footer global options"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2304
-msgid "Custom CSS"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2309
-msgid "Website Performances"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2311
-msgid ""
-"On the web, speed is key ! Improve the load time of your pages with those "
-"options."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2315
+#: inc/czr-init.php:5194
 msgid "Front-end placeholders and help blocks"
-msgstr ""
+msgstr "Eksempelblokker og hjelpeblokker i forsystemet"
 
-#: class-fire-utils_settings_map.php:2343
-msgid "Home featured page one"
-msgstr ""
+#: inc/czr-front.php:3569
+msgid "Edit those featured pages %s, or %s (you'll be able to add yours later)."
+msgstr "Rediger disse fremhevede sidene %s, or %s (du vil være i stand til å legge til dine senere)."
 
-#: class-fire-utils_settings_map.php:2344
-msgid "Home featured page two"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2345
-msgid "Home featured page three"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2348
-msgid "Featured text one (200 car. max)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2349
-msgid "Featured text two (200 car. max)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2350
-msgid "Featured text three (200 car. max)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2366
-#, php-format
-msgid "Custom featured page %1$s"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2382
-#, php-format
-msgid "Featured text %1$s (200 car. max)"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2385
-msgid ""
-"You need to select a page first. Leave this field empty if you want to use "
-"the page excerpt."
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2510
-msgid "&mdash; No slider &mdash;"
-msgstr ""
-
-#: class-fire-utils_settings_map.php:2511
-msgid "&mdash; Demo Slider &mdash;"
-msgstr ""
-
-#: parts/class-content-attachment.php:41
-msgid "&larr; Previous"
-msgstr "&larr; Forrige"
-
-#: parts/class-content-attachment.php:42
-msgid "Next &rarr;"
-msgstr "Neste &rarr;"
-
-#: parts/class-content-breadcrumb.php:38 parts/class-content-breadcrumb.php:50
-#: parts/class-header-menu.php:771
-msgid "Home"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:47
-msgid "Browse:"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:524
-msgid "g:i a"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:527
-#, php-format
-msgid "Minute %1$s"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:527
-msgid "i"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:530
-msgid "g a"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:546
-#: parts/class-content-breadcrumb.php:556
-#: parts/class-content-breadcrumb.php:565
-#: parts/class-content-breadcrumb.php:576
-#: parts/class-content-breadcrumb.php:578
-#: parts/class-content-breadcrumb.php:777
-#, fuzzy
-msgid "Y"
-msgstr "Y"
-
-#: parts/class-content-breadcrumb.php:547
-#: parts/class-content-breadcrumb.php:568
-#: parts/class-content-breadcrumb.php:570
-#: parts/class-content-breadcrumb.php:781
-msgid "F"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:550
-#: parts/class-content-breadcrumb.php:552
-#: parts/class-content-breadcrumb.php:785
-msgid "d"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:559
-#: parts/class-content-breadcrumb.php:561
-#, php-format
-msgid "Week %1$s"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:587
-#: parts/class-content-breadcrumb.php:589
-#, fuzzy, php-format
-msgid "Search results for &quot;%1$s&quot;"
-msgstr "Søkeresultater for: %s"
-
-#: parts/class-content-breadcrumb.php:594
-#, fuzzy
-msgid "404 Not Found"
-msgstr "Ikke funnet"
-
-#: parts/class-content-breadcrumb.php:599
-#: parts/class-content-breadcrumb.php:601
-#, fuzzy, php-format
-msgid "Page %d"
-msgstr "Side %s"
-
-#: parts/class-content-breadcrumb.php:670
-msgid "Split"
-msgstr ""
-
-#: parts/class-content-breadcrumb.php:674
-msgid "Merge"
-msgstr ""
-
-#: parts/class-content-comments.php:92
-msgid "One thought on"
-msgstr ""
-
-#: parts/class-content-comments.php:94
-msgid "thoughts on"
-msgstr ""
-
-#: parts/class-content-comments.php:154
-msgid "Pingback:"
-msgstr ""
-
-#: parts/class-content-comments.php:154
-#, fuzzy
-msgid "(Edit)"
-msgstr "Rediger"
-
-#: parts/class-content-comments.php:181
-msgid "Reply"
-msgstr ""
-
-#: parts/class-content-comments.php:194
-#, fuzzy
-msgid "Post author"
-msgstr "Innleggsnavigasjon"
-
-#: parts/class-content-comments.php:201
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: parts/class-content-comments.php:206
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: parts/class-content-comments.php:241
-msgid "Comment navigation"
-msgstr "Kommentarnavigasjon"
-
-#: parts/class-content-comments.php:247
-#, fuzzy
-msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
-msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-comments.php:255
-#, fuzzy
-msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
-msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-comments.php:287
-msgid "Comments are closed."
-msgstr "Det er stengt for kommentarer."
-
-#: parts/class-content-comments.php:322
-msgid "Leave a comment"
-msgstr "Legg igjen en kommentar"
-
-#: parts/class-content-comments.php:344
-#, fuzzy
-msgid "Comment(s) on"
-msgstr "% kommentarer"
-
-#: parts/class-content-comments.php:363
-#, fuzzy
-msgid "comment"
-msgid_plural "comments"
-msgstr[0] "% kommentarer"
-msgstr[1] "% kommentarer"
-
-#: parts/class-content-featured_pages.php:41
-#, php-format
-msgid ""
-"Edit those featured pages %s, or %s (you'll be able to add yours later)."
-msgstr ""
-
-#: parts/class-content-featured_pages.php:42
+#: inc/czr-front.php:3570
 msgid "Edit those featured pages"
-msgstr ""
+msgstr "Rediger disse fremhevede sidene"
 
-#: parts/class-content-featured_pages.php:42
-#: parts/class-content-sidebar.php:140 parts/class-content-slider.php:525
-#: parts/class-footer-footer_main.php:154
+#: inc/czr-front.php:3570 inc/czr-front.php:7876 inc/czr-front.php:8973
+#: inc/czr-front.php:9631
 msgid "now"
-msgstr ""
+msgstr "nå"
 
-#: parts/class-content-featured_pages.php:43
+#: inc/czr-front.php:3571
 msgid "Remove the featured pages"
-msgstr ""
+msgstr "Fjern promoterte sider"
 
-#: parts/class-content-featured_pages.php:43
-msgid "remove them"
-msgstr ""
-
-#: parts/class-content-featured_pages.php:47 parts/class-content-post.php:210
-#: parts/class-content-sidebar.php:155 parts/class-content-slider.php:530
-#: parts/class-footer-footer_main.php:162 parts/class-header-menu.php:115
-#: parts/class-header-menu.php:370 parts/class-header-menu.php:397
-msgid "dismiss notice"
-msgstr ""
-
-#: parts/class-content-featured_pages.php:166
-msgid "Customizer screen"
-msgstr ""
-
-#: parts/class-content-featured_pages.php:167
+#: inc/czr-front.php:3696
 msgid "Edit now."
-msgstr ""
+msgstr "Rediger nå."
 
-#: parts/class-content-featured_pages.php:173
-#, fuzzy
-msgid "Featured page"
-msgstr "Fremhevet innhold"
+#: inc/czr-front.php:3571
+msgid "remove them"
+msgstr "fjern dem"
 
-#: parts/class-content-featured_pages.php:177
-msgid ""
-"Featured page description text : use the page excerpt or set your own custom "
-"text in the Customizr screen."
-msgstr ""
-
-#: parts/class-content-gallery.php:61
-msgid "Missing Attachment"
-msgstr ""
-
-#: parts/class-content-headings.php:182 parts/class-content-headings.php:187
-msgid "{no title} Read the post &raquo;"
-msgstr ""
-
-#: parts/class-content-headings.php:186
-#, php-format
-msgid "Permalink to %s"
-msgstr ""
-
-#: parts/class-content-headings.php:321
-msgid "Ooops, page not found"
-msgstr ""
-
-#: parts/class-content-headings.php:335
-msgid "No"
-msgstr ""
-
-#: parts/class-content-headings.php:369 parts/class-content-post.php:135
-#, php-format
-msgid "About %s"
-msgstr ""
-
-#: parts/class-content-headings.php:409
-#, php-format
-msgid "Daily Archives: %s"
-msgstr "Daglige arkiver: %s"
-
-#: parts/class-content-headings.php:409
-msgid "Archives"
-msgstr "Arkiv"
-
-#: parts/class-content-headings.php:410
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr "Månedlige arkiver: %s"
-
-#: parts/class-content-headings.php:411
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr "Årlige arkiver: %s"
-
-#: parts/class-content-page.php:42 parts/class-content-post.php:97
-#: parts/class-content-post_list.php:241
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Les videre <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-page.php:44 parts/class-content-post.php:98
-#: parts/class-content-post_list.php:243
-msgid "Pages:"
-msgstr "Sider:"
-
-#: parts/class-content-post.php:139
-#, fuzzy, php-format
-msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-post.php:201
+#: inc/czr-front.php:4857
 msgid "You can display your post's featured image here if you have set one."
-msgstr ""
+msgstr "Du kan vise innleggets fremhevede bilder her hvis du har valgt ett. "
 
-#: parts/class-content-post.php:202
-#, php-format
+#: inc/czr-front.php:4858
 msgid "%s to display a featured image here."
-msgstr ""
+msgstr "%s for å vise et fremhevet bilde her."
 
-#: parts/class-content-post.php:203
+#: inc/czr-front.php:4859 inc/czr-init.php:7593
 msgid "Jump to the customizer now"
-msgstr ""
+msgstr "Gå til til spesialtilpasseren nå"
 
-#: parts/class-content-post_metas.php:182
-#, php-format
-msgid "This entry was posted on %1$s<span class=\"by-author\"> by %2$s</span>."
-msgstr ""
+#: inc/czr-front.php:7871
+msgid "The %s sidebar has no widgets."
+msgstr "%s-sideområdet har ingen skjermelement"
 
-#: parts/class-content-post_metas.php:201
-msgid "Published"
-msgstr ""
+#: inc/czr-front.php:7875
+msgid "Add widgets to this sidebar %s or %s."
+msgstr "Legg til skjermelementer til denne sideområdet %s eller %s."
 
-#: parts/class-content-post_metas.php:204
-msgid "at dimensions"
-msgstr ""
+#: inc/czr-front.php:7878 inc/czr-front.php:9633
+msgid "dismiss this notice"
+msgstr "Avvis denne beskjeden"
 
-#: parts/class-content-post_metas.php:204
-msgid "Link to full-size image"
-msgstr ""
+#: inc/czr-front.php:8972
+msgid "Select your own slider %s, or %s (you'll be able to add one back later)."
+msgstr "velg din egen karusell %s, eller %s (du kan legge til en senere)."
 
-#: parts/class-content-post_metas.php:205
-#: parts/class-content-post_metas.php:580
-msgid "in"
-msgstr ""
+#: inc/czr-front.php:8782
+msgid "Go to"
+msgstr "Gå til"
 
-#: parts/class-content-post_metas.php:205
-msgid "Return to "
-msgstr ""
+#: inc/czr-front.php:8973
+msgid "Select your own slider"
+msgstr "Velg din egen karusell"
 
-#: parts/class-content-post_metas.php:267
-#, php-format
-msgid "This entry was posted in %1$s and tagged %2$s"
-msgstr ""
+#: inc/czr-front.php:8974
+msgid "Remove the home page slider"
+msgstr "Fjern forsidekarusellen"
 
-#: parts/class-content-post_metas.php:269
-#, php-format
-msgid "This entry was posted in %1$s"
-msgstr ""
+#: inc/czr-front.php:9630
+msgid "Add widgets to the footer %s or %s."
+msgstr "Legg til skjermelementer til sidefoten %s eller %s."
 
-#: parts/class-content-post_metas.php:271
-#, php-format
-msgid "This entry was tagged %2$s"
-msgstr ""
+#: inc/czr-front.php:8974
+msgid "remove this demo slider"
+msgstr "Fjern denne demokarusellen"
 
-#: parts/class-content-post_metas.php:280
-#, php-format
-msgid "This entry was posted on %1$s"
-msgstr ""
+#: inc/czr-front.php:817
+msgid "This is a default page menu."
+msgstr "Dette er en standard side-meny"
 
-#: parts/class-content-post_metas.php:282
-#, php-format
-msgid "on %1$s"
-msgstr ""
+#: inc/czr-front.php:818
+msgid "( If you don't have any pages in your website, then this side menu is empty for the moment. )"
+msgstr "(Hvis du ikke har noen sider på webområdet ditt, så er denne side-menyen tom for øyeblikket)"
 
-#: parts/class-content-post_metas.php:284
-#, php-format
-msgid "and posted on %1$s"
-msgstr ""
+#: inc/czr-front.php:819
+msgid "If you have already created menu(s), you can %s. If you need to create a new menu, jump to the %s."
+msgstr "Hvis du allerede har opprettet meny(er), kan du %s. Hvis du trenger å opprette en ny meny, gå til %s."
 
-#: parts/class-content-post_metas.php:296
-msgid "This entry was posted"
-msgstr ""
+#: inc/czr-front.php:820
+msgid "change the default menu"
+msgstr "endre standardmeny"
 
-#: parts/class-content-post_metas.php:296
-#: parts/class-content-post_metas.php:298
-#, php-format
-msgid "by %1$s"
-msgstr ""
+#: inc/czr-front.php:820
+msgid "replace this default menu by another one"
+msgstr "bytt ut standardmenyen med en annen"
 
-#: parts/class-content-post_metas.php:312
-msgid "(updated today)"
-msgstr ""
+#: inc/czr-front.php:821
+msgid "menu creation screen"
+msgstr "menylager-skjerm"
 
-#: parts/class-content-post_metas.php:312
-#, php-format
-msgid "(updated %s days ago)"
-msgstr ""
+#: inc/czr-init.php:3497
+msgid "Remove all the menus."
+msgstr "Fjern alle menyene"
 
-#: parts/class-content-post_metas.php:313
-msgid "(updated 1 day ago)"
-msgstr ""
+#: inc/czr-init.php:3498
+msgid "Don't display any menus in the header of your website"
+msgstr "Ikke vis noen menyer i sidehodet på websiden din."
 
-#: parts/class-content-post_metas.php:316
-#, php-format
-msgid "(updated on %1$s)"
-msgstr ""
+#: inc/czr-init.php:3502
+msgid "Use with caution : provide an alternative way to navigate in your website for your users."
+msgstr "Bruk med forsiktighet : Tiilby en alternavtiv måte å navigere på websiden for brukerene dine."
 
-#: parts/class-content-post_metas.php:376
-#, fuzzy, php-format
-msgid "View all posts in %s"
-msgstr "Alle innlegg av %s"
+#: inc/czr-init.php:3864
+msgid "The above layout options will set your layout globally for your post and pages. But you can also define the layout for each post and page individually. Learn how in the %s."
+msgstr "Utformingsvalgene ovenfor vil sette en global utformingen for innlegg og sider. Du kan også definere utformingen for enkeltposter og sider individuelt. Lær hvordan i %s. "
 
-#: parts/class-content-post_metas.php:511
-#, fuzzy, php-format
-msgid "View all posts by %s"
-msgstr "Alle innlegg av %s"
+#: inc/czr-init.php:3865
+msgid "Customizr theme documentation"
+msgstr "Customizr tema-dokumentasjonen"
 
-#: parts/class-content-post_metas.php:531
-msgid "Open"
-msgstr ""
+#: inc/czr-init.php:3868
+msgid "If you need to change the layout design of the front page, then open the 'Front Page' section above this one."
+msgstr "Hvis du trenger å endre utformingen på forsiden, åpne 'Forside'-seksjonen over denne."
 
-#: parts/class-content-post_metas.php:581
-msgid "tagged"
-msgstr ""
+#: inc/czr-init.php:4160
+msgid "You can display the featured image (also called the post thumbnail) of your posts before their content, when they are displayed individually."
+msgstr "Du kan vise det fremhevede bildet (også kalt innlegsminiatyrbildet)  for innleggene før innholdet, når de vises individuelt. "
 
-#: parts/class-content-post_metas.php:604
-msgid "by"
-msgstr ""
+#: inc/czr-front.php:4861 inc/czr-init.php:4161
+msgid "Don't know how to set a featured image to a post? Learn how in the %s."
+msgstr "Vet du ikke hvordan du setter et fremhevet bilde til et innlegg? Lær hvordan i %s."
 
-#: parts/class-content-post_navigation.php:89
-#: parts/class-content-post_navigation.php:144
+#: inc/czr-init.php:4718
+msgid "Stick the footer to the bottom of the page"
+msgstr "Klistre sidefoten til bunnen av siden"
+
+#: inc/czr-init.php:4815
+msgid "Display help notices on front-end for logged in users."
+msgstr "Vil en hjelpenotis på forsystemet for innloggede brukere."
+
+#: inc/czr-init.php:4818
+msgid "When this options is enabled, various help notices and some placeholder blocks are displayed on the front-end of your website. They are only visible by logged in users with administration capabilities."
+msgstr "Når dette alternativet er aktivert, vil ulike hjelpenotiser og noen eksempelblokker vises på forsystemet av nettstedet. De er bare synlig for innloggede brukere med administratorfunksjoner."
+
+#: inc/czr-init.php:4886
+msgid "Sidebars"
+msgstr "Sideområder"
+
+#: inc/czr-init.php:4887
+msgid "Sidebars settings for the Customizr theme."
+msgstr "Innstillinger for sideområdet til Customizr-temaet"
+
+#: inc/czr-init.php:4976 inc/czr-init.php:4984
+msgid "You can create new menu and edit your menu's content %s."
+msgstr "Du kan opprette en ny meny å redigere menyinnholdet ditt %s."
+
+#: inc/czr-init.php:4979
+msgid "on the Menus screen in the Appearance section"
+msgstr "på menyskjermen i utforming-seksjonen"
+
+#: inc/czr-init.php:4980 inc/czr-init.php:4988
+msgid "create/edit menus"
+msgstr "opprett/rediger menyer"
+
+#: inc/czr-init.php:4987
+msgid "in the menu panel"
+msgstr "i menypanelet"
+
+#: inc/czr-init.php:4993
+msgid "If a menu location has no menu assigned to it, a default page menu will be used."
+msgstr "Hvis en menylokasjon er uten en tildelt meny, vil en standardmeny for siden bli brukt. "
+
+#: inc/czr-init.php:5053
+msgid "Smooth Scroll"
+msgstr "Glatt rulling"
+
+#: inc/czr-init.php:5055
+msgid "Smooth Scroll settings"
+msgstr "Instillinger for glatt rulling"
+
+#: inc/czr-init.php:5068
+msgid "Navigation Menus"
+msgstr "Navigasjonsmenyer"
+
+#: inc/czr-init.php:3376
+msgid "When you've set your main menu as a vertical side navigation, you can check this option to display a complementary horizontal menu in the header."
+msgstr "Når du har satt hovedmenyen på siden som en vertikal navigasjon, kan du velge denne muligheten for å vise en komplimentær horisontal meny i sidehodet."
+
+#: inc/czr-init.php:3372
+msgid "Display a secondary (horizontal) menu in the header."
+msgstr "Vis en sekundær (horisontal) meny i sidehodet"
+
+#: inc/czr-init.php:3328
+msgid "Also applied to the secondary menu if any."
+msgstr "Også gjeldende for sekundærmeny hvis den eksisterer"
+
+#: inc/czr-init.php:3381
+msgid "Main menu design"
+msgstr "Utseende hovedmeny"
+
+#: inc/czr-init.php:3382
+msgid "Select a design : side menu (vertical) or regular (horizontal)"
+msgstr "Velg et utseende : sidemeny (vertikal) eller normal (horisontal) "
+
+#: inc/czr-init.php:3386
+msgid "Regular (horizontal)"
+msgstr "Normal (horisontal) "
+
+#: inc/czr-init.php:3387
+msgid "Side Menu (vertical)"
+msgstr "Sidemeny (vertikal) "
+
+#: inc/czr-init.php:3394
+msgid "For mobile devices (responsive), limit the height of the dropdown menu block to the visible viewport."
+msgstr "For mibile enheter (responsive), begrens høyden på nedtrekksmeny-blokken til det synlige skjermområdet."
+
+#: inc/czr-init.php:3403
+msgid "Display a label next to the menu button."
+msgstr "Vis en merkelapp ved siden av menyknappen."
+
+#: inc/czr-init.php:3407
+msgid "Note : the label is hidden on mobile devices."
+msgstr "OBS : merkelappen er skjult på mobile enheter"
+
+#: inc/czr-init.php:3412
+msgid "Menu position (for \"main\" menu)"
+msgstr "Menyposisjon (for \"hoved\"-menyen)"
+
+#: inc/czr-init.php:3422
+msgid "When the menu style is set to \"Side Menu\", the menu position is the side on which the menu will be revealed."
+msgstr "Når menystilen er satt til \"Sidemeny\", er menyposisjonen på den siden menyen vil vises."
+
+#: inc/czr-init.php:3436
+msgid "Secondary (horizontal) menu design"
+msgstr "Sekundær (horisontal)-meny utseende"
+
+#: inc/czr-init.php:3437
+msgid "Menu position (for the horizontal menu)"
+msgstr "Menyposisjon (for horisontal-menyen)"
+
+#: inc/czr-init.php:3482
+msgid "Choose a mobile devices (responsive) behaviour for the secondary menu."
+msgstr "Velg en responsive oppførsel (mobile enheter) for sekundærmeny."
+
+#: inc/czr-init.php:3487
+msgid "Move after inside the side menu "
+msgstr "Flytt etter innsiden av side-meny"
+
+#: inc/czr-init.php:3486
+msgid "Move before inside the side menu "
+msgstr "Flytt før innsiden av side-meny"
+
+#: inc/czr-init.php:3488
+msgid "Display in the header"
+msgstr "Vis i sidehodet"
+
+#: inc/czr-init.php:3489
+msgid "Hide"
+msgstr "Skjul"
+
+#: inc/czr-admin.php:626
+msgid "The Customizr Pro WordPress theme allows anyone to create a beautiful, professional and fully responsive website in a few seconds. In the Pro version, you'll get all the features of the free version plus some really cool and even revolutionary ones."
+msgstr "Customizr Pro WordPresstemaet lar hvem som helst skape en nydelig, profesjonell og fullstendig responsive webside på et par sekunder. I proff-versjonen får du alle funksjonen fra gratisversjonen, pluss noen skikkelige kule og til og med noen som er revolusjonerende!"
+
+#: inc/czr-init.php:1034
+msgid "Secondary (horizontal) Menu"
+msgstr "Undermeny (Horisontal)"
+
+#: inc/czr-init.php:2858
+msgid "Disabled if the random option is on."
+msgstr "Deaktivert hvis tilfeldig er valgt. "
+
+#: inc/czr-init.php:2925
+msgid "Important note"
+msgstr "Viktig beskjed"
+
+#: inc/czr-init.php:2925
+msgid "this option can create conflicts with some plugins, make sure that your plugins features (if any) are working fine after enabling this option."
+msgstr "Dette valget kan skape konflikter med noen tilleggsmoduler, forsikre deg om at dine tilleggsfunksjoner (hvis du har noen) fungerer som de skal etter at du aktiverer dette valget."
+
+#: inc/czr-init.php:3186
+msgid "Enable Smooth Scroll"
+msgstr "Aktiver glatt siderulling"
+
+#: inc/czr-init.php:3190
+msgid "This option enables a smoother page scroll."
+msgstr "Dette valget aktiverer en glattere siderulling."
+
+#: inc/czr-init.php:3212
+msgid "Choose a layout for the header"
+msgstr "Velg et utseende for sidehodet."
+
+#: inc/czr-init.php:3221
+msgid "This setting might impact the side on which the menu is revealed."
+msgstr "Denne instillingen kan påvirke siden som menyen vises på."
+
+#: inc/czr-admin.php:522
+msgid "If you don't find an answer to your issue in the documentation, don't panic! The Customizr theme is used by a growing community of webmasters reporting bugs and making continuous improvements. If you have a problem with the theme, chances are that it's already been reported and fixed in the support forums."
+msgstr "Hvis du ikke finner et svar på problemet ditt i dokumentasjonen, ikke få panikk! Customizr-temaet er brukt av et voksende felleskap av webutviklere som rapporterer feil og gjør forbedringer fortløpende. Hvis du har et problem med temaet, det er en mulighet for at det allerede er rapportert inn og er fikset i supportforumet."
+
+#: inc/czr-admin.php:523
+msgid "The easiest way to search in the support forums is to use our Google powered search engine on our %s."
+msgstr "Den enkleste måten å søke I supportforumet er og bruke vår Google-baserte søkemotor på vår %s."
+
+#: inc/czr-admin.php:524
+msgid "home page"
+msgstr "hjemmeside"
+
+#: inc/czr-admin.php:556
+msgid "Thank you for using %s!"
+msgstr "Takk for at du bruker %s!"
+
+#: inc/czr-admin.php:557
+msgid "%s %s has more features, is safer and more stable than ever to help you designing an awesome website."
+msgstr "%s %s har flere funksjoner, er tryggere og mer stabil en noen gang for at du skal kunne lage en fantastisk webside! "
+
+#: inc/czr-admin.php:558
+msgid "check the changelog"
+msgstr "sjekk endringsloggen"
+
+#: inc/czr-admin.php:562
+msgid "The best way to start with %s is to read the %s and visit the %s."
+msgstr "Den beste måten og starte med %s er å lese %s og besøke %s. "
+
+#: inc/czr-admin.php:620
+msgid "Go Customizr Pro"
+msgstr "Skaff deg Customizr Pro"
+
+#: inc/czr-admin.php:565
+msgid "demo website"
+msgstr "demoside"
+
+#: inc/czr-admin.php:499
+msgid "Need help with"
+msgstr "Trenger hjelp med "
+
+#: inc/czr-admin.php:517
+msgid "The best way to start is to read the %s."
+msgstr "Den beste måten og starte på er å lese %s. "
+
+#: inc/czr-admin.php:504
+msgid "Welcome to"
+msgstr "Velkommen til"
+
+#: inc/czr-admin.php:518 inc/czr-admin.php:564 inc/czr-front.php:1103
+msgid "documentation"
+msgstr "dokumentasjon"
+
+#: inc/czr-admin.php:328
+msgid "Good, you've just upgraded to"
+msgstr "Flott, du har akkurat oppgradert til "
+
+#: inc/czr-admin.php:339
+msgid "We'd like to introduce the new features we've been working on."
+msgstr "Vi vil gjerne introdusere deg til de nye funksjonene vi har jobbet med."
+
+#: inc/czr-admin.php:330
+msgid "version"
+msgstr "versjon"
+
+#: inc/czr-admin.php:341
+msgid "Read the latest release notes"
+msgstr "Les siste utgivelsesnotater"
+
+#: inc/czr-admin.php:343
+msgid "Visit the demo"
+msgstr "Besøk demonstrasjonen"
+
+#: inc/czr-admin.php:349
+msgid "I already know what's new thanks !"
+msgstr "Jeg vet allerede hva som er nytt, takk!"
+
+#: inc/czr-admin.php:350
+msgid "close"
+msgstr "lukk"
+
+#: inc/czr-admin.php:1579
+msgid "Link the whole slide"
+msgstr "Gjør hele bildet i karusellen til en lenke"
+
+#: inc/czr-admin.php:1776
+msgid "Link"
+msgstr "Lenge"
+
+#: inc/czr-customize.php:131
+msgid "You haven't created any menu yet. %s or check the %s to learn more about menus."
+msgstr "Du har ikke opprettet en meny ennå. %s eller sjekk %s for og lære mer om menyer."
+
+#: inc/czr-customize.php:121
+msgid "Assign menus to locations"
+msgstr "Sett meny til lokasjon"
+
+#: inc/czr-customize.php:132
+msgid "Create a new menu now"
+msgstr "Opprett ny menu nå"
+
+#: inc/czr-customize.php:133 inc/czr-front.php:4862 inc/czr-init.php:4162
+msgid "WordPress documentation"
+msgstr "WordPress dokumentasjon"
+
+#: inc/czr-customize.php:528
+msgid "dismiss"
+msgstr "Tøm"
+
+#: inc/czr-customize.php:588
+msgid "Rediscover the beauty of your blog posts and increase your visitors engagement with the Grid Customizer."
+msgstr "Gjenoppdag kjærligheten for innleggene dine, og øk bruken fra dine besøkende med rutenettkonfiguratoren"
+
+#: inc/czr-customize.php:602
+msgid "Add creative and engaging reveal animations to your side menu."
+msgstr "Legg til kreative og engasjerende animasjoner til side-menyen"
+
+#: inc/czr-customize.php:589
+msgid "Try it in the demo"
+msgstr "Prøv det i demoen"
+
+#: inc/czr-customize.php:603
+msgid "Side menu animation demo"
+msgstr "Demonstrasjon av animasjon i sidemeny"
+
+#: inc/czr-admin.php:1566
+msgid "or a custom link (leave this empty if you already selected a page or post above)"
+msgstr "eller en egendefinert lenke (la denne være tom hvis du allerede har valgt en side eller et bilde ovenfor)"
+
+#: inc/czr-admin.php:1572
+msgid "Open link in a new page/tab"
+msgstr "Åpne lenken i en ny side / fane"
+
+#: inc/czr-customize.php:85
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Velg &mdash;"
+
+#. Template Name of the plugin/theme
+msgid "Custom Page Example"
+msgstr "Egendefinert side-eksempel"
+
+#: inc/czr-front.php:910
+msgid "Add a menu"
+msgstr "Legg til en meny"
+
+#: inc/czr-front.php:309
+msgid "Back Home"
+msgstr "Hjem"
+
+#: inc/czr-front.php:9751
+msgid "Back to top"
+msgstr "Tilbake til toppen"
+
+#: inc/czr-front.php:9626
+msgid "The footer has no widgets"
+msgstr "Denne sidefoten har ingen skjermelementer"
+
+#: inc/czr-front.php:9056
+msgid "Check the slider doc now &raquo;"
+msgstr "Sjekk dokumentet for karusell &raquo;"
+
+#: inc/czr-front.php:9054
+msgid "Easily create sliders and add them in any posts or pages."
+msgstr "Enkelt opprett karuseller og legg dem til i innlegg eller på sider."
+
+#: inc/czr-front.php:9050
+msgid "Check the front page slider doc &raquo;"
+msgstr "Sjekk dokumentet for forsidekarusell &raquo;"
+
+#: inc/czr-front.php:9048
+msgid "Discover how to replace or remove this demo slider."
+msgstr "Finn ut hvordan du kan erstatte eller fjerne denne demokarusellen"
+
+#: inc/czr-front.php:825 inc/czr-front.php:1080 inc/czr-front.php:1107
+#: inc/czr-front.php:3575 inc/czr-front.php:4866 inc/czr-front.php:7891
+#: inc/czr-front.php:8978 inc/czr-front.php:9639 inc/czr-init.php:7597
+msgid "dismiss notice"
+msgstr "Avvis melding"
+
+#: inc/czr-front.php:7887
+msgid "See the theme documentation."
+msgstr "Sjekk temadokumentasjonen."
+
+#: inc/czr-front.php:7886
+msgid "Changing the layout in the Customizr theme"
+msgstr "Endring av utforming i Customizr-temaet"
+
+#: inc/czr-front.php:7884
+msgid "You can also remove this sidebar by changing the current page layout."
+msgstr "Du kan også fjerne denne sideområdet ved å endre den gjeldende sideutformingen"
+
+#: inc/czr-front.php:7876 inc/czr-front.php:9631
+msgid "Add widgets"
+msgstr "Legg til skjermelement"
+
+#: inc/czr-front.php:7867 inc/czr-front.php:9622
+msgid "This block is visible for admin users only."
+msgstr "Denne blokken er kun synlig for administratorbrukere."
+
+#: inc/czr-front.php:7326
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere innlegg <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/czr-front.php:7306
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Eldre innlegg"
+
+#: inc/czr-front.php:7238 inc/czr-front.php:7293
 msgid "Post navigation"
 msgstr "Innleggsnavigasjon"
 
-#: parts/class-content-post_navigation.php:157
-#, fuzzy
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-post_navigation.php:177
-#, fuzzy
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
-
-#: parts/class-content-sidebar.php:131 parts/class-footer-footer_main.php:145
-msgid "This block is visible for admin users only."
-msgstr ""
-
-#: parts/class-content-sidebar.php:135
-#, php-format
-msgid "The %s sidebar has no widgets."
-msgstr ""
-
-#: parts/class-content-sidebar.php:139
-#, php-format
-msgid "Add widgets to this sidebar %s or %s."
-msgstr ""
-
-#: parts/class-content-sidebar.php:140 parts/class-footer-footer_main.php:154
-msgid "Add widgets"
-msgstr ""
-
-#: parts/class-content-sidebar.php:142 parts/class-footer-footer_main.php:156
-msgid "dismiss this notice"
-msgstr ""
-
-#: parts/class-content-sidebar.php:148
-msgid "You can also remove this sidebar by changing the current page layout."
-msgstr ""
-
-#: parts/class-content-sidebar.php:150
-msgid "Changing the layout in the Customizr theme"
-msgstr ""
-
-#: parts/class-content-sidebar.php:151
-msgid "See the theme documentation."
-msgstr ""
-
-#: parts/class-content-slider.php:393
-msgid "Go to"
-msgstr ""
-
-#: parts/class-content-slider.php:524
-#, php-format
-msgid ""
-"Select your own slider %s, or %s (you'll be able to add one back later)."
-msgstr ""
-
-#: parts/class-content-slider.php:525
-msgid "Select your own slider"
-msgstr ""
-
-#: parts/class-content-slider.php:526
-msgid "Remove the home page slider"
-msgstr ""
-
-#: parts/class-content-slider.php:526
-msgid "remove this demo slider"
-msgstr ""
-
-#: parts/class-content-slider.php:559
-msgid "Discover how to replace or remove this demo slider."
-msgstr ""
-
-#: parts/class-content-slider.php:561
-msgid "Check the front page slider doc &raquo;"
-msgstr ""
-
-#: parts/class-content-slider.php:565
-msgid "Easily create sliders and add them in any posts or pages."
-msgstr ""
-
-#: parts/class-content-slider.php:567
-msgid "Check the slider doc now &raquo;"
-msgstr ""
-
-#: parts/class-footer-footer_main.php:149
-msgid "The footer has no widgets"
-msgstr ""
-
-#: parts/class-footer-footer_main.php:153
-#, php-format
-msgid "Add widgets to the footer %s or %s."
-msgstr ""
-
-#: parts/class-footer-footer_main.php:269
-msgid "Back to top"
-msgstr ""
-
-#: parts/class-header-header_main.php:315
-msgid "Back Home"
-msgstr ""
-
-#: parts/class-header-menu.php:107
-msgid "This is a default page menu."
-msgstr ""
-
-#: parts/class-header-menu.php:108
-msgid ""
-"( If you don't have any pages in your website, then this side menu is empty "
-"for the moment. )"
-msgstr ""
-
-#: parts/class-header-menu.php:109
-#, php-format
-msgid ""
-"If you have already created menu(s), you can %s. If you need to create a new "
-"menu, jump to the %s."
-msgstr ""
-
-#: parts/class-header-menu.php:110
-msgid "change the default menu"
-msgstr ""
-
-#: parts/class-header-menu.php:110
-msgid "replace this default menu by another one"
-msgstr ""
-
-#: parts/class-header-menu.php:111
-msgid "menu creation screen"
-msgstr ""
-
-#: parts/class-header-menu.php:167 parts/class-header-menu.php:174
-msgid "Close"
-msgstr ""
-
-#: parts/class-header-menu.php:167
-msgid "Menu"
-msgstr ""
-
-#: parts/class-header-menu.php:174
-msgid "Open the menu"
-msgstr ""
-
-#: parts/class-header-menu.php:200
-msgid "Add a menu"
-msgstr ""
-
-#: parts/class-header-menu.php:363
-msgid ""
-"You can now display your menu as a vertical and mobile friendly side menu, "
-"animated when revealed."
-msgstr ""
-
-#: parts/class-header-menu.php:364
-#, php-format
-msgid "%s or %s."
-msgstr ""
-
-#: parts/class-header-menu.php:365
-msgid "Try it with the demo"
-msgstr ""
-
-#: parts/class-header-menu.php:366
-msgid "open the customizer menu section"
-msgstr ""
-
-#: parts/class-header-menu.php:366
-msgid "change your menu design now"
-msgstr ""
-
-#: parts/class-header-menu.php:390
-msgid "You can display your main menu or a second menu here horizontally."
-msgstr ""
-
-#: parts/class-header-menu.php:391
-#, php-format
-msgid "%s or read the %s."
-msgstr ""
-
-#: parts/class-header-menu.php:392
-msgid "Manage menus in the header"
-msgstr ""
-
-#: parts/class-header-menu.php:392
-msgid "Manage your menus in the header now"
-msgstr ""
-
-#: parts/class-header-menu.php:819
-msgid "Pages"
-msgstr ""
-
-#~ msgid "Images"
-#~ msgstr "Bilder"
-
-#~ msgid "Links"
-#~ msgstr "Lenker"
-
-#, fuzzy
-#~ msgid "Navigation"
-#~ msgstr "Innleggsnavigasjon"
-
-#, fuzzy
-#~ msgid "Layout"
-#~ msgstr "Utseende"
-
-#, fuzzy
-#~ msgid "Category Archives :"
-#~ msgstr "Kategoriarkiv: %s"
-
-#, fuzzy
-#~ msgid "Tag Archives :"
-#~ msgstr "Stikkordarkiv: %s"
-
-#, fuzzy
-#~ msgid "Author Archives :"
-#~ msgstr "Kategoriarkiv: %s"
-
-#, fuzzy
-#~ msgid "The sidebar : "
-#~ msgstr "Innhold sidekolonne"
-
-#, fuzzy
-#~ msgid "Style your WordPress site live!"
-#~ msgstr "WordPress-gjengen"
-
-#, fuzzy
-#~ msgid "One thought on &ldquo;%2$s&rdquo;"
-#~ msgstr "En tanke om &ldquo;%2$s&rdquo;"
-
-#~ msgid ""
-#~ "The home page features your choice of up to 6 posts prominently displayed "
-#~ "in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can "
-#~ "change the tag and layout in <a href=\"%2$s\">Appearance &rarr; "
-#~ "Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</"
-#~ "a> will be displayed instead."
-#~ msgstr ""
-#~ "Forsiden viser fremhevet innhold – opp til seks innlegg som vises i et "
-#~ "rutenett eller i en slider, kontrollert av et <a href=\"%1$s\">stikkord</"
-#~ "a>. Du kan endre stikkordet og layouten i <a href=\"%2$s\">Utseende "
-#~ "&rarr; Tilpass</a>. Hvis ingen innlegg har dette stikkordet, vises <a "
-#~ "href=\"%3$s\">klebrige innlegg</a> isteden."
-
-#~ msgid "More videos"
-#~ msgstr "Flere videoer"
-
-#~ msgid "More audio"
-#~ msgstr "Mer lyd"
-
-#~ msgid "More quotes"
-#~ msgstr "Flere sitater"
-
-#~ msgid "More galleries"
-#~ msgstr "Flere gallerier"
-
-#~ msgid "More asides"
-#~ msgstr "Flere notiser"
-
-#~ msgctxt "featured content default tag slug"
-#~ msgid "featured"
-#~ msgstr "fremhevet"
-
-#~ msgid ""
-#~ "Use this widget to list your recent Aside, Quote, Video, Audio, Image, "
-#~ "Gallery, and Link posts."
-#~ msgstr ""
-#~ "Bruk denne widgeten for å vise dine siste notis-, sitat-, video-, lyd-, "
-#~ "bilde-, galleri- og lenke-innlegg."
-
-#~ msgid "http://wordpress.org/themes/twentyfourteen"
-#~ msgstr "http://wordpress.org/themes/twentyfourteen"
-
-#~ msgid ""
-#~ "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match "
-#~ "the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
-#~ msgstr ""
-#~ "Bruk et <a href=\"%1$s\">stikkord</a> for å fremheve dine innlegg. Hvis "
-#~ "ingen innlegg har dette stikkordet, vil <a href=\"%2$s\">klebrige "
-#~ "innlegg</a> vises isteden."
-
-#~ msgid ""
-#~ "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s"
-#~ "\">Twenty Fourteen documentation</a>."
-#~ msgstr ""
-#~ "For en inngående starthjelp, tips og triks, besøk <a href=\"%s"
-#~ "\">Dokumentasjon for Twenty Fourteen</a>."
-
-#~ msgctxt "monthly archives date format"
-#~ msgid "F Y"
-#~ msgstr "F Y"
-
-#~ msgid "Tag Name"
-#~ msgstr "Stikkord"
-
-#~ msgid "Don&rsquo;t display tag on front end."
-#~ msgstr "Ikke vis dette stikkordet på fremsidene."
-
-#~ msgid ""
-#~ "In 2014, our default theme lets you create a responsive magazine website "
-#~ "with a sleek, modern design. Feature your favorite homepage content in "
-#~ "either a grid or a slider. Use the three widget areas to customize your "
-#~ "website, and change your content's layout with a full-width page template "
-#~ "and a contributor page to show off your authors. Creating a magazine "
-#~ "website with WordPress has never been easier."
-#~ msgstr ""
-#~ "I 2014 gjør vårt standardtema deg i stand til å lage et responsivt "
-#~ "magasinnettsted med et moderne design. Fremhev ditt favorittinnhold i et "
-#~ "rutenett eller en slider. Bruk de tre widgetområdene for å tilpasse "
-#~ "nettstedet og endre layouten med fullbreddeformat og bidragsytersider for "
-#~ "å fremheve dine ulike forfattere. Å lage et magasinnettsted med WordPress "
-#~ "har aldri vært enklere."
-
-#~ msgid "Previous"
-#~ msgstr "Forrige"
-
-#~ msgid "Next"
-#~ msgstr "Neste"
-
-#~ msgid ""
-#~ "It looks like nothing was found at this location. Maybe try a search?"
-#~ msgstr ""
-#~ "Det ser ikke ut til at noe ble funnet på denne adressen. Kanskje du kan "
-#~ "prøve et søk?"
-
-#~ msgctxt "Used between list items, there is a space after the comma."
-#~ msgid ", "
-#~ msgstr ", "
-
-#~ msgid "Additional sidebar that appears on the right."
-#~ msgstr "Ekstra sidekolonne som vises på høyre side."
-
-#~ msgid "Appears in the footer section of the site."
-#~ msgstr "Vises i bunnen på nettstedet."
-
-#~ msgid "%d Article"
-#~ msgid_plural "%d Articles"
-#~ msgstr[0] "%d artikkel"
-#~ msgstr[1] "%d artikler"
-
-#~ msgid "Previous Image"
-#~ msgstr "Forrige bilde"
-
-#~ msgid ""
-#~ "Twenty Fourteen requires at least WordPress version 3.6. You are running "
-#~ "version %s. Please upgrade and try again."
-#~ msgstr ""
-#~ "Twenty Foruteen krever minimum WordPress versjon 3.6. Du bruker nå "
-#~ "versjon %s. Vennligst oppgrader og prøv igjen."
-
-#~ msgid "Background may only be visible on wide screens."
-#~ msgstr "Bakgrunnen er kanskje bare synlig på store skjermer."
-
-#~ msgid "Grid"
-#~ msgstr "Rutenett"
-
-#~ msgid ""
-#~ "Enhance your site design by using <a href=\"%s\">Featured Images</a> for "
-#~ "posts you&rsquo;d like to stand out (also known as post thumbnails). This "
-#~ "allows you to associate an image with your post without inserting it. "
-#~ "Twenty Fourteen uses featured images for posts and pages&mdash;above the "
-#~ "title&mdash;and in the Featured Content area on the home page."
-#~ msgstr ""
-#~ "Forbedre utseendet ved å bruke <a href=\"%s\">fremhevede bilder</a> for "
-#~ "innlegg som du vil at man skal legge merke til. Dette lar deg knytte et "
-#~ "bilde til et innlegg uten å sette det inn i teksten. Twenty Fourteen "
-#~ "bruker fremhevede bilder for innlegg og sider – over tittelen – og i "
-#~ "fremhevet innhold-delen av forsiden."
-
-#~ msgid "<span class=\"meta-nav\">Published In</span>%title"
-#~ msgstr "<span class=\"meta-nav\">Publisert i</span>%title"
-
-#~ msgid "<span class=\"meta-nav\">Previous Post</span>%title"
-#~ msgstr "<span class=\"meta-nav\">Forrige innlegg</span>%title"
-
-#~ msgid "<span class=\"meta-nav\">Next Post</span>%title"
-#~ msgstr "<span class=\"meta-nav\">Neste innlegg</span>%title"
-
-#~ msgid "Twenty Fourteen Ephemera"
-#~ msgstr "Twenty Fourteen Ephemera"
-
-#~ msgid "Audio"
-#~ msgstr "Lyd"
-
-#~ msgid ""
-#~ "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
-#~ msgid_plural ""
-#~ "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
-#~ msgstr[0] ""
-#~ "Dette galleriet inneholder <a href=\"%1$s\" rel=\"bookmark\">%2$s bilde</"
-#~ "a>."
-#~ msgstr[1] ""
-#~ "Dette galleriet inneholder <a href=\"%1$s\" rel=\"bookmark\">%2$s bilder</"
-#~ "a>."
-
-#~ msgid "Post format to show:"
-#~ msgstr "Innleggsformat som skal vises:"
-
-#~ msgid "&larr; Older Comments"
-#~ msgstr "&larr; Eldre kommentarer"
-
-#~ msgid "Newer Comments &rarr;"
-#~ msgstr "Nyere kommentarer &rarr;"
-
-#~ msgid "1 Comment"
-#~ msgstr "1 kommentar"
-
-#~ msgid "http://wordpress.org/"
-#~ msgstr "http://nb.wordpress.org/"
-
-#~ msgid "Proudly powered by %s"
-#~ msgstr "Stolt drevet av %s"
-
-#~ msgid "Top primary menu"
-#~ msgstr "Øverste primærmeny"
-
-#~ msgid "Primary Sidebar"
-#~ msgstr "Første sidekolonne"
-
-#~ msgid "Main sidebar that appears on the left."
-#~ msgstr "Hovedsidekolonne til venstre."
-
-#~ msgctxt "Lato font: on or off"
-#~ msgid "on"
-#~ msgstr "on"
-
-#~ msgid "Search"
-#~ msgstr "Søk"
-
-#~ msgid "Primary Menu"
-#~ msgstr "Primærmeny"
-
-#~ msgid "Sticky"
-#~ msgstr "Klebrig"
-
-#~ msgid "Nothing Found"
-#~ msgstr "Ingenting funnet"
-
-#~ msgid ""
-#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-#~ msgstr ""
-#~ "Klar for å publisere ditt første innlegg? <a href=\"%1$s\">Kom i gang "
-#~ "her</a>."
-
-#~ msgid ""
-#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-#~ "searching can help."
-#~ msgstr "Vi klarer ikke å finne det du leter etter. Prøv å søke."
-
-#~ msgid "Videos"
-#~ msgstr "Videoer"
-
-#~ msgid "Asides"
-#~ msgstr "Notiser"
-
-#~ msgid "Quotes"
-#~ msgstr "Sitater"
-
-#~ msgid "Twenty Fourteen"
-#~ msgstr "Twenty Fourteen"
+#: inc/czr-front.php:7128
+msgid "by"
+msgstr "av"
+
+#: inc/czr-front.php:7105
+msgid "tagged"
+msgstr "merket"
+
+#: inc/czr-front.php:7055
+msgid "Open"
+msgstr "Åpen"
+
+#: inc/czr-front.php:7035
+msgid "View all posts by %s"
+msgstr "Alle innlegg av %s"
+
+#: inc/czr-front.php:6900
+msgid "View all posts in %s"
+msgstr "Alle innlegg I kategorien %s"
+
+#: inc/czr-front.php:6839
+msgid "(updated on %1$s)"
+msgstr "(oppdatert den %1$s)"
+
+#: inc/czr-front.php:6836
+msgid "(updated 1 day ago)"
+msgstr "(oppdatert for 1 dag siden)"
+
+#: inc/czr-front.php:6835
+msgid "(updated %s days ago)"
+msgstr "(oppdatert for %s dager siden)"
+
+#: inc/czr-front.php:6835
+msgid "(updated today)"
+msgstr "(oppdatert i dag)"
+
+#: inc/czr-front.php:6819 inc/czr-front.php:6821
+msgid "by %1$s"
+msgstr "av %1$s"
+
+#: inc/czr-front.php:6819
+msgid "This entry was posted"
+msgstr "Dette innlegget er skrevet "
+
+#: inc/czr-front.php:6807
+msgid "and posted on %1$s"
+msgstr "og skrevet den %1$s"
+
+#: inc/czr-front.php:6805
+msgid "on %1$s"
+msgstr "den %1$s"
+
+#: inc/czr-front.php:6803
+msgid "This entry was posted on %1$s"
+msgstr "Dette innlegget var skrevet den %1$s"
+
+#: inc/czr-front.php:6794
+msgid "This entry was tagged %2$s"
+msgstr "Dette innlegget er merket med %2$s"
+
+#: inc/czr-front.php:6792
+msgid "This entry was posted in %1$s"
+msgstr "Dette innlegget er skrevet under %1$s"
+
+#: inc/czr-front.php:6790
+msgid "This entry was posted in %1$s and tagged %2$s"
+msgstr "Dette innlegget er skrevet under %1$s og merket med %2$s"
+
+#: inc/czr-front.php:6728
+msgid "Return to "
+msgstr "Tilbake til"
+
+#: inc/czr-front.php:6728 inc/czr-front.php:7104
+msgid "in"
+msgstr "i"
+
+#: inc/czr-front.php:6727
+msgid "Link to full-size image"
+msgstr "Lenke til bildet i full størrelse"
+
+#: inc/czr-front.php:6727
+msgid "at dimensions"
+msgstr "I dimmensjonene"
+
+#: inc/czr-front.php:6724
+msgid "Published"
+msgstr "Publisert"
+
+#: inc/czr-front.php:6705
+msgid "This entry was posted on %1$s<span class=\"by-author\"> by %2$s</span>."
+msgstr "Dette innlegget ble skrevet den %1$s<span class=\"by-author\"> av %2$s</span>."
+
+#: inc/czr-front.php:4795
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Vis alle innlegg av %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/czr-front.php:4595 inc/czr-front.php:4753 inc/czr-front.php:5231
+msgid "Pages:"
+msgstr "Sider:"
+
+#: inc/czr-front.php:4593 inc/czr-front.php:4752 inc/czr-front.php:5229
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Les videre <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/czr-front.php:4364
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/czr-front.php:4364
+msgid "Yearly Archives: %s"
+msgstr "Årsarkiv: %s"
+
+#: inc/czr-front.php:4363
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/czr-front.php:4363
+msgid "Monthly Archives: %s"
+msgstr "Månedsarkiv: %s"
+
+#: inc/czr-front.php:4362
+msgid "Archives"
+msgstr "Arkiver"
+
+#: inc/czr-front.php:4362
+msgid "Daily Archives: %s"
+msgstr "Dagsarkiv: %s"
+
+#: inc/czr-front.php:4322 inc/czr-front.php:4791
+msgid "About %s"
+msgstr "Om %s"
+
+#: inc/czr-front.php:4288
+msgid "No"
+msgstr "Nei"
+
+#: inc/czr-front.php:4274
+msgid "Ooops, page not found"
+msgstr "Oida, den siden fant vi ikke"
+
+#: inc/czr-front.php:4136
+msgid "Permalink to %s"
+msgstr "Permalenke til %s"
+
+#: inc/czr-front.php:4132 inc/czr-front.php:4137
+msgid "{no title} Read the post &raquo;"
+msgstr "{uten tittel} Les innlegget &raquo;"
+
+#: inc/czr-front.php:3919
+msgid "Missing Attachment"
+msgstr "Mangler vedlegg"
+
+#: inc/czr-front.php:3707
+msgid "Featured page description text : use the page excerpt or set your own custom text in the Customizr screen."
+msgstr "Fremhevet sidebeskrivelse, tekst : bruk sideutdraget eller skriv din egendefinerte tekst under Customizr-skjermen."
+
+#: inc/czr-front.php:3703
+msgid "Featured page"
+msgstr "Fremhevet side"
+
+#: inc/czr-front.php:3695
+msgid "Customizer screen"
+msgstr "Tilpassningskjerm"
+
+#: inc/czr-front.php:3381
+msgid "comment"
+msgid_plural "comments"
+msgstr[0] "kommentar"
+msgstr[1] "kommentarer"
+
+#: inc/czr-front.php:3362
+msgid "Comment(s) on"
+msgstr "Kommentar(er) på"
+
+#: inc/czr-front.php:3339
+msgid "Leave a comment"
+msgstr "Legg igjen en kommentar"
+
+#: inc/czr-front.php:3304
+msgid "Comments are closed."
+msgstr "Det er stengt for kommentarer."
+
+#: inc/czr-front.php:3272
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere kommentarer <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/czr-front.php:3264
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "%s <span class=\"meta-nav\">&rarr;</span> Eldre kommentarer"
+
+#: inc/czr-front.php:3258
+msgid "Comment navigation"
+msgstr "Kommentarnavigasjon"
+
+#: inc/czr-front.php:3223
+msgid "Your comment is awaiting moderation."
+msgstr "Kommentaren din venter på moderering"
+
+#. translators: 1: date, 2: time
+#: inc/czr-front.php:3218
+msgid "%1$s at %2$s"
+msgstr "%1$s den %2$s"
+
+#: inc/czr-front.php:3211
+msgid "Post author"
+msgstr "Innleggsforfatter"
+
+#: inc/czr-front.php:3198
+msgid "Reply"
+msgstr "Svar"
+
+#: inc/czr-front.php:3170
+msgid "(Edit)"
+msgstr "(Rediger)"
+
+#: inc/czr-front.php:3169
+msgid "Pingback:"
+msgstr "Tilbakelinking"
+
+#: inc/czr-front.php:3109
+msgid "thoughts on"
+msgstr "tanker om"
+
+#: inc/czr-front.php:3107
+msgid "One thought on"
+msgstr "Én tanke om"
+
+#: inc/czr-front.php:2805
+msgid "F j, Y"
+msgstr "j. F Y"
+
+#: inc/czr-front.php:2801
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/czr-front.php:2650
+msgid "Merge"
+msgstr "Slå sammen"
+
+#: inc/czr-front.php:2646
+msgid "Split"
+msgstr "Splitt"
+
+#: inc/czr-front.php:2575 inc/czr-front.php:2577
+msgid "Page %d"
+msgstr "Side %d"
+
+#: inc/czr-front.php:2570
+msgid "404 Not Found"
+msgstr "404 Ikke funnet"
+
+#: inc/czr-front.php:2563 inc/czr-front.php:2565
+msgid "Search results for &quot;%1$s&quot;"
+msgstr "Søkeresultater for &quot;%1$s&quot;"
+
+#: inc/czr-front.php:2535 inc/czr-front.php:2537
+msgid "W"
+msgstr "W"
+
+#: inc/czr-front.php:2535 inc/czr-front.php:2537
+msgid "Week %1$s"
+msgstr "Uke %1$s"
+
+#: inc/czr-front.php:2526 inc/czr-front.php:2528 inc/czr-front.php:2805
+msgid "d"
+msgstr "d"
+
+#: inc/czr-front.php:2523 inc/czr-front.php:2544 inc/czr-front.php:2546
+#: inc/czr-front.php:2801
+msgid "F"
+msgstr "F"
+
+#: inc/czr-front.php:2522 inc/czr-front.php:2532 inc/czr-front.php:2541
+#: inc/czr-front.php:2552 inc/czr-front.php:2554 inc/czr-front.php:2797
+msgid "Y"
+msgstr "Y"
+
+#: inc/czr-front.php:2506
+msgid "g a"
+msgstr "g a"
+
+#: inc/czr-front.php:2503
+msgid "i"
+msgstr "i"
+
+#: inc/czr-front.php:2503
+msgid "Minute %1$s"
+msgstr "Minutt %1$s"
+
+#: inc/czr-front.php:2500
+msgid "g:i a"
+msgstr "g:i a"
+
+#: inc/czr-front.php:2020
+msgid "Browse:"
+msgstr "Se gjennom:"
+
+#: inc/czr-front.php:1474 inc/czr-front.php:2011 inc/czr-front.php:2023
+msgid "Home"
+msgstr "Hjem"
+
+#: inc/czr-front.php:1860
+msgid "Next &rarr;"
+msgstr "Neste &rarr;"
+
+#: inc/czr-front.php:1859
+msgid "&larr; Previous"
+msgstr "&larr; Forrige"
+
+#: inc/czr-init.php:4128
+msgid "Set the post grid thumbnail's max height in pixels"
+msgstr "Sett innleggsminiatyrbilder I rutenett sin makshøyde i piksler"
+
+#: inc/czr-init.php:4127
+msgid "Thumbnails max height for the grid layout"
+msgstr "Maks bildehøyde for miniatyrbilder under rutenett-utseende"
+
+#: inc/czr-init.php:4116
+msgid "Max. length for post titles (in words)"
+msgstr "Maks lengde for innleggstittel (I ord) "
+
+#: inc/czr-init.php:4106
+msgid "Display post format icons in the background"
+msgstr "Vis ikon for innleggsformat I bakgrunnen"
+
+#: inc/czr-init.php:4097
+msgid "Apply a colored bottom border to each grid items"
+msgstr "Påfør en farget bunnlinje på hvert rute-element"
+
+#: inc/czr-init.php:4088
+msgid "Apply a shadow to each grid items"
+msgstr "Påfør en skygge på hvert rute-element"
+
+#: inc/czr-init.php:4083
+msgid "Unchecked contexts are displayed with the alternate thumbnails layout."
+msgstr "Ikke valgte kontekster vises med vekslende utseende på miniatyrbilder"
+
+#: inc/czr-init.php:4079
+msgid "Apply the grid layout to Search results"
+msgstr "Påfør rutenett-utseende til søkresultater"
+
+#: inc/czr-init.php:4071
+msgid "Apply the grid layout to Archives (archives, categories, author posts)"
+msgstr "Påfør rutenett-utseende til arkiver (arkiver, kategorier, forfatterinnlegg)"
+
+#: inc/czr-init.php:4063
+msgid "Apply the grid layout to Home/Blog"
+msgstr "Påfør rutenett-utseende til forsiden / blogg"
+
+#: inc/czr-init.php:4055
+msgid "Expand the last sticky post (for home and blog page only)"
+msgstr "Utvid det siste klistrede innlegget (kun for forsiden og bloggsiden)"
+
+#: inc/czr-init.php:4050
+msgid "Note : columns are limited to 3 for single sidebar layouts and to 2 for double sidebar layouts."
+msgstr "OBS : Kolonner er begrenset til 3 for sider med ett sideområde, og 2 for sider med dobbelt sideområde."
+
+#: inc/czr-init.php:4047
+msgid "4"
+msgstr "4"
+
+#: inc/czr-init.php:4046
+msgid "3"
+msgstr "3"
+
+#: inc/czr-init.php:4045
+msgid "2"
+msgstr "2"
+
+#: inc/czr-init.php:4044
+msgid "1"
+msgstr "1"
+
+#: inc/czr-init.php:4040
+msgid "Number of columns per row"
+msgstr "Antall kolonner per rad"
+
+#: inc/czr-init.php:4035
+msgid "When you select the grid Layout, the post content is limited to the excerpt."
+msgstr "Når du velger rutenett-utseende, innleggsinnholdet er begrenset til utdraget"
+
+#: inc/czr-init.php:4032
+msgid "Grid layout"
+msgstr "rutenett-utseende"
+
+#: inc/czr-init.php:4031
+msgid "Alternate thumbnails layout"
+msgstr "Utseende for vekslende miniatyrbilder"
+
+#: inc/czr-init.php:4027
+msgid "Select a Layout"
+msgstr "Velg et utseende"
+
+#: inc/czr-init.php:4026
+msgid "Post List Design"
+msgstr "Utseende for innleggs-liste"
+
+#: inc/czr-init.php:3743
+msgid "You might want to regenerate your thumbnails."
+msgstr "Du bør vurdere å regenerere miniatyrbildene dine"
+
+#: inc/czr-init.php:3742
+msgid "If this option is checked, your images will be resized with your custom height on upload. This is better for your overall loading performance."
+msgstr "Hvis denne muligheten er valgt, vil bildene bli skalert til din egendefinerte høyde ved opplasting. Dette er generelt bedre for innlastingsytelsen."
+
+#: inc/czr-init.php:3736
+msgid "Replace the default image slider's height"
+msgstr "Bytt høyden på standardkarusellen"
+
+#: inc/czr-init.php:3728
+msgid "Apply this height to all sliders"
+msgstr "Sett denne høyden til alle karuseller"
+
+#: inc/czr-init.php:3718
+msgid "Set slider's height in pixels"
+msgstr "Set karusellens høyde i piksler"
+
+#: inc/czr-init.php:4802
+msgid "Check this option to delay the loading of non visible images. Images below the viewport will be loaded dynamically on scroll. This can boost performances by reducing the weight of long web pages with images."
+msgstr "Velg denne muligheten for å forsinke innlasting av ikke-synlige bilder. Bilder utenfor skjermområdet vil last inn dynamisk ved rulling. Dette kan øke ytelsen ved å redusere vekten av en lang webside med bilder."
+
+#: inc/czr-init.php:4797
+msgid "Load images on scroll"
+msgstr "Last inn bilder under rulling"
+
+#: inc/czr-init.php:4689
+msgid "Will be hidden if empty"
+msgstr "Vil være skjult hvis tom"
+
+#: inc/czr-init.php:4683
+msgid "Social link title in sidebars"
+msgstr "Sosiale lenketitler i sideområder"
+
+#: inc/czr-init.php:4727 inc/czr-init.php:4735
+msgid "Display a back to top arrow on scroll"
+msgstr "Vis en tilbake til toppen-pil ved rulling"
+
+#: inc/czr-init.php:4642
+msgid "Display posts navigation in post lists (archives, blog page, categories, search results ..)"
+msgstr "Vist innleggsnavigasjon i innleggslister (arkiver, bloggsider, kategorier, søkeresultater ..) "
+
+#: inc/czr-init.php:4633
+msgid "Display posts navigation in single posts"
+msgstr "Vist innleggsnavigasjon på enkeltinnlegg"
+
+#: inc/czr-init.php:4624
+msgid "Display navigation in pages"
+msgstr "Vis navigasjon på sider"
+
+#: inc/czr-init.php:4615
+msgid "When this option is checked, the posts navigation is displayed below the posts"
+msgstr "Når denne mulighet er valgt, vil innleggsnavigasjon bli vist under innlegget."
+
+#: inc/czr-init.php:4612
+msgid "Display posts navigation"
+msgstr "Vis innleggsnavigasjon"
+
+#: inc/czr-init.php:4597
+msgid "By default, WordPress displays the past comments, even if comments are disabled in posts or pages. Unchecking this option allows you to not display this comment history."
+msgstr "Som standard viser WordPress tidligere kommentarer, selv om kommentarer er deaktivert i innlegg eller på sider. Om du fjerner dette valget får du mulighet til å skjule kommentarhistorikk."
+
+#: inc/czr-init.php:4593
+msgid "Display the comment list"
+msgstr "Vis kommentarlisten"
+
+#: inc/czr-init.php:4587
+msgid "discussion settings page."
+msgstr "Side for diskusjonsinnstillinger"
+
+#: inc/czr-init.php:4585
+msgid "You can also change other comments settings in the"
+msgstr "Du kan også endre andre kommentarinstillinger under "
+
+#: inc/czr-init.php:4584
+msgid "post screen"
+msgstr "Innleggskjermen"
+
+#: inc/czr-init.php:4582
+msgid "If checked, this option enables comments on all types of single posts. You can disable comments for a single post in quick edit mode from the"
+msgstr "Hvis valgt, lar dette valget deg aktivere kommentarer på alle typer enkeltinnlegg. Du kan deaktivere kommentarer for enkeltinnlegg fra "
+
+#: inc/czr-init.php:4577
+msgid "Enable comments on posts"
+msgstr "Aktiver kommentarer på sider"
+
+#: inc/czr-init.php:4571
+msgid "the discussion settings page."
+msgstr "Side for diskusjonsinnstillinger"
+
+#: inc/czr-init.php:4569
+msgid "You can also change other comments settings in :"
+msgstr "Du kan også endre andre kommentar-innstillinger her : "
+
+#: inc/czr-init.php:4568
+msgid "If checked, this option will enable comments on pages. You can disable comments for a single page in the quick edit mode of the page list screen."
+msgstr "Hvis valgt, vil dette valget la deg aktivere kommentarer på sider. Du kan deaktiver kommentarer på enkeltsider under rask redigeringsmodus på sidelisten. "
+
+#: inc/czr-init.php:4562
+msgid "Other comments settings"
+msgstr "Andre kommentar-innstillinger"
+
+#: inc/czr-init.php:4544
+msgid "Custom"
+msgstr "Egendefinert"
+
+#: inc/czr-init.php:4543
+msgid "Skin color"
+msgstr "Farge"
+
+#: inc/czr-init.php:4539 inc/czr-init.php:4551
+msgid "Comments bubble color"
+msgstr "Farge på kommentarbobler"
+
+#: inc/czr-init.php:4531
+msgid "Large bubbles"
+msgstr "Store bobler"
+
+#: inc/czr-init.php:4530
+msgid "Small bubbles"
+msgstr "Små bobler"
+
+#: inc/czr-init.php:4526
+msgid "Comments bubble shape"
+msgstr "Bobleformede kommentarer"
+
+#: inc/czr-init.php:4517
+msgid "Display the number of comments in a bubble next to the post title"
+msgstr "Vis antall kommentarer i en boble ved siden av innleggstittelen"
+
+#: inc/czr-init.php:4515
+msgid "Comments bubbles"
+msgstr "Kommentarbobler"
+
+#: inc/czr-init.php:4498
+msgid "Apply a drop cap to the first paragraph of your pages"
+msgstr "Påfør fremhevede initialer til det første avsnittet på sider"
+
+#: inc/czr-init.php:4496
+msgid "Enable drop caps in pages"
+msgstr "Aktiver fremhevet initial på sider"
+
+#: inc/czr-init.php:4489
+msgid "Apply a drop cap to the first paragraph of your single posts content"
+msgstr "Påfør fremhevede initialer til det første avsnittet på sider med enkeltinnlegg"
+
+#: inc/czr-init.php:4487
+msgid "Enable drop caps in posts"
+msgstr "Aktiver fremhevet initial i innlegg."
+
+#: inc/czr-init.php:4481
+msgid "Simple black"
+msgstr "Enkel sort"
+
+#: inc/czr-init.php:4480
+msgid "Skin color with shadow"
+msgstr "Kle farger med en skygge"
+
+#: inc/czr-init.php:4476
+msgid "Drop cap style"
+msgstr "Dropp fremhevede initialer"
+
+#: inc/czr-init.php:4466
+msgid "(number of words)"
+msgstr "(antall ord) "
+
+#: inc/czr-init.php:4465
+msgid "Apply a drop cap when the paragraph includes at least the following number of words :"
+msgstr "Påfør fremhevede initialer til det første avsnittet hvis det inneholder minst så mange ord:"
+
+#: inc/czr-init.php:4456
+msgid "Apply a drop cap to the first paragraph of your post / page content"
+msgstr "Påfør fremhevede initialer til den første avsnittet  av innlegget / sideinnholdet. "
+
+#: inc/czr-init.php:4454
+msgid "Enable drop caps"
+msgstr "Aktiver fremhevet initial"
+
+#: inc/czr-init.php:4453
+msgid "Drop caps"
+msgstr "Fremhevet initial"
+
+#: inc/czr-init.php:4435
+msgid "Apply nice on hover expansion effect to the galleries images"
+msgstr "Påfør en penere utvidelseseffekt på galleribilder når markøren holdes over"
+
+#: inc/czr-init.php:4433
+msgid "Enable Customizr effects on hover"
+msgstr "Aktiver Customizr-effekt når musepekeren holdes over"
+
+#: inc/czr-init.php:4426
+msgid "Apply lightbox effects to galleries images"
+msgstr "Aktiver Lysboks-effekt på galleribilder"
+
+#: inc/czr-init.php:4424
+msgid "Enable Lightbox effect in galleries"
+msgstr "Aktiver Lysboks-effekt i gallerier"
+
+#: inc/czr-init.php:4417
+msgid "Apply Customizr effects to galleries images"
+msgstr "Påfør Customizr-effekter til galleribilder"
+
+#: inc/czr-init.php:4415
+msgid "Enable Customizr galleries"
+msgstr "Aktiver Customizr-gallerier"
+
+#: inc/czr-init.php:4156
+msgid "After the title"
+msgstr "Etter tittelen"
+
+#: inc/czr-init.php:4155
+msgid "Before the title boxed"
+msgstr "Før tittelen, innrammet"
+
+#: inc/czr-init.php:4154
+msgid "Before the title in full width"
+msgstr "Før tittelen, I full bredde"
+
+#: inc/czr-init.php:4153
+msgid "Don't display"
+msgstr "Ikke vis"
+
+#: inc/czr-init.php:4149
+msgid "Post thumbnail position"
+msgstr "Posisjon til innleggsminiatyrbildet"
+
+#: inc/czr-init.php:4015
+msgid "Search results page titles"
+msgstr "Søkeresultater for sidetitler"
+
+#: inc/czr-front.php:4289 inc/czr-init.php:4014
+msgid "Search Results for :"
+msgstr "Søkeresultater for: %s"
+
+#: inc/czr-init.php:4006
+msgid "Author pages titles"
+msgstr "Forfattersider, titler"
+
+#: inc/czr-init.php:3997
+msgid "Tag pages titles"
+msgstr "Etikettsider, titler"
+
+#: inc/czr-init.php:3988
+msgid "Category pages titles"
+msgstr "Kategorisider, titler"
+
+#: inc/czr-init.php:3987
+msgid "Archive titles"
+msgstr "Arkivtittler"
+
+#: inc/czr-init.php:3978
+msgid "Alternate thumbnail/content"
+msgstr "Vekslende miniatyrbilde/innhold"
+
+#: inc/czr-init.php:3971 inc/czr-init.php:4739
+msgid "Left"
+msgstr "Venstre"
+
+#: inc/czr-init.php:3970
+msgid "Bottom"
+msgstr "Bunn"
+
+#: inc/czr-init.php:3969 inc/czr-init.php:4740
+msgid "Right"
+msgstr "Høyre"
+
+#: inc/czr-init.php:3968
+msgid "Top"
+msgstr "Topp"
+
+#: inc/czr-init.php:3964
+msgid "Thumbnails position"
+msgstr "Miniatyrbildeposisjon"
+
+#: inc/czr-init.php:3952 inc/czr-init.php:4170
+msgid "Set the thumbnail's max height in pixels"
+msgstr "Sett miniatyrbildets makshøyde i piksler"
+
+#: inc/czr-init.php:3944
+msgid "Rectangular with unblur effect on hover"
+msgstr "Rektangulær med klar-effekt når markøren holdes over"
+
+#: inc/czr-init.php:3943
+msgid "Rectangular with blur effect on hover"
+msgstr "Rektangulær med uklar-effekt når markøren holdes over"
+
+#: inc/czr-init.php:3942
+msgid "Rectangular with no effect"
+msgstr "Rektangulær uten effekt"
+
+#: inc/czr-init.php:3941
+msgid "Squared, no expansion"
+msgstr "Firkantetn, ingen ekspansjon"
+
+#: inc/czr-init.php:3940
+msgid "Squared, expand on hover"
+msgstr "Firkantet, ekspander når markøren holdes over"
+
+#: inc/czr-init.php:3939
+msgid "Rounded, no expansion"
+msgstr "Rund, ingen ekspansjon"
+
+#: inc/czr-init.php:3938
+msgid "Rounded, expand on hover"
+msgstr "Rund, ekspanderer når markøren holdes over"
+
+#: inc/czr-init.php:3934
+msgid "Thumbnails shape"
+msgstr "Miniyatyrbildeform"
+
+#: inc/czr-init.php:3933
+msgid "Thumbnails options for the alternate thumbnails layout"
+msgstr "Alternativer for miniatyrbilder til vekslende miniatyrbilde-utseende"
+
+#: inc/czr-init.php:3915
+msgid "Upload a default thumbnail"
+msgstr "Last opp et predefinert miniatyrbilde"
+
+#: inc/czr-init.php:3907
+msgid "If no featured image is set, use the last image attached to this post."
+msgstr "Hvis ikke noe fremhevet bilde er satt, bruk det siste bildet tilknyttet dette innlegget. "
+
+#: inc/czr-init.php:3902
+msgid "Note : thumbnails are always displayed when the grid layout is choosen."
+msgstr "OBS: miniatyrbilder vil alltids vises når rutenett-utseende er valgt."
+
+#: inc/czr-init.php:3902
+msgid "When this option is checked, the post thumbnails are displayed in all post lists : blog, archives, author page, search pages, ..."
+msgstr "Når dette alternativet er valgt, vil miniatyrbilder vises i alle innleggslister: blogg, arkiver, forfatterensiden, søkesider,..."
+
+#: inc/czr-init.php:3898
+msgid "Display the post thumbnails"
+msgstr "Vis miniatyrbilder til innlegg"
+
+#: inc/czr-init.php:3897
+msgid "Thumbnails options"
+msgstr "Alternativer for miniatyrbilder"
+
+#: inc/czr-init.php:3887
+msgid "Set the excerpt length (in number of words) "
+msgstr "Sett lengden på utdrag (I antall ord)"
+
+#: inc/czr-init.php:4398
+msgid "Info (blue)"
+msgstr "Info (Blå)"
+
+#: inc/czr-init.php:4397
+msgid "Important (red)"
+msgstr "Viktig (Rød)"
+
+#: inc/czr-init.php:4396
+msgid "Alert (orange)"
+msgstr "Alarm (Orange) "
+
+#: inc/czr-init.php:4395
+msgid "Success (green)"
+msgstr "Suksess (Grønn)"
+
+#: inc/czr-init.php:4394
+msgid "Default (grey)"
+msgstr "Standard (Grå)"
+
+#: inc/czr-init.php:4390
+msgid "Update notice style"
+msgstr "Oppdatert-notis, stil"
+
+#: inc/czr-init.php:4381
+msgid "Update notice text"
+msgstr "Oppdatert-notis, egendefinert tekst"
+
+#: inc/czr-init.php:4379
+msgid "Recently updated !"
+msgstr "Nylig oppdatert!"
+
+#: inc/czr-init.php:4376
+msgid "Set a maximum interval (in days) during which the last update notice will be displayed."
+msgstr "Sett et maksimum-intervall (antall dager) hvor i perioden nylig oppdatert-notisen skal vises"
+
+#: inc/czr-init.php:4370
+msgid "Display the notice if the last update is less (strictly) than n days old"
+msgstr "Vis en notis hvis den siste oppdateringen er mindre (strengt) en X dager gammel"
+
+#: inc/czr-init.php:4364
+msgid "If this option is checked, a customizable recent update notice is displayed next to the post title."
+msgstr "Hvis denne muligheten er valgt, en redigerbar nylig oppdatert-notis vises ved siden av innleggstittelen."
+
+#: inc/czr-init.php:4360
+msgid "Display a recent update notice"
+msgstr "Vis en nylig oppdatert-notis"
+
+#: inc/czr-init.php:4359
+msgid "Recent update notice after post titles"
+msgstr "Nylig oppdatert-notis etter innleggstittel"
+
+#: inc/czr-init.php:4351
+msgid "Date of the last update"
+msgstr "Datoen for siste oppdatering"
+
+#: inc/czr-init.php:4350
+msgid "Nb of days since last update"
+msgstr "Ant. Dager siden siste oppdatering"
+
+#: inc/czr-init.php:4346
+msgid "Select the last update format"
+msgstr "Velg format for \"Sist oppdatert\""
+
+#: inc/czr-init.php:4340
+msgid "If this option is checked, additional date informations about the the last post update can be displayed (nothing will show up if the post has never been updated)."
+msgstr "Hvis denne muligheten er valgt, vil ekstra datoinformajon om oppdateringer i siste innlegg vises. (Ingenting vil vises om innlegget aldri har vært oppdatert)."
+
+#: inc/czr-init.php:4336
+msgid "Display the update date"
+msgstr "Vis oppdateringsdato"
+
+#: inc/czr-init.php:4328
+msgid "Display the author"
+msgstr "Vis forfatteren"
+
+#: inc/czr-init.php:4320
+msgid "Display the publication date"
+msgstr "Vis publiseringsdato"
+
+#: inc/czr-init.php:4311
+msgid "Display non-hierarchical taxonomies (like tags)"
+msgstr "Vis grupperinger som ikke er underlagt hierarki (som etiketter)"
+
+#: inc/czr-init.php:4302
+msgid "Display hierarchical taxonomies (like categories)"
+msgstr "Vis grupperinger som er underlagt hierarki (som kategorier)"
+
+#: inc/czr-init.php:4301
+msgid "Select the metas to display"
+msgstr "Velg metainformasjon å vise"
+
+#: inc/czr-init.php:4291
+msgid "Display posts metas in post lists (archives, blog page)"
+msgstr "Vis metainformasjon i innleggslister (arkviver, bloggside) "
+
+#: inc/czr-init.php:4282
+msgid "Display posts metas for single posts"
+msgstr "Vis metainformasjon for innlegg på enkeltinnlegg"
+
+#: inc/czr-init.php:4273
+msgid "Display posts metas on home"
+msgstr "Vis metainformasjon til innlegg på forsiden"
+
+#: inc/czr-init.php:4272 inc/czr-init.php:4623
+msgid "Select the contexts"
+msgstr "Velg sammenhenger"
+
+#: inc/czr-init.php:4265
+msgid "Text only"
+msgstr "Kun tekst"
+
+#: inc/czr-init.php:4264
+msgid "Buttons and text"
+msgstr "Knapper og tekst"
+
+#: inc/czr-init.php:4260
+msgid "Select a design for the post metas"
+msgstr "Velg et utseende for metainformasjonen til innlegg"
+
+#: inc/czr-init.php:4259
+msgid "Metas Design"
+msgstr "Utseende for metainformasjon"
+
+#: inc/czr-init.php:4252
+msgid "When this option is checked, the post metas (like taxonomies, date and author) are displayed below the post titles."
+msgstr "Når denne muligheten er valgt, vil metainformasjon for innlegg (grupperinger, dato og forfatter) bli vist under innleggstittel."
+
+#: inc/czr-init.php:4249
+msgid "Display posts metas"
+msgstr "Vis metainformasjon for innlegg"
+
+#: inc/czr-init.php:3028
+msgid "WP footer widgets : display icons next to titles"
+msgstr "WP skjermelementer i sidefot : vis ikoner ved siden av titler"
+
+#: inc/czr-init.php:3019
+msgid "WP sidebar widgets : display icons next to titles"
+msgstr "WP skjermelement i sideområde : vis ikoner ved siden av titler "
+
+#: inc/czr-init.php:3012
+msgid "When this option is checked, a post type icon is displayed on the left of each post titles in an archive page. An archive page can be : category, tag, author, date archive, custom taxonomies, search results."
+msgstr "Når denne valgmuligheten er valgt, et innleggsikon vil vises på venstresiden av hver innleggstittel på en arkivside. En arkivside kan være : kategori, emne, forfatter, datoarkiv, egendefinerte klassifiseringer og søkeresultater."
+
+#: inc/czr-init.php:3009
+msgid "Display an icon next to each post title in an archive page"
+msgstr "Vis et ikon ved siden av hver innleggstittel på en arkivside"
+
+#: inc/czr-init.php:3002
+msgid "When this option is checked, an archive type icon is displayed in the heading of every types of archives, on the left of the title. An archive page can be : category, tag, author, date archive, custom taxonomies, search results."
+msgstr "Når denne muligheten er valgt, vil et arkivikon vises i overskriften på alle typer arkiv på venstresiden av tittelen. En arkivside kan være : kategori, emne, forfatter, datoarkiv, egendefinerte klassifiseringer og søkeresultater."
+
+#: inc/czr-init.php:2999
+msgid "Display an icon next to the archive title"
+msgstr "Vis et ikon ved siden av arkivtittelen"
+
+#: inc/czr-init.php:2990
+msgid "Display a post icon next to the single post title"
+msgstr "Vis et innleggsikon ved siden av tittelen til enkeltinnlegg"
+
+#: inc/czr-init.php:2981
+msgid "Display a page icon next to the page title"
+msgstr "Vis et sideikon ved siden av sidetittelen"
+
+#: inc/czr-init.php:2975
+msgid "When this option is checked, a contextual icon is displayed next to the titles of pages, posts, archives, and WP built-in widgets."
+msgstr "Når muligheter er valgt, et kontekstuelt ikon vises ved siden av tittelen på siden, innlegg, arkiv og innebygde WP-skjermelementer"
+
+#: inc/czr-init.php:2971
+msgid "Display icons next to titles"
+msgstr "Vis ikoner ved siden av tittler"
+
+#: inc/czr-init.php:4230
+msgid "Display the breadcrumb in posts lists : blog page, archives, search results..."
+msgstr "Vis navigasjonsti I innleggslister : bloggsiden, arkiver søkeresultater..."
+
+#: inc/czr-init.php:4221
+msgid "Display the breadcrumb in single posts"
+msgstr "Vis navigasjonsti på enkeltinnlegg"
+
+#: inc/czr-init.php:4212
+msgid "Display the breadcrumb in pages"
+msgstr "Vis navigasjonsti på sider"
+
+#: inc/czr-init.php:4204
+msgid "Display the breadcrumb on home page"
+msgstr "Vis navigasjonsti på forsiden"
+
+#: inc/czr-init.php:2951
+msgid "Open external links in a new tab"
+msgstr "Åpne eksterne lenger i ny fane"
+
+#: inc/czr-init.php:2944 inc/czr-init.php:2955
+msgid "This will be applied to the links included in post or page content only."
+msgstr "Dette vil kun påføres på lenker som inkluderes i innlegg eller på sider."
+
+#: inc/czr-init.php:2940
+msgid "Display an icon next to external links"
+msgstr "Vis et ikon ved siden av eksterne lenker"
+
+#: inc/czr-init.php:2930
+msgid "Fade effect on link hover"
+msgstr "Uttoningseffekt over lenker"
+
+#: inc/czr-init.php:3473
+msgid "Hover move effect for the sub menu items"
+msgstr "Forflyttningseffekt for undermenyelementer når markøren holdes over."
+
+#: inc/czr-init.php:3464
+msgid "Reveal the sub-menus blocks with a fade effect"
+msgstr "Vis undermeny-blokker med en falmende effekt"
+
+#: inc/czr-init.php:3417 inc/czr-init.php:3442
+msgid "Menu on the right"
+msgstr "Meny til høyre"
+
+#: inc/czr-init.php:3416 inc/czr-init.php:3441
+msgid "Menu on the left"
+msgstr "Meny til venstre"
+
+#: inc/czr-init.php:3353
+msgid "the z-index"
+msgstr "z-indeksen"
+
+#: inc/czr-init.php:3351
+msgid "What is"
+msgstr "Hva er"
+
+#: inc/czr-init.php:3343
+msgid "Set the header z-index"
+msgstr "Set sidehodets z-indeks"
+
+#: inc/czr-init.php:3333
+msgid "Sticky header : semi-transparent on scroll"
+msgstr "Klistret sidehode : semi-transparent ved rulling"
+
+#: inc/czr-init.php:3323
+msgid "Sticky header : display the menu"
+msgstr "Klistret sidehode : vis menyen"
+
+#: inc/czr-init.php:3314
+msgid "Sticky header : shrink title / logo"
+msgstr "Klistret sidehode : krymp tittel / logo"
+
+#: inc/czr-init.php:3305
+msgid "Sticky header : display the title / logo"
+msgstr "Klistret sidehode : vis tittel / logo"
+
+#: inc/czr-init.php:3285
+msgid "Sticky header : display the tagline"
+msgstr "Klistret sidehodet : vis slagordet"
+
+#: inc/czr-init.php:3280
+msgid "If checked, this option makes the header stick to the top of the page on scroll down."
+msgstr "Hvis valgt, vil sidehodet være klistret til toppen av siden når du ruller nedover"
+
+#: inc/czr-init.php:3275
+msgid "Sticky on scroll"
+msgstr "Klistrende ved rulling"
+
+#: inc/czr-init.php:3274
+msgid "Sticky header settings"
+msgstr "Konfigurer klistrende sidehodet"
+
+#: inc/czr-init.php:3218
+msgid "Logo / title on the right"
+msgstr "Logo / tittel på høyre side"
+
+#: inc/czr-init.php:3217
+msgid "Logo / title centered"
+msgstr "Logo / tittel sentrert"
+
+#: inc/czr-init.php:3216
+msgid "Logo / title on the left"
+msgstr "Logo / tittel på venstre side"
+
+#: inc/czr-init.php:3269
+msgid "If checked, this option wraps the header menu/tagline/social in a light grey box."
+msgstr "Hvis avhuket, pakkes meny/slagord/sosiale lenker i en lysegrå boks."
+
+#: inc/czr-init.php:3264
+msgid "Display menu in a box"
+msgstr "Vis menyen innpakket i en boks"
+
+#: inc/czr-init.php:3236
+msgid "Display the tagline"
+msgstr "Vis slagord"
+
+#: inc/czr-init.php:2900
+msgid "This option sets the default font size applied to any text element of your website, when no font size is already applied."
+msgstr "Dette valget setter standardstørrelse valgt for ethvert tekstelement på websiden din, når ingen standardstørrelse allerede er valgt. "
+
+#: inc/czr-init.php:2892
+msgid "Set your website default font size in pixels."
+msgstr "Sett standard størrelse på skrifttypen for din webside i piksler."
+
+#: inc/czr-init.php:2887
+msgid "This font picker allows you to preview and select among a handy selection of font pairs and single fonts. If you choose a pair, the first font will be applied to the site main headings : site name, site description, titles h1, h2, h3., while the second will be the default font of your website for any texts or paragraphs."
+msgstr "Denne skriftvelgeren lar deg forhåndsvise og velge bland en håndfull samling av skrifttypekombinasjoner og enkeltstående skrifttyper. Hvis du velger en kombinasjon, vil den første bli satt til sidens hovedoverskrifter : sidenavn, sidebeskrivelse, titlene h1, h2, h3, mens den andre vil være standard skrifttype for tekster og paragrafer på siden din."
+
+#: inc/czr-init.php:2880
+msgid "Select a beautiful font pair (headings &amp; default fonts) or single font for your website."
+msgstr "Velg en nydelig skrifttypekombinasjon (overskrifter &amp; standardskrift) eller enkle skrifttyper for websiden din."
+
+#: inc/czr-init.php:3171
+msgid "Check this option to display an author info block after each single post content. Note : the Biographical info field must be filled out in the user profile."
+msgstr "Velg denne muligheten for å vise en informasjonsblokk om forfatteren etter innholdet på enkeltinnlegg. OBS : Biografifeltet må være fylt ut i brukerprofilen"
+
+#: inc/czr-init.php:3167
+msgid "Display an author box after each single post content"
+msgstr "Vis en forfatterboks etter innhold for hvert enkeltinnlegg"
+
+#: inc/czr-init.php:3833
+msgid "Global Post Lists Settings"
+msgstr "Globale innstillinger for innleggsliste"
+
+#: inc/czr-init.php:3803
+msgid "Note : the home page layout has to be set in the home page section"
+msgstr "OBS: Utformingen for hovedsiden må settes i forsideseksjonen. "
+
+#: inc/czr-init.php:5190
+msgid "On the web, speed is key ! Improve the load time of your pages with those options."
+msgstr "På nett er hastigheten en viktig nøkkel! Forbedre innlastingstiden for sidene med disse valgene."
+
+#: inc/czr-init.php:5188
+msgid "Website Performances"
+msgstr "Websideytelser"
+
+#: inc/czr-init.php:5174
+msgid "Set up footer global options"
+msgstr "Sett opp mulighetene for den globale sidefoten"
+
+#: inc/czr-init.php:5172
+msgid "Footer global settings"
+msgstr "Globale innstillinger for sidefoten"
+
+#: inc/czr-init.php:5146
+msgid "Set up post/page navigation options"
+msgstr "Sett opp mulighetene for innlegg/side-navigasjon"
+
+#: inc/czr-init.php:5144
+msgid "Post/Page Navigation"
+msgstr "Innlegg/side-navigasjon"
+
+#: inc/czr-init.php:5134
+msgid "Set up paragraphs options"
+msgstr "Sett opp muligheter for avsnitt"
+
+#: inc/czr-init.php:5132
+msgid "Paragraphs"
+msgstr "Avsnitt"
+
+#: inc/czr-init.php:5128
+msgid "Set up gallery options"
+msgstr "Sett opp muligheter for galleri"
+
+#: inc/czr-init.php:5126
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: inc/czr-init.php:5122
+msgid "Set up post metas options"
+msgstr "Sett opp metainformasjon for innlegg"
+
+#: inc/czr-init.php:5120
+msgid "Post metas (category, tags, custom taxonomies)"
+msgstr "Metainformasjon for innlegg (kategori, merkelapper, egendefinerte grupperinger)"
+
+#: inc/czr-init.php:5108
+msgid "Set up breadcrumb options"
+msgstr "Sett opp muligheter for navigasjonssti"
+
+#: inc/czr-init.php:5106
+msgid "Breadcrumb"
+msgstr "Navigasjonssti"
+
+#: inc/czr-init.php:5102
+msgid "Set up single posts options"
+msgstr "Konfigurer enkle innlegg"
+
+#: inc/czr-init.php:5100
+msgid "Single posts"
+msgstr "Enkeltinnlegg"
+
+#: inc/czr-init.php:5096
+msgid "Set up post lists options"
+msgstr "Sett opp muligheter for innleggslister"
+
+#: inc/czr-init.php:5094
+msgid "Post lists : blog, archives, ..."
+msgstr "Innlegslister : Blogg, arkiver, ... "
+
+#: inc/czr-init.php:4973
+msgid "Your theme supports %s menu. Select which menu you would like to use."
+msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
+msgstr[0] "Temaet ditt støtter %s-meny. Velg hvilken meny du ønsker og bruke."
+msgstr[1] "Temaet ditt støtter %s-menyer. Velg hvilke menyer som vises i hvert område."
+
+#: inc/czr-init.php:5063
+msgid "Design and layout"
+msgstr "Utseende og utforming"
+
+#: inc/czr-init.php:3210 inc/czr-init.php:5063
+msgid "Header design and layout"
+msgstr "Utseende for sidehodet"
+
+#: inc/czr-init.php:5049
+msgid "Post authors settings"
+msgstr "Instillinger for innleggsforfatter"
+
+#: inc/czr-init.php:5047
+msgid "Authors"
+msgstr "Forfattere"
+
+#: inc/czr-init.php:5041
+msgid "Image settings"
+msgstr "Bildeinnstillinger"
+
+#: inc/czr-init.php:5037
+msgid "Set up the titles icons options"
+msgstr "Sett opp muligheter for tittelikoner"
+
+#: inc/czr-init.php:5035
+msgid "Titles icons settings"
+msgstr "Innstillinger for tittelikoner"
+
+#: inc/czr-init.php:5029
+msgid "Links style and effects"
+msgstr "Lenkestiler og effekter"
+
+#: inc/czr-init.php:5019
+msgid "Set up the font global settings"
+msgstr "Sett opp de globale innstillingene for skrifttyper"
+
+#: inc/czr-init.php:5017
+msgid "Fonts"
+msgstr "Skrifttyper"
+
+#: inc/czr-init.php:5000
+msgid "Site Title & Tagline"
+msgstr "Sidens tittel og slagord"
+
+#: inc/czr-init.php:4773
+msgid "How to create and use a child theme ?"
+msgstr "Hvordan lage og bruke et under-tema? "
+
+#: inc/czr-init.php:4772
+msgid "child theme."
+msgstr "under-tema"
+
+#: inc/czr-init.php:4771
+msgid "Use this field to test small chunks of CSS code. For important CSS customizations, you'll want to modify the style.css file of a"
+msgstr "Bruk dette feltet til å teste små mengder CSS-kode. For viktige endringer i CSS, vil du heller endre style.css-filen til et"
+
+#: inc/czr-init.php:4767
+msgid "Add your custom css here and design live! (for advanced users)"
+msgstr "Legg til egendefinert CSS her, og utform siden i nåtid! (for avanserte brukere) "
+
+#: inc/czr-init.php:3152
+msgid "Activate this option to move the sidebars (if any) after the main content block, for smartphones or tablets viewport."
+msgstr "Aktiver denne muligheten for å flytte sideområdet (hvis noen finnes) etter blokken fof hovedinnhold, for smarttelefoner eller nettbrett sine skjermer."
+
+#: inc/czr-init.php:3149
+msgid "Dynamic sidebar reordering on small devices"
+msgstr "Dynamisk strukturering av sideområdet på små enheter"
+
+#: inc/czr-init.php:2925
+msgid "If enabled, this option activates a smooth page scroll when clicking on a link to an anchor of the same page."
+msgstr "Hvis aktivert, setter dette valget en glatt siderulling når man klikker på en lenke til et anker på samme side."
+
+#: inc/czr-init.php:2922
+msgid "Smooth scroll on click"
+msgstr "Klikk for glatt rulling"
+
+#: inc/czr-init.php:3108
+msgid "This option dynamically centers your images on any devices, vertically or horizontally according to their initial aspect ratio."
+msgstr "Dette valget sentrerer bildene dine dynamisk på enhver enhet, vertikalt og horisontalt - basert på forhold i utgangspunktet. "
+
+#: inc/czr-init.php:3105
+msgid "Dynamic thumbnails centering on any devices"
+msgstr "Dynamisk sentrering av miniatyrbilde på enhver enhet"
+
+#: inc/czr-init.php:3097
+msgid "Dynamic slider images centering on any devices"
+msgstr "Dynamisk bildesentrering på enhver enhet"
+
+#: inc/czr-init.php:3091
+msgid "When checked, this option displays a loading icon when the slides are being setup."
+msgstr "Når valgt, vises et ikon for innlasting når bildene i karusellen settes opp. "
+
+#: inc/czr-init.php:3088
+msgid "Sliders : display on loading icon before rendering the slides"
+msgstr "Karuseller : Vis et ikon  når innholdet lastes før visning av bilder i karusellen"
+
+#: inc/czr-init.php:3074
+msgid "Open the description page of the Regenerate thumbnails plugin"
+msgstr "Åpne siden for beskrivelsen av re-generering av miniatyrbilder-modulen"
+
+#: inc/czr-init.php:3072
+msgid "regenerate thumbnails"
+msgstr "Re-generer miniatyrbilder"
+
+#: inc/czr-init.php:3071
+msgid "It is strongly recommended to regenerate your media library images in high definition with this free plugin"
+msgstr "Det er sterkt anbefalt å regenerere bildene dine i mediebiblioteket med høy oppløsning ved hjelp av denne gratis-modulen"
+
+#: inc/czr-init.php:3070
+msgid "If enabled, your website will include support for high resolution devices."
+msgstr "Hvis aktivert,  websiden vil inkludere støtte for enheter med høy skjermoppløsning."
+
+#: inc/czr-init.php:3066
+msgid "High resolution (Retina) support"
+msgstr "Støtte for høy oppløsning (Retina)"
+
+#: inc/czr-init.php:3060
+msgid "If enabled, this option will force images to fit the screen on lightbox zoom."
+msgstr "Hvis aktiver, dette valget vil tvinge bilder til å passe på skjermen i en lysboks-forstørring."
+
+#: inc/czr-init.php:3057
+msgid "Autoscale images on zoom"
+msgstr "Autoskaler bilder ved forstørring"
+
+#: inc/czr-init.php:3051
+msgid "If enabled, this option activates a popin window whith a zoom effect when an image is clicked. Note : to enable this effect on the images of your pages and posts, images have to be linked to the Media File."
+msgstr "Hvis aktivert, denne valgmuligheten aktiverer en innhoppsvindu med en forstørrelseseffekt når et bilde blir klikket på. Notat: for å aktivare denne effekten på bilderne for sider og innlegg, bildene må være tilknyttet mediefilen."
+
+#: inc/czr-init.php:3048
+msgid "Lightbox effect on images"
+msgstr "Lysbokseffekt på bilder"
+
+#: inc/czr-init.php:4708
+msgid "Social links in footer"
+msgstr "Sosiale lenker i sidefoten"
+
+#: inc/czr-init.php:4674
+msgid "Social links in right sidebar"
+msgstr "Sosiale lenker i høyre sideområde"
+
+#: inc/czr-init.php:4664
+msgid "Social links in left sidebar"
+msgstr "Sosiale lenker i venstre sideområde"
+
+#: inc/czr-init.php:3254
+msgid "Social links in header"
+msgstr "Sosiale lenker i sidehodet"
+
+#: inc/czr-init.php:4563
+msgid "Enable comments on pages"
+msgstr "Aktiver kommentarer på sider"
+
+#: inc/czr-init.php:3858
+msgid "Choose the pages default layout"
+msgstr "Velg standardutformingen for sider"
+
+#: inc/czr-init.php:3850
+msgid "Display the full content"
+msgstr "Vis fullstendig innhold"
+
+#: inc/czr-init.php:3662 inc/czr-init.php:3849
+msgid "Display the excerpt"
+msgstr "Vis et utdrag"
+
+#: inc/czr-init.php:3845
+msgid "Select the length of posts in lists (home, search, archives, ...)"
+msgstr "Velg antall innlegg i lister (Hjem, søk, arkiv, ...) "
+
+#: inc/czr-init.php:3834
+msgid "Maximum number of posts per page"
+msgstr "Maksimalt antall innlegg per side"
+
+#: inc/czr-init.php:3821
+msgid "Choose the posts default layout"
+msgstr "Velg innleggenes standardutforming"
+
+#: inc/czr-init.php:3814
+msgid "This option will override the specific layouts on all posts/pages, including the front page."
+msgstr "Dette valget vil overstyre den spesifikke utformingen på alle innlegg/sider, inkludert forsiden."
+
+#: inc/czr-init.php:3811
+msgid "Force default layout everywhere"
+msgstr "Tving standardutforming over alt"
+
+#: inc/czr-init.php:3799
+msgid "Choose the global default layout"
+msgstr "Velg det globale standardutseende"
+
+#: inc/czr-init.php:4195
+msgid "Display Breadcrumb"
+msgstr "Vis navigasjonsti"
+
+#: inc/czr-init.php:3684 inc/czr-init.php:3777
+msgid "Button text"
+msgstr "Knappetekst"
+
+#: inc/czr-init.php:3683 inc/czr-init.php:3775
+msgid "Read more &raquo;"
+msgstr "Les mer &raquo;"
+
+#: inc/czr-init.php:3769
+msgid "The images are set with the \"featured image\" of each pages (in the page edit screen). Uncheck the option above to disable the featured page images."
+msgstr "Bildene er markert med \"fremhevet bilde\" på hver side (under sidebehandlingskjermen). Fjern valget over for og deaktivere bilder for fremhevede sider."
+
+#: inc/czr-init.php:3766
+msgid "Show images"
+msgstr "Vis bilder"
+
+#: inc/czr-init.php:3757
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: inc/czr-init.php:3756
+msgid "Enable"
+msgstr "Aktiver"
+
+#: inc/czr-init.php:3752
+msgid "Display home featured pages area"
+msgstr "Vis fremhevede sideområdet på forsiden"
+
+#: inc/czr-init.php:3751
+msgid "Featured pages options"
+msgstr "Konfigurer fremhevet innhold"
+
+#: inc/czr-init.php:3711
+msgid "in ms : 1000ms = 1s"
+msgstr "I millisekunds: 1000ms = 1 sekund"
+
+#: inc/czr-init.php:3706
+msgid "Delay between each slides"
+msgstr "Forsinkelse mellom hver slide"
+
+#: inc/czr-init.php:3694
+msgid "Full width slider"
+msgstr "Full bredde på slider"
+
+#: inc/czr-init.php:3620
+msgid "Select front page slider"
+msgstr "Velg forside-slider"
+
+#: inc/czr-init.php:3619
+msgid "Slider options"
+msgstr "Konfigurer Slider"
+
+#: inc/czr-init.php:3607
+msgid "Set up the front page layout"
+msgstr "Konfigurer forsideutseende"
+
+#: inc/czr-init.php:3580
+msgid "Posts page"
+msgstr "Innleggs-siden"
+
+#: inc/czr-init.php:3572
+msgid "Front page"
+msgstr "Forside"
+
+#: inc/czr-init.php:3566
+msgid "A static page"
+msgstr "En statisk side"
+
+#: inc/czr-init.php:3565
+msgid "Your latest posts"
+msgstr "Dine siste innlegg"
+
+#: inc/czr-init.php:3564
+msgid "Don't show any posts or page"
+msgstr "Ikke vis noen innlegg eller sider"
+
+#: inc/czr-init.php:3559
+msgid "Front page displays"
+msgstr "Forsidevisning"
+
+#: inc/czr-init.php:3551
+msgid "Choose content and layout"
+msgstr "Velg innhold og utseende"
+
+#: inc/czr-init.php:2836
+msgid "FAVICON"
+msgstr "FAVORITTIKON"
+
+#: inc/czr-init.php:2835
+msgid "Favicon Upload (supported formats : .ico, .png, .gif)"
+msgstr "Last opp favorittikon (støttede formater: .ico, .png, .gif)"
+
+#: inc/czr-init.php:2829
+msgid "Use this upload control to specify a different logo on sticky header mode."
+msgstr "Bruke denne opplastingskontrollen for å spesifisere en annen logo i klistret sidehode-modus"
+
+#: inc/czr-init.php:2818
+msgid "Sticky Logo Upload (supported formats : .jpg, .png, .gif, svg, svgz)"
+msgstr "Last opp klistrende logo (støttede formater: .jpg, .png, .gif, SVG, SVGZ)"
+
+#: inc/czr-init.php:2814
+msgid "Uncheck this option to keep your original logo dimensions."
+msgstr "Fjern valget for å beholde orginale logodimmensjoner."
+
+#: inc/czr-init.php:2810
+msgid "Force logo dimensions to max-width:250px and max-height:100px"
+msgstr "Tving logodimmensjoner til max-width:250px og max-height: 100px"
+
+#: inc/czr-init.php:2795
+msgid "LOGO"
+msgstr "LOGO"
+
+#: inc/czr-init.php:2794
+msgid "Logo Upload (supported formats : .jpg, .png, .gif, svg, svgz)"
+msgstr "Last opp logo (støttede formater: .jpg, .png, .gif, SVG, SVGZ)"
+
+#: inc/czr-init.php:3230
+msgid "Uncheck this option to remove the colored top border."
+msgstr "Fjern haken for å fjerne den fargede topplinjen."
+
+#: inc/czr-init.php:3226
+msgid "Display top border"
+msgstr "Vis topplinjen"
+
+#: inc/czr-init.php:4793
+msgid "Using the minified version of the stylesheets will speed up your webpage load time."
+msgstr "Bruk av den minifiserte versjonen av stilark vil øke innlastingshastigheten til siden din."
+
+#: inc/czr-init.php:4790
+msgid "Performance : use the minified CSS stylesheets"
+msgstr "Ytelse : Bruk minifiserte CSS stilskjema"
+
+#: inc/czr-init.php:2866
+msgid "Apply a random color skin on each page load."
+msgstr "Legg til en tilfeldig fargetema på hver sideinnlastning."
+
+#: inc/czr-init.php:2863
+msgid "Randomize the skin"
+msgstr "Tilfeldig fargetema"
+
+#: inc/czr-init.php:2853
+msgid "Choose a predefined skin"
+msgstr "Velg et predefinert fargetema"
+
+#: inc/czr-init.php:3457
+msgid "Expand submenus on hover"
+msgstr "Hold markøren over for å ekspandere undermenyer"
+
+#: inc/czr-init.php:3456
+msgid "Expand submenus on click"
+msgstr "Ekspander undermenyer ved klikk"
+
+#: inc/czr-init.php:3452
+msgid "Select a submenu expansion option"
+msgstr "Velg en ekspansjonsmulighet for undermeny"
+
+#: inc/czr-init.php:5163
+msgid "Various settings for responsive display"
+msgstr "Forskjellige innstillinger for responsive visning"
+
+#: inc/czr-init.php:3117 inc/czr-init.php:5161
+msgid "Responsive settings"
+msgstr "Instillinger for responsivitet"
+
+#: inc/czr-init.php:5183
+msgid "Custom CSS"
+msgstr "Egendefinert CSS"
+
+#: inc/czr-init.php:5031
+msgid "Various links settings"
+msgstr "Forskjellige lenkeinnstillinger"
+
+#: inc/czr-init.php:5043
+msgid "Various images settings"
+msgstr "Forskjellige bildeinnstillinger"
+
+#: inc/czr-init.php:5025
+msgid "Set up your social links"
+msgstr "Sett opp dine sosiale lenker"
+
+#: inc/czr-init.php:4682 inc/czr-init.php:5023
+msgid "Social links"
+msgstr "Sosiale lenker"
+
+#: inc/czr-init.php:5140
+msgid "Set up comments options"
+msgstr "Sett opp mulighetene for kommentarer"
+
+#: inc/czr-init.php:5138
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: inc/czr-init.php:5089
+msgid "Set up layout options"
+msgstr "Sett opp muligheter for utseende"
+
+#: inc/czr-init.php:5087
+msgid "Pages &amp; Posts Layout"
+msgstr "Sider &amp; Innleggsutseende"
+
+#: inc/czr-init.php:5082
+msgid "Set up front page options"
+msgstr "Sett opp muligheter for forsiden"
+
+#: inc/czr-init.php:5080
+msgid "Front Page"
+msgstr "Forside"
+
+#: inc/czr-init.php:5007
+msgid "Set up logo and favicon options"
+msgstr "Sett opp alternativer for logo og favorittikon"
+
+#: inc/czr-init.php:5005
+msgid "Logo &amp; Favicon"
+msgstr "Logo &amp; Favorittikon"
+
+#: inc/czr-init.php:5013
+msgid "Select a skin for Customizr"
+msgstr "Velg en utforming for Customizr"
+
+#: inc/czr-init.php:5011
+msgid "Skin"
+msgstr "Utforming"
+
+#: inc/czr-init.php:4899
+msgid "Advanced settings for the Customizr theme."
+msgstr "Avanserte innstillinger for Customizr-temaet"
+
+#: inc/czr-init.php:4898
+msgid "Advanced options"
+msgstr "Avanserte alternativer"
+
+#: inc/czr-init.php:4893
+msgid "Footer settings for the Customizr theme."
+msgstr "Innstillinger for sidefoten til Customizr-temaet"
+
+#: inc/czr-init.php:4892
+msgid "Footer"
+msgstr "Sidefot"
+
+#: inc/czr-init.php:4881
+msgid "Content settings for the Customizr theme."
+msgstr "Innstillinger for innholdet til Customizer-temaet"
+
+#: inc/czr-init.php:4880
+msgid "Content : home, posts, ..."
+msgstr "Innhold : Forside, innlegg, ... "
+
+#: inc/czr-init.php:4875
+msgid "Header settings for the Customizr theme."
+msgstr "Instillinger for sidethodet til Customizr-temaet"
+
+#: inc/czr-init.php:4874
+msgid "Header"
+msgstr "Sidehodet"
+
+#: inc/czr-init.php:4869
+msgid "Global settings for the Customizr theme :skin, socials, links..."
+msgstr "Globale innstillinger for Customizr-temaet : Utseende, sosialt, lenker... "
+
+#: inc/czr-init.php:4868
+msgid "Global settings"
+msgstr "Globale innstillinger"
+
+#: inc/czr-init.php:5396
+msgid "&mdash; Demo Slider &mdash;"
+msgstr "&mdash; Demokarusell &mdash;"
+
+#: inc/czr-init.php:5395
+msgid "&mdash; No slider &mdash;"
+msgstr "&mdash; Ingen karusell &mdash;"
+
+#: inc/czr-init.php:5269
+msgid "You need to select a page first. Leave this field empty if you want to use the page excerpt."
+msgstr "Du må velge en side først. La dette feltet være tomt om du ønsker å bruke sideutdraget."
+
+#: inc/czr-init.php:5266
+msgid "Featured text %1$s (200 char. max)"
+msgstr "Fremhevet tekst %1$s (maks 200 tegn)"
+
+#: inc/czr-init.php:5250
+msgid "Custom featured page %1$s"
+msgstr "Egendefinert promotert side %1$s"
+
+#: inc/czr-init.php:5234
+msgid "Featured text three (200 char. max)"
+msgstr "Fremhevet tekst 3 (maks 200 tegn)"
+
+#: inc/czr-init.php:5233
+msgid "Featured text two (200 char. max)"
+msgstr "Fremhevet tekst 2 (maks 200 tegn)"
+
+#: inc/czr-init.php:5232
+msgid "Featured text one (200 char. max)"
+msgstr "Fremhevet tekst 1 (maks 200 tegn)"
+
+#: inc/czr-init.php:5229
+msgid "Home featured page three"
+msgstr "Forsidepromotert side nummer en"
+
+#: inc/czr-init.php:5228
+msgid "Home featured page two"
+msgstr "Forsidepromotert side nummer to"
+
+#: inc/czr-init.php:5227
+msgid "Home featured page one"
+msgstr "Forsidepromotert side nummer en"
+
+#: inc/czr-init.php:6033
+msgid "Page %s"
+msgstr "Side %s"
+
+#: inc/czr-init.php:1221
+msgid "Need help with Customizr? Click here!"
+msgstr "Trenger du hjelp med Customizr? Klikk her!"
+
+#: inc/czr-init.php:1218
+msgid "Help"
+msgstr "Hjelp"
+
+#: inc/czr-init.php:1033
+msgid "Main Menu"
+msgstr "Hovedmeny"
+
+#: inc/czr-init.php:858 inc/czr-init.php:8601
+msgid "Many layout and design options are available from the WordPress customizer screen : see your changes live !"
+msgstr "Mange utseende og designmuligheter er tilgjengelig fra WordPress-tilpassingsskjermen : Se endringene dine i sanntid!"
+
+#: inc/czr-init.php:844 inc/czr-init.php:8595 inc/czr-init.php:8607
+msgid "Customizr is a clean responsive theme"
+msgstr "Customizr er et rent, responsivt tema"
+
+#: inc/czr-init.php:829
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Beklager, men det ble ikke funnet noe som passet det du søkte etter. Vennligst prøv med noen andre søkeord."
+
+#: inc/czr-init.php:828
+msgid "Sir Winston Churchill"
+msgstr "Sir Winston Churchill"
+
+#: inc/czr-init.php:827
+msgid "Success is the ability to go from one failure to another with no loss of enthusiasm..."
+msgstr "Suksess er  evnen til å gå fra en tabbe til en annen uten å miste noen form for entusiasme... (Success is the ability to go from one failure to another with no loss of enthusiasm...)"
+
+#: inc/czr-init.php:822
+msgid "Sorry, but the requested page is not found. You might try a search below."
+msgstr "Beklager, men den forespurte siden ble ikke funnet. Du kan prøve et søk under. "
+
+#: inc/czr-init.php:821
+msgid "George Orwell"
+msgstr "George Orwell"
+
+#: inc/czr-init.php:820
+msgid "Speaking the Truth in times of universal deceit is a revolutionary act."
+msgstr "Å si sannheten i en tid med universielt bedrageri, er en revolusjonerende handling. ( Speaking the Truth in times of universal deceit is a revolutionary act.)"
+
+#: inc/czr-init.php:802
+msgid "Footer Widget Area Three"
+msgstr "Skjermelement i sidefot, område 3"
+
+#: inc/czr-init.php:798
+msgid "Footer Widget Area Two"
+msgstr "Skjermelement i sidefot, område 2"
+
+#: inc/czr-init.php:795 inc/czr-init.php:799 inc/czr-init.php:803
+msgid "Just use it as you want !"
+msgstr "Bare bruk den som du vil!"
+
+#: inc/czr-init.php:794
+msgid "Footer Widget Area One"
+msgstr "Skjermelement i sidefot, område 1"
+
+#: inc/czr-init.php:782
+msgid "Left Sidebar"
+msgstr "Venstre sideområde"
+
+#: inc/czr-init.php:783 inc/czr-init.php:787
+msgid "Appears on posts, static pages, archives and search pages"
+msgstr "Vises på innlegg, statiske sider, arkiv- og søkesider"
+
+#: inc/czr-init.php:786
+msgid "Right Sidebar"
+msgstr "Høyre sideområde"
+
+#: inc/czr-init.php:758
+msgid "LinkedIn profile url"
+msgstr "LinkedInprofil URL"
+
+#: inc/czr-init.php:757
+msgid "Follow me on LinkedIn"
+msgstr "Følg meg på LinkedIn"
+
+#: inc/czr-init.php:753
+msgid "Dribbble profile url"
+msgstr "Dribbbleprofil URL"
+
+#: inc/czr-init.php:752
+msgid "Follow me on Dribbble"
+msgstr "Følg meg på Dribbble"
+
+#: inc/czr-init.php:748
+msgid "Github profile url"
+msgstr "Githubprofil URL"
+
+#: inc/czr-init.php:747
+msgid "Follow me on Github"
+msgstr "Følg meg på Github"
+
+#: inc/czr-init.php:743
+msgid "Pinterest profile url"
+msgstr "Pinterestprofil URL"
+
+#: inc/czr-init.php:742
+msgid "Pin me on Pinterest"
+msgstr "Fest meg på Pinterest"
+
+#: inc/czr-init.php:738
+msgid "Youtube profile url"
+msgstr "YouTubeprofil URL"
+
+#: inc/czr-init.php:737
+msgid "Follow me on Youtube"
+msgstr "Følg meg på YouTube"
+
+#: inc/czr-init.php:733
+msgid "WordPress profile url"
+msgstr "WordPressprofil URL"
+
+#: inc/czr-init.php:732
+msgid "Follow me on WordPress"
+msgstr "Følg meg på WordPress"
+
+#: inc/czr-init.php:728
+msgid "Flickr url"
+msgstr "Flickr URL"
+
+#: inc/czr-init.php:727
+msgid "Follow me on Flickr"
+msgstr "Følg meg på Flickr"
+
+#: inc/czr-init.php:723
+msgid "Tumblr url"
+msgstr "Tumblr URL"
+
+#: inc/czr-init.php:722
+msgid "Follow me on Tumblr"
+msgstr "Følg meg på Tumblr"
+
+#: inc/czr-init.php:718
+msgid "Instagram profile url"
+msgstr "Instagramprofil URL"
+
+#: inc/czr-init.php:717
+msgid "Follow me on Instagram"
+msgstr "Følg meg på Instagram"
+
+#: inc/czr-init.php:713
+msgid "Google+ profile url"
+msgstr "Google+ profil URL"
+
+#: inc/czr-init.php:712
+msgid "Follow me on Google+"
+msgstr "Følg meg på Google+"
+
+#: inc/czr-init.php:708
+msgid "Facebook profile url"
+msgstr "Facebookprofil URL"
+
+#: inc/czr-init.php:707
+msgid "Follow me on Facebook"
+msgstr "Følg meg på Facebook"
+
+#: inc/czr-init.php:703
+msgid "Twitter profile url"
+msgstr "Twitterprofil URL"
+
+#: inc/czr-init.php:702
+msgid "Follow me on Twitter"
+msgstr "Følg meg på Twitter"
+
+#: inc/czr-init.php:692
+msgid "RSS feed (default is the wordpress feed)"
+msgstr "RSS-strøm (Standard er wordpress sin strøm)"
+
+#: inc/czr-init.php:691
+msgid "Subscribe to my rss feed"
+msgstr "Abonner på min rss-strøm"
+
+#: inc/czr-init.php:653
+msgid "Single fonts"
+msgstr "Enslige skrifttyper"
+
+#: inc/czr-init.php:644
+msgid "Web safe fonts pairs"
+msgstr "Web-sikre skriftypekombinasjoner"
+
+#: inc/czr-init.php:624
+msgid "Google fonts pairs"
+msgstr "Google skriftypekombinasjoner"
+
+#: inc/czr-init.php:597
+msgid "Light blue "
+msgstr "Lys blå"
+
+#: inc/czr-init.php:596
+msgid "Green blue"
+msgstr "Grønnblå"
+
+#: inc/czr-init.php:595
+msgid "Light green"
+msgstr "Lys grønn"
+
+#: inc/czr-init.php:594
+msgid "Green"
+msgstr "Grønn"
+
+#: inc/czr-init.php:593
+msgid "Flat yellow"
+msgstr "Flat gul"
+
+#: inc/czr-init.php:592
+msgid "Yellow"
+msgstr "Gul"
+
+#: inc/czr-init.php:591
+msgid "Flat orange"
+msgstr "Flat oransje"
+
+#: inc/czr-init.php:590
+msgid "Orange"
+msgstr "Oransje"
+
+#: inc/czr-init.php:589
+msgid "Red"
+msgstr "Rød"
+
+#: inc/czr-init.php:588
+msgid "Flat red"
+msgstr "Flat rød"
+
+#: inc/czr-init.php:587
+msgid "Purple"
+msgstr "Lilla"
+
+#: inc/czr-init.php:586
+msgid "Flat purple"
+msgstr "Flat lilla"
+
+#: inc/czr-init.php:585
+msgid "Ligth grey"
+msgstr "Lys grå"
+
+#: inc/czr-init.php:584
+msgid "Grey"
+msgstr "Grå"
+
+#: inc/czr-init.php:583
+msgid "Flat black"
+msgstr "Flat sort"
+
+#: inc/czr-init.php:582
+msgid "Black"
+msgstr "Sort"
+
+#: inc/czr-init.php:581
+msgid "Blue"
+msgstr "Blå"
+
+#: inc/czr-init.php:566 inc/czr-init.php:567
+msgid "No sidebars : full width layout"
+msgstr "Ingen sideområder : Full sidebredde"
+
+#: inc/czr-init.php:560 inc/czr-init.php:561
+msgid "2 sidebars : Right and Left"
+msgstr "2 sideområder : Høyre og venstre"
+
+#: inc/czr-init.php:554 inc/czr-init.php:555
+msgid "Left sidebar"
+msgstr "Venstre sideområde"
+
+#: inc/czr-init.php:548 inc/czr-init.php:549
+msgid "Right sidebar"
+msgstr "Høyre sideområde"
+
+#: inc/czr-customize.php:1282
+msgid "Remove"
+msgstr "Fjern"
+
+#: inc/czr-customize.php:1281
+msgid "Upload"
+msgstr "Last opp"
+
+#: inc/czr-customize.php:845
+msgid "Check the documentation"
+msgstr "Sjekk dokumentasjonen"
+
+#: inc/czr-customize.php:843
+msgid "Need help to create a slider ?"
+msgstr "Trenger du hjelp med å opprette en karusell? "
+
+#: inc/czr-customize.php:842
+msgid "Create a slider"
+msgstr "Opprett en karusell? "
+
+#: inc/czr-admin.php:732
+msgid "To copy the system infos, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr "For å kopiere systeminformasjonen, klikk under, trykk så Ctrl + C (PC) eller Cmd + C (Mac)."
+
+#: inc/czr-admin.php:731
+msgid "Please include the following informations when posting support requests"
+msgstr "Vennligst inkluder følgende informasjon når du sender inn supportforespørsler"
+
+#: inc/czr-admin.php:730
+msgid "System Informations"
+msgstr "Systeminformasjon"
+
+#: inc/czr-admin.php:655
+msgid "Go to Dashboard"
+msgstr "Gå til kontrollpanel"
+
+#: inc/czr-admin.php:655
+msgid "Go to Dashboard &rarr; Home"
+msgstr "Gå til Kontrollpanel &rarr; Hjem"
+
+#: inc/czr-admin.php:713
+msgid "Changelog in version %1$s"
+msgstr "Endringslogg i versjon %1$s"
+
+#: inc/czr-admin.php:643
+msgid "Do you think you made an awesome website that can inspire people? Submitting a site for review is quick and easy to do."
+msgstr "Synes du at du har laget en kjempetøff webside som kan insiprere andre? Det er raskt og enkelt å sende inn siden for en omtale."
+
+#: inc/czr-admin.php:641
+msgid "This showcase aims to show what can be done with Customizr and helping other users to find inspiration for their web design."
+msgstr "Denne fremvisningen prøver og vise hva som kan gjøres med Customizr, og hjelper andre å finne inspirasjon for deres design. "
+
+#: inc/czr-admin.php:640
+msgid "Find inspiration for your next Customizr based website!"
+msgstr "Finn inspirasjon for din nesten Customizr-inspirerte webside!"
+
+#: inc/czr-admin.php:639 inc/czr-admin.php:646
+msgid "Visit the showcase"
+msgstr "Besøk fremvisningsområdet"
+
+#: inc/czr-admin.php:636
+msgid "Customizr Showcase"
+msgstr "Customizr fremvisning"
+
+#: inc/czr-admin.php:624
+msgid "Easily take your web design one step further"
+msgstr "Ta webdesignet ditt et steg videre med enkelhet"
+
+#: inc/czr-admin.php:623
+msgid "Visit the extension's page"
+msgstr "Besøk utvidelsessiden"
+
+#: inc/czr-admin.php:610
+msgid "Follow us"
+msgstr "Følg oss"
+
+#: inc/czr-admin.php:605
+msgid "If you are happy with the theme, say it on wordpress.org and give Customizr a nice review! <br />(We are addicted to your feedbacks...)"
+msgstr "Hvis du er fornøyd med temaet, si det på wordpress.org, og legge igjen en god omtale! <br /> (Vi er hekta på deres tilbakemeldinger...) "
+
+#: inc/czr-admin.php:604
+msgid "Happy user of Customizr?"
+msgstr "Fornøyd bruker av Customizr? "
+
+#: inc/czr-admin.php:597
+msgid "<strong>We do our best do make Customizr the perfect free theme for you!</strong><br/> Please help support it's continued development with a donation of $20, $50, or even $100."
+msgstr "<strong>Vi gjør vårt beste for å gjøre Customizr til det perfekte gratistemaet for deg!</strong><br/> Vær så snill å støtt videre utvikling med en donasjon på $20, $50, eller til og med $100."
+
+#: inc/czr-admin.php:596
+msgid "We need sponsors!"
+msgstr "Vi trenger sponsorer!"
+
+#: inc/czr-admin.php:579
+msgid "You are using a child theme of Customizr %1$s : always check the %2$s after upgrading to see if a function or a template has been deprecated."
+msgstr "Du bruker et undertema av Customizr  %1$s : sjekk bestandig %2$s etter oppdatering for og se om en funksjon eller en mal er utdatert."
+
+#: inc/czr-admin.php:536
+msgid "Check the FAQ"
+msgstr "Sjekk OSS (Ofte Stilte Spørsmål)"
+
+#: inc/czr-admin.php:532
+msgid "Read the documentation"
+msgstr "Les dokimentasjonen"
+
+#: inc/czr-admin.php:466
+msgid "About Customizr"
+msgstr "Om Customizr"
+
+#: inc/czr-admin.php:1847
+msgid "Current slide"
+msgstr "Nåværende bilde"
+
+#: inc/czr-admin.php:1845
+msgid "Edit this slide"
+msgstr "Rediger dette bildet"
+
+#: inc/czr-admin.php:1819
+msgid "No Image Selected"
+msgstr "Ingen bilde valgt"
+
+#: inc/czr-admin.php:1777 inc/czr-front.php:2621 inc/czr-front.php:2654
+#: inc/czr-front.php:2669 inc/czr-front.php:2697 inc/czr-front.php:3212
+#: inc/czr-front.php:3786 inc/czr-front.php:4191 inc/czr-front.php:8875
+msgid "Edit"
+msgstr "Rediger"
+
+#: inc/czr-admin.php:1775
+msgid "Button Text"
+msgstr "Knappetekst"
+
+#: inc/czr-admin.php:1774
+msgid "Slide Text"
+msgstr "Bildetekst"
+
+#: inc/czr-admin.php:1773
+msgid "Title"
+msgstr "Tittel"
+
+#: inc/czr-admin.php:1772
+msgid "Slide Image"
+msgstr "Slider-bilde"
+
+#: inc/czr-admin.php:1762
+msgid "This slider has not slides to show. Go to the media library and start adding images to it."
+msgstr "Denne karusellen har ingen bilder å vise. Gå til mediebiblioteket og legg bilder til den."
+
+#: inc/czr-admin.php:1634
+msgid "You haven't create any slider yet. Write a slider name and click on the button to add you first slider."
+msgstr "Du har ikke opprettet en karusell ennå. Skriv et karusellnavn og klikk på knappen for og legge til din første karusell."
+
+#: inc/czr-admin.php:1607 inc/czr-admin.php:1636
+msgid "Add a slider"
+msgstr "Legg til en karusell"
+
+#: inc/czr-admin.php:1557
+msgid "No link"
+msgstr "Ingen lenke"
+
+#: inc/czr-admin.php:1552
+msgid "Choose a linked page or post (among the last 100)."
+msgstr "Velg en tilknyttet side eller innlegg (blant de siste 100)."
+
+#: inc/czr-admin.php:1545
+msgid "Button text (80 char. max length)"
+msgstr "Knappetekst (maks 80 tegn)"
+
+#: inc/czr-admin.php:1537
+msgid "Title and text color"
+msgstr "Tittel-og tekstfarge"
+
+#: inc/czr-admin.php:1530
+msgid "Description text (below the title, 250 char. max length)"
+msgstr "Beskrivelsestekst (under tittelen, maks 250 tegn)"
+
+#: inc/czr-admin.php:1523
+msgid "Title text (80 char. max length)"
+msgstr "Titteltekst (maks 80 tegn)"
+
+#: inc/czr-admin.php:1377
+msgid "Add to a slider (create one if needed)"
+msgstr "Bruk i en karusell (Lag en om nødvendig)"
+
+#: inc/czr-admin.php:1375
+msgid "Add to a slider"
+msgstr "Bruk i en karusell"
+
+#: inc/czr-admin.php:1223 inc/czr-customize.php:840
+msgid "You haven't create any slider yet. Go to the media library, edit your images and add them to your sliders."
+msgstr "Du har ikke opprettet en karusell ennå. Gå til mediabiblioteket, rediger bildene dine og legg dem til karusellen"
+
+#: inc/czr-admin.php:1212 inc/czr-admin.php:1617
+msgid "Delete slider"
+msgstr "Slett karusell"
+
+#: inc/czr-admin.php:1209 inc/czr-admin.php:1614
+msgid "The slider will be deleted permanently (images, call to actions and link will be kept)."
+msgstr "Karusellen blir permanent slettet (bilder, opprop og lenker vil bli beholdt)."
+
+#: inc/czr-admin.php:1204 inc/czr-admin.php:1610
+msgid "Delete this slider"
+msgstr "Slett denne karusellen"
+
+#: inc/czr-admin.php:1187
+msgid "Slider Layout : set the slider in full width"
+msgstr "Karusellutseende : bruk karusellen i full sidebredde"
+
+#: inc/czr-admin.php:1180
+msgid "Delay between each slides in milliseconds (default : 5000 ms)"
+msgstr "Forsinkelse mellom hvert karusellbilde i millisekunder (standard : 5000 ms)"
+
+#: inc/czr-admin.php:1176
+msgid "To create a new slider : open the media library, edit your images and add them to your new slider."
+msgstr "For å opprette en ny karusell: Åpne mediebiblioteket, rediger bildene dine og legg dem til din nye karusell."
+
+#: inc/czr-admin.php:1153 inc/czr-admin.php:1601
+msgid "&mdash; Select a slider &mdash; "
+msgstr "&mdash; Velg en karusell &mdash; "
+
+#: inc/czr-admin.php:1147 inc/czr-admin.php:1586
+msgid "Choose a slider"
+msgstr "Velg en karusell"
+
+#: inc/czr-admin.php:1081
+msgid "Add a slider to this post/page"
+msgstr "Legg til en karusell til inlegget/siden"
+
+#: inc/czr-admin.php:1038
+msgid "Default layout %1s"
+msgstr "Standardutseende %1s"
+
+#: inc/czr-admin.php:1034
+msgid "Select a specific layout for %1$s"
+msgstr "Velg et spesifikt utseende for %1$s"
+
+#: inc/czr-admin.php:1031 inc/czr-init.php:3535 inc/czr-init.php:3540
+#: inc/czr-init.php:4849
+msgid "here"
+msgstr "her"
+
+#: inc/czr-admin.php:1030 inc/czr-admin.php:1035
+msgid "this post"
+msgstr "dette innlegget"
+
+#: inc/czr-admin.php:1030 inc/czr-admin.php:1035
+msgid "this page"
+msgstr "denne siden"
+
+#: inc/czr-admin.php:1029
+msgid "You can define a specific layout for %1$s by using the pre-defined left and right sidebars. The default layouts can be defined in the WordPress customizer screen %2$s.<br />"
+msgstr "Du kan definere et spesifikt utseende for %1$s ved og bruke den predefinerte høyre-og venstre sideområdet. Standardutseende kan defineres i WordPress tilpassningskjermbildet %2$s.<br />"
+
+#: inc/czr-admin.php:1025
+msgid "Change layout options"
+msgstr "Endre utseendekonfigurasjon"
+
+#: inc/czr-admin.php:1024
+msgid "You have checked the <i>\"Force global default layout for all posts and pages\"</i>, you must unchecked this option to enable a specific layout for this post."
+msgstr "Du har huket av for  <i>\"Tving globalt utseende for alle innlegg og sider\"</i>, du må fjerne dette valget for å aktivere et spesifikt utseende for dette innlegget."
+
+#: inc/czr-admin.php:1019
+msgid "posts"
+msgstr "innlegg"
+
+#: inc/czr-admin.php:1019
+msgid "pages"
+msgstr "sider"
+
+#: inc/czr-admin.php:1019
+msgid "Default %1$s layout is set to : %2$s"
+msgstr "Standard %1$s utseende er satt til : %2$s"
+
+#: inc/czr-admin.php:950 inc/czr-admin.php:1346
+msgid "Slider Options"
+msgstr "Alternativer for forsidekarusell"
+
+#: inc/czr-admin.php:942
+msgid "Layout Options"
+msgstr "Instillinger for utseende"
+
+#: inc/czr-customize.php:672 inc/czr-customize.php:673
+msgid "Upgrade Wordpress Now"
+msgstr "Oppgrader WordPress nå"
+
+#: inc/czr-customize.php:669
+msgid "This theme requires WordPress 3.4+"
+msgstr "Dette temaet krever WordPress 3.4+"
+
+#: inc/czr-customize.php:649 inc/czr-customize.php:650
+msgid "Upgrade WP"
+msgstr "Oppdater WP"
+
+#: inc/czr-customize.php:633
+msgid "rating. Thanks :) !"
+msgstr "Rangering. Takk! :) "
+
+#: inc/czr-customize.php:631
+msgid "Review the Customizr theme"
+msgstr "Skriv en omtale av Customizr-temaet"
+
+#: inc/czr-customize.php:629
+msgid "we would love to receive a"
+msgstr "vil vi bli kjempeglad for å motta en "
+
+#: inc/czr-customize.php:628
+msgid "the Customizr pro theme"
+msgstr "Customizr Pro-temaet"
+
+#: inc/czr-customize.php:628
+msgid "the Customizr theme"
+msgstr "Customizr-temaet"
+
+#: inc/czr-customize.php:627
+msgid "If you like"
+msgstr "Hvis du liker "
+
+#: inc/czr-customize.php:616
+msgid "Customize your footer credits with Customizr Pro."
+msgstr "Tilpass krediteringer i sidefoten med Customizr Pro."
+
+#: inc/czr-customize.php:576
+msgid "Add unlimited featured pages with Customizr Pro."
+msgstr "Legg til ubegrenset fremhevede sider med Customizr Pro"
+
+#: inc/czr-customize.php:565
+msgid "Need more control on your fonts ? Style any text in live preview ( size, color, font family, effect, ...) with Customizr Pro."
+msgstr "Trenger du mer kontroll på skriftypene dine?  Endre stilen på enhver tekst I nåtidsvisning (størrelse, farge, fonttype, effekt, ...) med Customizr Pro."
+
+#: inc/czr-admin.php:629
+msgid "Discover Customizr Pro"
+msgstr "Oppdag Customizr Pro"
+
+#: inc/czr-customize.php:546
+msgid "Let me think twice"
+msgstr "La meg tenke meg om et par ganger"
+
+#: inc/czr-customize.php:545
+msgid "Hide forever"
+msgstr "Skjul for evig"
+
+#: inc/czr-customize.php:544
+msgid "Once clicked the 'Hide forever' button, this donation block will not be displayed anymore.<br/>Either you are using Customizr for personal or business purposes, any kind of sponsorship will be appreciated to support this free theme.<br/><strong>Already donator? Thanks, you rock!<br/><br/> Live long and prosper with Customizr!</strong>"
+msgstr "Når du har trykket på \"Skjul for evig\"-knappen, vil ikke denne donasjonsblokken bli vist mer. <br />Enten du bruker Customizr til personlig eller forretningsøyemed,vil alle bidrag til dette gratistemaet satt stor pris på.<br /><strong>Allerede donert? Takk! Du er konge!</br /><br />Lev lenge og vel med Customizr!</strong>"
+
+#: inc/czr-customize.php:541
+msgid "Make a donation for Customizr"
+msgstr "Doner penger til Customizr"
+
+#: inc/czr-customize.php:533
+msgid ", developer of the Customizr theme"
+msgstr ", utvikler av Customizr temaet"
+
+#: inc/czr-customize.php:531
+msgid "Hi! This is"
+msgstr "Hei! Dette er"
+
+#: inc/czr-init.php:3538
+msgid "Jump to the blog design options"
+msgstr "Gå til alternativer for bloggdesign"
+
+#: inc/czr-customize.php:363
+msgid "More grid design options"
+msgstr "Flere grid-design muligheter"
+
+#. Author URI of the plugin/theme
+msgid "http://presscustomizr.com/"
+msgstr "http://presscustomizr.com/"
+
+#. Author of the plugin/theme
+msgid "nikeo"
+msgstr "nikeo"
+
+#. Theme URI of the plugin/theme
+msgid "http://presscustomizr.com/customizr"
+msgstr "http://presscustomizr.com/customizr"

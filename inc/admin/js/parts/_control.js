@@ -34,6 +34,37 @@
     }
   };
 
+
+  //FIX FOR SECTION CONTENT HIDDEN BY THE FOOTER
+  //Problem fixed : since WP4.5, the footer of the customizer includes the device switcher
+  //but there's aso the rating link there.
+  //Therefore, in sections higher than the viewport, some content might be hidden
+  //This is fixed on each section expanded event
+  api.bind('ready', function() {
+    //wp.customize.Section is not available before wp 4.1
+    if ( 'function' != typeof (api.Section) )
+      return;
+    _.map( api.settings.sections, function( section, id ) {
+
+      var _section = api.section(id);
+      _section.expanded.callbacks.add( function( _expanded ) {
+          if ( ! _expanded )
+            return;
+          var $container = _section.container.closest( '.wp-full-overlay-sidebar-content' ),
+                $content = _section.container.find( '.accordion-section-content' );
+            //content resizing to the container height
+            _resizeContentHeight = function() {
+              $content.css( 'height', $container.innerHeight() );
+          };
+          _resizeContentHeight();
+          //this is set to off in the original expand callback if 'expanded' is false
+          $( window ).on( 'resize.customizer-section', _.debounce( _resizeContentHeight, 110 ) );
+        }
+      );//add
+    });//_.map
+  });
+
+
   /* Multiple Picker */
   /**
    * @constructor
@@ -47,14 +78,128 @@
 
       //handle case when all choices become unselected
       _select.on('change', function(e){
-        if ( 0 === $(this).find("option:selected").length ) 
-          control.setting.set([]);    
+        if ( 0 === $(this).find("option:selected").length )
+          control.setting.set([]);
       });
-    }    
+    }
   });
   $.extend( api.controlConstructor, {
-    tc_multiple_picker : api.TCMultiplePickerControl    
+    tc_multiple_picker : api.TCMultiplePickerControl
   });
+
+
+
+  /* IMAGE UPLOADER CONTROL IN THE CUSTOMIZER */
+  //CroppedImageControl is not available before wp 4.3
+  if ( ('function' == typeof wp.media.controller.Cropper ) && ( 'function' == typeof api.CroppedImageControl ) ) {
+    /* TCCustomizeImage Cropper */
+    /**
+    * Custom version of:
+    * wp.media.controller.CustomizeImageCropper (wp-includes/js/media-views.js)
+    *
+    * In order to use image destination sizes different than the suggested ones
+    *
+    * A state for cropping an image.
+    *
+    * @class
+    * @augments wp.media.controller.Cropper
+    * @augments wp.media.controller.State
+    * @augments Backbone.Model
+    */
+    wp.media.controller.TCCustomizeImageCropper = wp.media.controller.Cropper.extend({
+      doCrop: function( attachment ) {
+        var cropDetails = attachment.get( 'cropDetails' ),
+            control = this.get( 'control' );
+
+        cropDetails.dst_width  = control.params.dst_width;
+        cropDetails.dst_height = control.params.dst_height;
+
+        return wp.ajax.post( 'crop-image', {
+            wp_customize: 'on',
+            nonce: attachment.get( 'nonces' ).edit,
+            id: attachment.get( 'id' ),
+            context: control.id,
+            cropDetails: cropDetails
+        } );
+      }
+    });
+
+    /* TCCroppedImageControl */
+    /**
+    * @constructor
+    * @augments wp.customize.CroppedImageControl
+    * @augments wp.customize.Class
+    */
+    api.TCCroppedImageControl = api.CroppedImageControl.extend({
+      /**
+      * Create a media modal select frame, and store it so the instance can be reused when needed.
+      * TC: We don't want to crop svg (cropping fails), gif (animated gifs become static )
+      * @Override
+      * We need to override this in order to use our ImageCropper custom extension of wp.media.controller.Cropper
+      *
+      * See api.CroppedImageControl:initFrame() ( wp-admin/js/customize-controls.js )
+      */
+      initFrame: function() {
+
+        var l10n = _wpMediaViewsL10n;
+
+        this.frame = wp.media({
+            button: {
+                text: l10n.select,
+                close: false
+            },
+            states: [
+                new wp.media.controller.Library({
+                    title: this.params.button_labels.frame_title,
+                    library: wp.media.query({ type: 'image' }),
+                    multiple: false,
+                    date: false,
+                    priority: 20,
+                    suggestedWidth: this.params.width,
+                    suggestedHeight: this.params.height
+                }),
+                new wp.media.controller.TCCustomizeImageCropper({
+                    imgSelectOptions: this.calculateImageSelectOptions,
+                    control: this
+                })
+            ]
+        });
+
+        this.frame.on( 'select', this.onSelect, this );
+        this.frame.on( 'cropped', this.onCropped, this );
+        this.frame.on( 'skippedcrop', this.onSkippedCrop, this );
+      },
+
+      /**
+      * After an image is selected in the media modal, switch to the cropper
+      * state if the image isn't the right size.
+      *
+      * TC: We don't want to crop svg (cropping fails), gif (animated gifs become static )
+      * @Override
+      * See api.CroppedImageControl:onSelect() ( wp-admin/js/customize-controls.js )
+      */
+      onSelect: function() {
+        var attachment = this.frame.state().get( 'selection' ).first().toJSON();
+        if ( ! ( attachment.mime && attachment.mime.indexOf("image") > -1 ) ){
+          //Todo: better error handling, show some message?
+          this.frame.trigger( 'content:error' );
+          return;
+        }
+        if ( ( _.contains( ['image/svg+xml', 'image/gif'], attachment.mime ) ) || //do not crop gifs or svgs
+                this.params.width === attachment.width && this.params.height === attachment.height && ! this.params.flex_width && ! this.params.flex_height ) {
+            this.setImageFromAttachment( attachment );
+            this.frame.close();
+        } else {
+            this.frame.setState( 'cropper' );
+        }
+      },
+    });//end Controller
+
+    $.extend( api.controlConstructor, {
+      tc_cropped_image : api.TCCroppedImageControl
+    });
+  }//endif
+
 
 
 
@@ -173,23 +318,33 @@
     //2, show posts on front
     'page_for_posts' : {
        controls: [
-         'tc_blog_restrict_by_cat'    
+         'tc_blog_restrict_by_cat',
        ],
        callback : function (to) {
-         return '0' !== to;  
+         return '0' !== to;
        },
     },
     'show_on_front' : {
       controls: [
-        'tc_blog_restrict_by_cat'    
+        'tc_blog_restrict_by_cat',
+        'tc_show_post_navigation_home'
       ],
-      callback : function (to) {
+      callback : function (to, targetSetId) {
         if ( 'posts' == to )
           return true;
-        if ( 'page' == to )
+        if ( 'page' == to && 'tc_blog_restrict_by_cat' == targetSetId ) //show cat picker also if a page for posts is set
           return '0' !== api( _build_setId('page_for_posts') ).get() ;
         return false;
       },
+
+    },
+    'tc_logo_upload' : {
+      controls: [
+          'tc_logo_resize'
+      ],
+      callback : function( to ) {
+        return _.isNumber( to );
+      }
     },
     'tc_show_featured_pages': {
       controls: TCControlParams.FPControls,
@@ -205,11 +360,12 @@
         'tc_slider_default_height_apply_all',
         'tc_slider_change_default_img_size',
         'tc_posts_slider_number',
-        'tc_posts_slider_type',
+        'tc_posts_slider_stickies',
         'tc_posts_slider_title',
         'tc_posts_slider_text',
         'tc_posts_slider_link',
-        'tc_posts_slider_button_text'
+        'tc_posts_slider_button_text',
+        'tc_posts_slider_restrict_by_cat' //tc-pro-bundle
       ],
       callback: function (to, targetSetId) {
         //posts slider options must be hidden when the posts slider not choosen
@@ -217,18 +373,26 @@
           return 'tc_posts_slider' == to;
 
         //if user select the post slider option, append a notice in the label element
-        var $_front_slider_container = api.control( _build_setId('tc_front_slider') ).container;
+        //and hide the notice when no sliders have been created yet
+        var $_front_slider_container = api.control( _build_setId('tc_front_slider') ).container,
+            $_label = $( 'label' , $_front_slider_container ),
+            $_empty_sliders_notice = $( 'div.tc-notice', $_front_slider_container);
+
         if ( 'tc_posts_slider' == to ) {
-          var $_label = $( 'label' , $_front_slider_container );
           if ( 0 !== $_label.length && ! $('.tc-notice' , $_label ).length ) {
             var $_notice = $('<span>', { class: 'tc-notice', html : translatedStrings.postSliderNote || '' } );
             $_label.append( $_notice );
           } else {
             $('.tc-notice' , $_label ).show();
           }
+          //hide no sliders created notice
+          if ( 0 !== $_empty_sliders_notice.length )
+            $_empty_sliders_notice.hide();
         } else {
-          if ( 0 !== $( '.tc-notice' , $_front_slider_container ).length )
-            $( '.tc-notice' , $_front_slider_container ).hide();
+          if ( 0 !== $( '.tc-notice' , $_label ).length )
+            $( '.tc-notice' , $_label ).hide();
+          if ( 0 !== $_empty_sliders_notice.length )
+            $_empty_sliders_notice.show();
         }
         return '0' !== to;
       }//callback
@@ -276,6 +440,22 @@
         }
       }
     },
+    'tc_post_list_thumb_shape' : {
+      controls: [
+        'tc_post_list_thumb_height'
+      ],
+      callback: function (to) {
+        return to.indexOf('rectangular') > -1;
+      }
+    },
+    'tc_post_list_thumb_position' : {
+      controls: [
+        'tc_post_list_thumb_alternate'
+      ],
+      callback: function (to) {
+        return _.contains( [ 'left', 'right'], to );
+      }
+    },
     'tc_post_list_show_thumb' : {
       controls: [
         'tc_post_list_use_attachment_as_thumb',
@@ -292,14 +472,7 @@
       //display dependant if master setting value == value
       cross: {
         tc_post_list_thumb_height : { master : 'tc_post_list_thumb_shape' , callback : function (to) { return to.indexOf('rectangular') > -1; } },
-      }
-    },
-    'tc_post_list_thumb_shape' : {
-      controls: [
-        'tc_post_list_thumb_height'
-      ],
-      callback: function (to) {
-        return to.indexOf('rectangular') > -1;
+        tc_post_list_thumb_alternate: { master: 'tc_post_list_thumb_position', callback: function (to) { return _.contains( [ 'left', 'right'], to ); } }
       }
     },
     'tc_breadcrumb' : {
@@ -385,10 +558,18 @@
         'tc_sticky_shrink_title_logo',
         'tc_sticky_show_menu',
         'tc_sticky_transparent_on_scroll',
-        'tc_sticky_logo_upload'
+        'tc_sticky_logo_upload',
+        'tc_woocommerce_header_cart_sticky'
       ],
-      callback: function (to) {
+      callback: function (to, targetSetId) {
         return '1' == to;
+      },
+      cross: {
+        tc_woocommerce_header_cart_sticky : { master : 'tc_woocommerce_header_cart' , callback : function (to, tID, changedSetId ) {
+          return to &&  //api.control.active is available since wp 4.0 as the php active_callback
+            //so let's skip this for older wp versions
+            ( 'function' == typeof api.control.active ? api.control( _build_setId( changedSetId ) ).active() : true );
+        } }
       }
     },
     'tc_comment_bubble_color_type' : {
@@ -443,11 +624,16 @@
     'tc_show_post_navigation' : {
       controls: [
         'tc_show_post_navigation_page',
+        'tc_show_post_navigation_home',
         'tc_show_post_navigation_single',
         'tc_show_post_navigation_archive'
       ],
       callback: function (to) {
         return '1' == to;
+      },
+      //display dependant if master setting value == value
+      cross: {
+        tc_show_post_navigation_home : { master : 'show_on_front' , callback : function (to) { return 'posts' == to; } },
       }
     },
     'tc_display_second_menu' : {
@@ -529,6 +715,30 @@
             return true;
           }
         }
+      }
+    },
+    'tc_woocommerce_header_cart' : {
+      controls: [
+        'tc_woocommerce_header_cart_sticky'
+      ],
+      callback: function (to, tID , changedSetId) {
+        return to &&  //api.control.active is available since wp 4.0 as the php active_callback
+        //so let's skip this for older wp versions
+        ( 'function' == typeof api.control.active ? api.control( _build_setId( changedSetId ) ).active() : true );
+      },
+      //display dependant if master setting value == value
+      cross: {
+        tc_woocommerce_header_cart_sticky : { master : 'tc_sticky_header' , callback : function (to) {
+            return to;
+        } },
+      }
+    },
+    'tc_show_back_to_top' : {
+      controls: [
+        'tc_back_to_top_position'
+      ],
+      callback : function ( to ) {
+        return 1 == to;
       }
     }
   };
