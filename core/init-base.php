@@ -28,6 +28,10 @@ if ( ! class_exists( 'CZR_BASE' ) ) :
         public $tc_grid_size;
         public $tc_grid_full_size;
 
+        private $retina_excluded_mime_types = array(
+            'application/pdf'
+        );
+
         //print comments template once : plugins compatibility
         public static $comments_rendered = false;
 
@@ -471,9 +475,62 @@ if ( ! class_exists( 'CZR_BASE' ) ) :
           if ( ! is_array($metadata) )
             return $metadata;
 
+
           //Create the retina image for the main file
+          /*
+          when the attachment is a pdf:
+          isset($metadata['width']) && isset($metadata['height'])
+          is false as $metadata is like:
+          Array
+          (
+              [sizes] => Array
+                  (
+                      [thumbnail] => Array
+                          (
+                              [file] => 15626866-1-pdf-116x150.jpg
+                              [width] => 116
+                              [height] => 150
+                              [mime-type] => image/jpeg
+                          )
+
+                      [medium] => Array
+                          (
+                              [file] => 15626866-1-pdf-232x300.jpg
+                              [width] => 232
+                              [height] => 300
+                              [mime-type] => image/jpeg
+                          )
+
+                      [large] => Array
+                          (
+                              [file] => 15626866-1-pdf-791x1024.jpg
+                              [width] => 791
+                              [height] => 1024
+                              [mime-type] => image/jpeg
+                          )
+
+                      [full] => Array
+                          (
+                              [file] => 15626866-1-pdf.jpg
+                              [width] => 1088
+                              [height] => 1408
+                              [mime-type] => image/jpeg
+                          )
+
+                  )
+
+          )
+          */
+
+          //excluded mime types
+          $retina_excluded_mime_types = apply_filters( 'retina_excluded_mime_types', $this->retina_excluded_mime_types );
+          if ( in_array( get_post_mime_type($attachment_id), $retina_excluded_mime_types ) ) {
+              return $metadata;
+          }
+
           if ( is_array($metadata) && isset($metadata['width']) && isset($metadata['height']) )
             $this -> czr_fn_create_retina_images( get_attached_file( $attachment_id ), $metadata['width'], $metadata['height'] , false, $_is_intermediate = false );
+
 
           //Create the retina images for each WP sizes
           foreach ( $metadata as $key => $data ) {
@@ -481,7 +538,7 @@ if ( ! class_exists( 'CZR_BASE' ) ) :
                 continue;
               foreach ( $data as $_size_name => $_attr ) {
                   if ( is_array( $_attr ) && isset($_attr['width']) && isset($_attr['height']) )
-                      $this -> czr_fn_create_retina_images( get_attached_file( $attachment_id ), $_attr['width'], $_attr['height'], true, $_is_intermediate = true );
+                      $this -> czr_fn_create_retina_images( get_attached_file( $attachment_id ), $_attr['width'], $_attr['height'], true, $_is_intermediate = true  );
               }
           }
           return $metadata;
@@ -536,6 +593,13 @@ if ( ! class_exists( 'CZR_BASE' ) ) :
           $meta = wp_get_attachment_metadata( $attachment_id );
           if ( !isset( $meta['file']) )
             return;
+
+          $retina_excluded_mime_types = apply_filters( 'retina_excluded_mime_types', $this->retina_excluded_mime_types );
+
+
+          if ( in_array( get_post_mime_type($attachment_id), $retina_excluded_mime_types ) ) {
+              return $metadata;
+          }
 
           $upload_dir = wp_upload_dir();
           $path = pathinfo( $meta['file'] );
