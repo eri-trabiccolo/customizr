@@ -92,10 +92,11 @@ function czr_fn_post_action( $link, $link_class = '', $link_attr = '', $echo = t
       $class       = $link_class ? $link_class . ' ' . $icon : $icon;
       $link_attr   = $link_attr ? " {$link_attr}" : '';
 
-      $post_action = sprintf( '<div class="post-action btn btn-skin-dark-shaded inverted"><a href="%1$s" class="%2$s"%3$s></a></div>',
+      $post_action = sprintf( '<div class="post-action btn btn-skin-dark-shaded inverted"><a href="%1$s" class="%2$s"%3$s role="button"><span class="sr-only">%4$s</span></a></div>',
         esc_url( $link ),
         esc_attr( $class ),
-        $link_attr
+        $link_attr,
+        esc_html__( 'Expand image', 'customizr' )
       );
 
 

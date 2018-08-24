@@ -130,28 +130,35 @@ class CZR_gallery {
 
                   if ( trim( $attachment->post_excerpt ) )
                         $image_attr[ 'aria-describedby' ] =  "$selector-$id";
-                  
+
                   $image_output = wp_get_attachment_image( $id, $atts['size'], false, $image_attr );
 
                   if ( ! empty( $atts['link'] ) && 'file' === $atts['link'] ) {
                         $link         = wp_get_attachment_url( $id );
 
-                        $image_output = sprintf( '<a href=%1$s class="bg-link"></a>%2$s', $link, $image_output );
+                        $image_output = sprintf( '<a href=%1$s class="bg-link" title="%2$s"><span class="sr-only">%2$s</span></a>%3$s',
+                              $link,
+                              sprintf( esc_html__( 'Link to the image file: %1$s', 'customizr' ), $link ),
+                              $image_output
+                        );
 
                         $image_output = apply_filters( 'czr_gallery_image_linking_media', $image_output, $id, $attachment );
 
                   } elseif ( ! empty( $atts['link'] ) && 'none' === $atts['link'] ) {
 
-                        //no link                        
+                        //no link
                         //maybe add expand img button
                         $image_output = apply_filters( 'czr_gallery_image_linking_no_media', $image_output, $id, $attachment );
 
                   } else {
 
                         //link to attachment page
-                        $link = get_attachment_link( $id );
-
-                        $image_output = sprintf( '<a href=%1$s class="bg-link"></a>%2$s', $link, $image_output );
+                        $link             = get_attachment_link( $id );
+                        $image_output = sprintf( '<a href=%1$s class="bg-link" title="%2$s"><span class="sr-only">%2$s</span></a>%3$s',
+                              $link,
+                              the_title_attribute( array( 'before' => esc_html__( 'Permalink to the attachment: ', 'customizr' ), 'echo' => false, 'post' => $id ) ),
+                              $image_output
+                        );
 
                         //maybe add expand img button
                         $image_output = apply_filters( 'czr_gallery_image_linking_no_media', $image_output, $id, $attachment );
@@ -198,7 +205,7 @@ class CZR_gallery {
 
             $title = trim($attachment->post_excerpt) ? ' title="'. wptexturize($attachment->post_excerpt) .'"' : '';
 
-            return str_replace( '<a', '<a data-lb-type="grouped-gallery"'.$title, $link_markup );
+            return str_replace( '<a', '<a role="button" data-lb-type="grouped-gallery"'.$title, $link_markup );
       }
 
 
@@ -215,7 +222,6 @@ class CZR_gallery {
             $attr  = 'data-lb-type="grouped-gallery"' . $title;
 
             return $markup . czr_fn_post_action( $link, $class = '', $attr,  $echo = false );
-
       }
 
 
@@ -244,9 +250,9 @@ class CZR_gallery {
             $article_container_width_md_up_ratio = $article_container_width_md_up_ratios[ $content_breadth ];
 
 
-            /* 
+            /*
             CZR_init::$instance->$css_container_width looks like:
-            
+
             array(
                 //min-widths: 1200px, 992px, 768px,
                 //xl, lg, md, sm, xs
@@ -260,21 +266,21 @@ class CZR_gallery {
             */
             $css_container_widths   = CZR_init::$instance->css_container_widths;
 
-            /* 
+            /*
             CZR_init::$instance->$css_mq_breakpoints looks like:
-            
+
             array(
                   'xl' => '1200',
                   'lg' => '992',
                   'md' => '768',
                   'sm' => '575'
-            ) 
+            )
             */
             $css_mq_breakpoints     = CZR_init::$instance->css_mq_breakpoints;
-            
 
 
-            $gallery_item_h_padding = 30; //px (15+15) 
+
+            $gallery_item_h_padding = 30; //px (15+15)
 
             //Following the principle used to set the gallery items columns in CSS)
             //
@@ -290,7 +296,7 @@ class CZR_gallery {
             // we limit the width of the 4-9 columns gallery items to 25% of the container width
             //
 
-            //default, mobile first: 
+            //default, mobile first:
             // 1 column  => 100vw - (left and right padding) 30px  (1)
             // 2+ columns => 50vw - (left and right padding) 30px  (2)
             $default_sizes = 1 == $gallery_columns ? 'calc( 100vw - '. $gallery_item_h_padding . 'px )' : 'calc( 50vw - '. $gallery_item_h_padding  . 'px )';
@@ -316,7 +322,7 @@ class CZR_gallery {
             }
             //(4)
             else {
-                  $image_size = $article_container_width/4;                  
+                  $image_size = $article_container_width/4;
             }
 
 
@@ -335,7 +341,7 @@ class CZR_gallery {
 
 
             // Medium devices (tablets, 768px and up)
-            //(min-width: 768px) => .container = 720px => article container's width depends on the content breadth      
+            //(min-width: 768px) => .container = 720px => article container's width depends on the content breadth
             $css_container_width     = $css_container_widths[ 'md' ];
 
             //get the article container width in pixels
@@ -343,7 +349,7 @@ class CZR_gallery {
 
             //(4.a)
             $_image_size = ( $gallery_columns > 3 && 'narrow' == $content_breadth ) ? $article_container_width / 4 :  $article_container_width / $gallery_columns ;
-            //avoid adjacents duplicate sizes => make the mq's smaller bp win  
+            //avoid adjacents duplicate sizes => make the mq's smaller bp win
             if ( $_image_size != $image_size ) {
                   $image_size = $_image_size;
                   //$sizes[] = sprintf( '(min-width: %1$spx) and (max-width: %2$spx) %3$spx',
@@ -356,7 +362,7 @@ class CZR_gallery {
             }
 
             //Considering 3 columns, with two sidebars:
-            //Sizes now looks like: 
+            //Sizes now looks like:
             //Array
             //(
             //    [0] => (min-width: 576px) 150px
@@ -369,7 +375,7 @@ class CZR_gallery {
                   //get the article container width in pixels
                   $article_container_width = $css_container_width * $article_container_width_md_up_ratio;
 
-                  //avoid adjacents duplicate sizes => make the mq's smaller bp win  
+                  //avoid adjacents duplicate sizes => make the mq's smaller bp win
                   $_image_size = $article_container_width / $gallery_columns;
 
                   if ( $_image_size != $image_size ) {
@@ -383,7 +389,7 @@ class CZR_gallery {
 
 
             //Considering 3 columns, with two sidebars:
-            //Sizes now looks like: 
+            //Sizes now looks like:
             //Array
             //(
             //    [0] => (min-width: 576px) 150px

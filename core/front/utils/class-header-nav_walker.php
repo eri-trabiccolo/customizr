@@ -79,7 +79,8 @@ if ( ! class_exists( 'CZR_nav_walker' ) ) :
       remove_filter( 'nav_menu_link_attributes' , 'czr_fn_add_nav_link_class', 10, 4 );
 
       if ( $item->is_dropdown ) {
-        $item_html = czr_fn_maybe_add_dropdown_html( $item_html, $args->dropdown_on );
+
+        $item_html = czr_fn_maybe_add_dropdown_html( $item_html, $args->dropdown_on, $item->url );
 
       }else {
 
@@ -229,7 +230,7 @@ endif;
 
 
 //maybe alter the item_html to add needed html code for dropdown
-function czr_fn_maybe_add_dropdown_html( $item_html, $dropdown_on ) {
+function czr_fn_maybe_add_dropdown_html( $item_html, $dropdown_on, $item_url = null ) {
 
     //3 cases:
     //1 - dropdown on hover | dropdown on click for regular nav
@@ -238,14 +239,35 @@ function czr_fn_maybe_add_dropdown_html( $item_html, $dropdown_on ) {
     switch( $dropdown_on ) {
 
       case 'link-action' :
-                $item_html = str_replace(
-                  array( '<a', '</a>' ),
-                  array(
-                    '<a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false"',
-                    '<span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>'
-                  ),
-                  $item_html
-                );
+                /*
+                * This is the case when the item_url param is not passed (page menu), or the item_url is passed
+                * but is NOT empty or '#' => meaning a menu item which doesn't link to anything.
+                */
+                if ( is_null( $item_url ) || ( ! is_null( $item_url ) && ! in_array( $item_url, array( '', ' ', '#' ) ) ) ) {
+                    $item_html = str_replace(
+                      array( '<a', '</a>' ),
+                      array(
+                        '<a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false"',
+                        '<span class="caret__dropdown-toggler"><i class="icn-down-small" aria-hidden="true" role="img"></i></span></a>'
+                      ),
+                      $item_html
+                    );
+                }
+                /*
+                * This is the case when the item_url param is passed and the item_url and is empty or '#' =>
+                * meaning a menu item which doesn't link to anything. It's only purpose is then to show a submenu
+                * either on click or on hover.
+                */
+                else if ( ! is_null( $item_url ) && in_array( $item_url, array( '', ' ', '#' ) ) ) {
+                    $item_html = str_replace(
+                      array( '<a', '</a>' ),
+                      array(
+                        '<a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" role="button"',
+                        '<span class="sr-only">'. esc_html__( 'Submenu toggle', 'customizr' ) . '</span><span class="caret__dropdown-toggler"><i class="icn-down-small" aria-hidden="true" role="img"></i></span></a>'
+                      ),
+                      $item_html
+                    );
+                }
                 break;
       case 'caret-click' :
                 $item_html = str_replace(
@@ -253,7 +275,7 @@ function czr_fn_maybe_add_dropdown_html( $item_html, $dropdown_on ) {
                   array(
                     //wrap both the link and the caret toggler in a convenient wrapper
                     '<span class="display-flex nav__link-wrapper align-items-start"><a',
-                    '</a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>'
+                    '</a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small" aria-hidden="true" role="img"></i><span class="sr-only">'. esc_html__( 'Submenu toggle', 'customizr' ) . '</span></button></span>'
                   ),
                   $item_html
                 );

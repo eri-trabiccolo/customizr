@@ -4,7 +4,7 @@
  */
 ?>
 <li class="nav__search <?php czr_fn_echo('element_class') ?>" <?php czr_fn_echo('element_attributes') ?>>
-  <a href="#" class="search-toggle_btn icn-search <?php czr_fn_echo('search_toggle_class'); ?>" <?php czr_fn_echo('search_toggle_attributes'); ?> aria-expanded="false"><span class="sr-only">Search</span></a>
+  <a href="#" class="search-toggle_btn icn-search <?php czr_fn_echo('search_toggle_class'); ?>" <?php czr_fn_echo('search_toggle_attributes'); ?> aria-expanded="false" role="button"><span class="sr-only"><?php esc_html_e( 'Search', 'customizr' ) ?></span></a>
   <?php if ( czr_fn_get_property( 'has_dropdown' ) ) : ?>
     <ul class="dropdown-menu czr-dropdown-menu">
       <?php
